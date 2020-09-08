@@ -343,7 +343,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1170;
-				ORGANIZATIONNAME = "Tuan Truong";
+				ORGANIZATIONNAME = "Sun Asterisk";
 				TargetAttributes = {
 					1773897D25071D8D003B5CD7 = {
 						CreatedOnToolsVersion = 11.7;
