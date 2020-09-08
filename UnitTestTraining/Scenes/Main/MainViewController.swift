@@ -11,15 +11,19 @@ import MGArchitecture
 import RxSwift
 import RxCocoa
 import Reusable
+import Then
 
 final class MainViewController: UIViewController, Bindable {
     
     // MARK: - IBOutlets
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
     
     var viewModel: MainViewModel!
-    var diposeBag = DisposeBag()
+    var disposeBag = DisposeBag()
+    
+    private var exercises = [ExerciseItemViewModel]()
     
     // MARK: - Life Cycle
     
@@ -36,17 +40,58 @@ final class MainViewController: UIViewController, Bindable {
     
     private func configView() {
         title = "Exercise List"
+        
+        tableView.do {
+            $0.delegate = self
+            $0.dataSource = self
+            $0.rowHeight = 44
+            $0.register(cellType: ExerciseCell.self)
+        }
     }
     
     func bindViewModel() {
-        let input = MainViewModel.Input()
-        _ = viewModel.transform(input, disposeBag: diposeBag)
+        let input = MainViewModel.Input(
+            loadTrigger: Driver.just(()),
+            selectTrigger: tableView.rx.itemSelected.asDriver()
+        )
+        
+        let output = viewModel.transform(input, disposeBag: disposeBag)
+        
+        output.$exercises
+            .asDriver()
+            .drive(onNext: { [unowned self] exercises in
+                self.exercises = exercises
+                self.tableView.reloadData()
+            })
+            .disposed(by: disposeBag)
     }
 }
 
-// MARK: - Binders
-extension MainViewController {
+// MARK: - UITableViewDelegate
+extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+// MARK: - UITableViewDataSource
+extension MainViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return exercises.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let viewModel = exercises[indexPath.row]
+        
+        return tableView.dequeueReusableCell(for: indexPath, cellType: ExerciseCell.self)
+            .then {
+                $0.bindViewModel(viewModel)
+            }
+    }
 }
 
 // MARK: - StoryboardSceneBased
