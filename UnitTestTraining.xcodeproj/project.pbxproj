@@ -13,11 +13,6 @@
 		177389C225071EA2003B5CD7 /* UnitTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389A725071EA2003B5CD7 /* UnitTestViewController.swift */; };
 		177389C325071EA2003B5CD7 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389A825071EA2003B5CD7 /* Assembler.swift */; };
 		177389C425071EA2003B5CD7 /* GatewaysAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389AC25071EA2003B5CD7 /* GatewaysAssembler.swift */; };
-		177389C525071EA2003B5CD7 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389AE25071EA2003B5CD7 /* APIError.swift */; };
-		177389C625071EA2003B5CD7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389AF25071EA2003B5CD7 /* APIService.swift */; };
-		177389C725071EA2003B5CD7 /* APIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389B025071EA2003B5CD7 /* APIInput.swift */; };
-		177389C825071EA2003B5CD7 /* APIOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389B125071EA2003B5CD7 /* APIOutput.swift */; };
-		177389C925071EA2003B5CD7 /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389B325071EA2003B5CD7 /* APIUrls.swift */; };
 		177389CA25071EA2003B5CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389B425071EA2003B5CD7 /* AppDelegate.swift */; };
 		177389CB25071EA2003B5CD7 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389B725071EA2003B5CD7 /* Storyboards.swift */; };
 		177389CC25071EA2003B5CD7 /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389B925071EA2003B5CD7 /* AppAssembler.swift */; };
@@ -29,7 +24,6 @@
 		177389D225071EA2003B5CD7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389C125071EA2003B5CD7 /* Utils.swift */; };
 		177389D625071FAE003B5CD7 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 177389D525071FAE003B5CD7 /* MBProgressHUD */; };
 		177389D92507200E003B5CD7 /* MGArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 177389D82507200E003B5CD7 /* MGArchitecture */; };
-		177389DC25072060003B5CD7 /* MGAPIService in Frameworks */ = {isa = PBXBuildFile; productRef = 177389DB25072060003B5CD7 /* MGAPIService */; };
 		177389DF25072085003B5CD7 /* Dto in Frameworks */ = {isa = PBXBuildFile; productRef = 177389DE25072085003B5CD7 /* Dto */; };
 		177389E225072210003B5CD7 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 177389E125072210003B5CD7 /* Then */; };
 		177389E925072442003B5CD7 /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389E425072442003B5CD7 /* MainAssembler.swift */; };
@@ -65,11 +59,6 @@
 		177389A725071EA2003B5CD7 /* UnitTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestViewController.swift; sourceTree = "<group>"; };
 		177389A825071EA2003B5CD7 /* Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
 		177389AC25071EA2003B5CD7 /* GatewaysAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GatewaysAssembler.swift; sourceTree = "<group>"; };
-		177389AE25071EA2003B5CD7 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		177389AF25071EA2003B5CD7 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		177389B025071EA2003B5CD7 /* APIInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInput.swift; sourceTree = "<group>"; };
-		177389B125071EA2003B5CD7 /* APIOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIOutput.swift; sourceTree = "<group>"; };
-		177389B325071EA2003B5CD7 /* APIUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
 		177389B425071EA2003B5CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177389B725071EA2003B5CD7 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		177389B925071EA2003B5CD7 /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
@@ -98,7 +87,6 @@
 				177389D625071FAE003B5CD7 /* MBProgressHUD in Frameworks */,
 				177389D92507200E003B5CD7 /* MGArchitecture in Frameworks */,
 				177389DF25072085003B5CD7 /* Dto in Frameworks */,
-				177389DC25072060003B5CD7 /* MGAPIService in Frameworks */,
 				177389F0250724E7003B5CD7 /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,18 +172,9 @@
 		177389A925071EA2003B5CD7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				177389AA25071EA2003B5CD7 /* UserDefaults */,
 				177389AB25071EA2003B5CD7 /* Gateways */,
-				177389AD25071EA2003B5CD7 /* API */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		177389AA25071EA2003B5CD7 /* UserDefaults */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 		177389AB25071EA2003B5CD7 /* Gateways */ = {
@@ -206,21 +185,9 @@
 			path = Gateways;
 			sourceTree = "<group>";
 		};
-		177389AD25071EA2003B5CD7 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				177389AE25071EA2003B5CD7 /* APIError.swift */,
-				177389AF25071EA2003B5CD7 /* APIService.swift */,
-				177389B025071EA2003B5CD7 /* APIInput.swift */,
-				177389B125071EA2003B5CD7 /* APIOutput.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		177389B225071EA2003B5CD7 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				177389B325071EA2003B5CD7 /* APIUrls.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -308,7 +275,6 @@
 			packageProductDependencies = (
 				177389D525071FAE003B5CD7 /* MBProgressHUD */,
 				177389D82507200E003B5CD7 /* MGArchitecture */,
-				177389DB25072060003B5CD7 /* MGAPIService */,
 				177389DE25072085003B5CD7 /* Dto */,
 				177389E125072210003B5CD7 /* Then */,
 				177389EF250724E7003B5CD7 /* Reusable */,
@@ -367,7 +333,6 @@
 			packageReferences = (
 				177389D425071FAE003B5CD7 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 				177389D72507200E003B5CD7 /* XCRemoteSwiftPackageReference "MGArchitecture" */,
-				177389DA25072060003B5CD7 /* XCRemoteSwiftPackageReference "MGAPIService" */,
 				177389DD25072085003B5CD7 /* XCRemoteSwiftPackageReference "Dto" */,
 				177389E025072210003B5CD7 /* XCRemoteSwiftPackageReference "Then" */,
 				177389EE250724E7003B5CD7 /* XCRemoteSwiftPackageReference "Reusable" */,
@@ -430,10 +395,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				177389EC25072442003B5CD7 /* MainViewController.swift in Sources */,
-				177389C925071EA2003B5CD7 /* APIUrls.swift in Sources */,
 				177389C325071EA2003B5CD7 /* Assembler.swift in Sources */,
 				177389D025071EA2003B5CD7 /* UIViewController+.swift in Sources */,
-				177389C725071EA2003B5CD7 /* APIInput.swift in Sources */,
 				177389F525073BA3003B5CD7 /* ExerciseCell.swift in Sources */,
 				177389CF25071EA2003B5CD7 /* AppUseCase.swift in Sources */,
 				177389CE25071EA2003B5CD7 /* AppViewModel.swift in Sources */,
@@ -441,14 +404,11 @@
 				177389F225073B8D003B5CD7 /* ExerciseItemViewModel.swift in Sources */,
 				177389D125071EA2003B5CD7 /* UIViewController+Rx.swift in Sources */,
 				177389CA25071EA2003B5CD7 /* AppDelegate.swift in Sources */,
-				177389C625071EA2003B5CD7 /* APIService.swift in Sources */,
 				177389D225071EA2003B5CD7 /* Utils.swift in Sources */,
 				177389EA25072442003B5CD7 /* MainNavigator.swift in Sources */,
 				177389CD25071EA2003B5CD7 /* AppNavigator.swift in Sources */,
-				177389C525071EA2003B5CD7 /* APIError.swift in Sources */,
 				177389CC25071EA2003B5CD7 /* AppAssembler.swift in Sources */,
 				177389CB25071EA2003B5CD7 /* Storyboards.swift in Sources */,
-				177389C825071EA2003B5CD7 /* APIOutput.swift in Sources */,
 				177389C425071EA2003B5CD7 /* GatewaysAssembler.swift in Sources */,
 				177389C225071EA2003B5CD7 /* UnitTestViewController.swift in Sources */,
 				177389E925072442003B5CD7 /* MainAssembler.swift in Sources */,
@@ -739,14 +699,6 @@
 				minimumVersion = 2.0.1;
 			};
 		};
-		177389DA25072060003B5CD7 /* XCRemoteSwiftPackageReference "MGAPIService" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/tuan188/MGAPIService";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
 		177389DD25072085003B5CD7 /* XCRemoteSwiftPackageReference "Dto" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tuan188/Dto";
@@ -783,11 +735,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 177389D72507200E003B5CD7 /* XCRemoteSwiftPackageReference "MGArchitecture" */;
 			productName = MGArchitecture;
-		};
-		177389DB25072060003B5CD7 /* MGAPIService */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 177389DA25072060003B5CD7 /* XCRemoteSwiftPackageReference "MGAPIService" */;
-			productName = MGAPIService;
 		};
 		177389DE25072085003B5CD7 /* Dto */ = {
 			isa = XCSwiftPackageProductDependency;
