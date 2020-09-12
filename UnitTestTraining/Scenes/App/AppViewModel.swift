@@ -27,11 +27,12 @@ extension AppViewModel: ViewModel {
     
     @discardableResult
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
+        let output = Output()
+        
         input.loadTrigger
-            .do(onNext: navigator.toMain)
-            .drive()
+            .drive(onNext: navigator.toMain)
             .disposed(by: disposeBag)
         
-        return Output()
+        return output
     }
 }

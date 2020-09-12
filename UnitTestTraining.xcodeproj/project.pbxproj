@@ -17,6 +17,9 @@
 		1712848F250C71D200A95A97 /* GettingExercisesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712848E250C71D200A95A97 /* GettingExercisesTests.swift */; };
 		17128493250C722A00A95A97 /* ExerciseGatewayMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128492250C722A00A95A97 /* ExerciseGatewayMock.swift */; };
 		17128495250C755900A95A97 /* ExerciseCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128494250C755900A95A97 /* ExerciseCellTests.swift */; };
+		1712849C250C75E300A95A97 /* AppViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128498250C75E300A95A97 /* AppViewModelTests.swift */; };
+		1712849D250C75E300A95A97 /* AppNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128499250C75E300A95A97 /* AppNavigatorMock.swift */; };
+		1712849E250C75E300A95A97 /* AppUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712849A250C75E300A95A97 /* AppUseCaseMock.swift */; };
 		1773898925071D8D003B5CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773898725071D8D003B5CD7 /* Main.storyboard */; };
 		1773898B25071D8E003B5CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1773898A25071D8E003B5CD7 /* Assets.xcassets */; };
 		1773898E25071D8E003B5CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773898C25071D8E003B5CD7 /* LaunchScreen.storyboard */; };
@@ -68,6 +71,9 @@
 		1712848E250C71D200A95A97 /* GettingExercisesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingExercisesTests.swift; sourceTree = "<group>"; };
 		17128492250C722A00A95A97 /* ExerciseGatewayMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGatewayMock.swift; sourceTree = "<group>"; };
 		17128494250C755900A95A97 /* ExerciseCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCellTests.swift; sourceTree = "<group>"; };
+		17128498250C75E300A95A97 /* AppViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModelTests.swift; sourceTree = "<group>"; };
+		17128499250C75E300A95A97 /* AppNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigatorMock.swift; sourceTree = "<group>"; };
+		1712849A250C75E300A95A97 /* AppUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUseCaseMock.swift; sourceTree = "<group>"; };
 		1773897E25071D8D003B5CD7 /* UnitTestTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1773898825071D8D003B5CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1773898A25071D8E003B5CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +130,7 @@
 		1712847B250C6D3900A95A97 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				17128496250C75D100A95A97 /* App */,
 				1712847C250C6D4100A95A97 /* Main */,
 			);
 			path = Scenes;
@@ -179,6 +186,16 @@
 				17128492250C722A00A95A97 /* ExerciseGatewayMock.swift */,
 			);
 			path = Gateways;
+			sourceTree = "<group>";
+		};
+		17128496250C75D100A95A97 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				17128498250C75E300A95A97 /* AppViewModelTests.swift */,
+				17128499250C75E300A95A97 /* AppNavigatorMock.swift */,
+				1712849A250C75E300A95A97 /* AppUseCaseMock.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		1773897525071D8D003B5CD7 = {
@@ -512,11 +529,14 @@
 			files = (
 				17128484250C6D5200A95A97 /* MainUseCaseMock.swift in Sources */,
 				1712848F250C71D200A95A97 /* GettingExercisesTests.swift in Sources */,
+				1712849D250C75E300A95A97 /* AppNavigatorMock.swift in Sources */,
 				17128483250C6D5200A95A97 /* MainNavigatorMock.swift in Sources */,
 				17128481250C6D5200A95A97 /* MainViewControllerTests.swift in Sources */,
 				17128495250C755900A95A97 /* ExerciseCellTests.swift in Sources */,
+				1712849E250C75E300A95A97 /* AppUseCaseMock.swift in Sources */,
 				17128493250C722A00A95A97 /* ExerciseGatewayMock.swift in Sources */,
 				17128482250C6D5200A95A97 /* MainViewModelTests.swift in Sources */,
+				1712849C250C75E300A95A97 /* AppViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

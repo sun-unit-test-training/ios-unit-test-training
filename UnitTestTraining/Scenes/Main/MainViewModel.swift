@@ -38,7 +38,7 @@ extension MainViewModel: ViewModel {
         
         input.selectTrigger
             .map { $0.row }
-            .do(onNext: { row in
+            .drive(onNext: { row in
                 switch row + 1 {
                 case 1:
                     self.navigator.toExercise1()
@@ -64,7 +64,6 @@ extension MainViewModel: ViewModel {
                     break
                 }
             })
-            .drive()
             .disposed(by: disposeBag)
         
         return output
