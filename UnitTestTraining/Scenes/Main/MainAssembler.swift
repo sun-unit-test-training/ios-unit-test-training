@@ -38,6 +38,6 @@ extension MainAssembler where Self: DefaultAssembler {
     }
     
     func resolve() -> MainUseCaseType {
-        return MainUseCase()
+        return MainUseCase(exerciseGateway: resolve())
     }
 }

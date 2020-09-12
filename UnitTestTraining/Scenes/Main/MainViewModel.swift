@@ -31,7 +31,7 @@ extension MainViewModel: ViewModel {
         let output = Output()
         
         input.loadTrigger
-            .map { self.exerciseList() }
+            .map { self.useCase.getExercies() }
             .map { $0.map(ExerciseItemViewModel.init(exercise:)) }
             .drive(output.$exercises)
             .disposed(by: disposeBag)
@@ -68,15 +68,5 @@ extension MainViewModel: ViewModel {
             .disposed(by: disposeBag)
         
         return output
-    }
-}
-
-extension MainViewModel {
-    struct Exercise {
-        var title = ""
-    }
-    
-    func exerciseList() -> [Exercise] {
-        return (1...10).map { Exercise(title: "Exercise \($0)") }
     }
 }

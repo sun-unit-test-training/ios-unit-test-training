@@ -23,8 +23,6 @@ final class MainViewController: UIViewController, Bindable {
     var viewModel: MainViewModel!
     var disposeBag = DisposeBag()
     
-    private var exercises = [ExerciseItemViewModel]()
-    
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
@@ -43,7 +41,6 @@ final class MainViewController: UIViewController, Bindable {
         
         tableView.do {
             $0.delegate = self
-            $0.dataSource = self
             $0.rowHeight = 44
             $0.register(cellType: ExerciseCell.self)
         }
@@ -59,10 +56,15 @@ final class MainViewController: UIViewController, Bindable {
         
         output.$exercises
             .asDriver()
-            .drive(onNext: { [unowned self] exercises in
-                self.exercises = exercises
-                self.tableView.reloadData()
-            })
+            .drive(tableView.rx.items) { tableView, row, exercise in
+                return tableView.dequeueReusableCell(
+                    for: IndexPath(row: row, section: 0),
+                    cellType: ExerciseCell.self
+                )
+                .then {
+                    $0.bindViewModel(exercise)
+                }
+            }
             .disposed(by: disposeBag)
     }
 }
@@ -71,26 +73,6 @@ final class MainViewController: UIViewController, Bindable {
 extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-    }
-}
-
-// MARK: - UITableViewDataSource
-extension MainViewController: UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return exercises.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let viewModel = exercises[indexPath.row]
-        
-        return tableView.dequeueReusableCell(for: indexPath, cellType: ExerciseCell.self)
-            .then {
-                $0.bindViewModel(viewModel)
-            }
     }
 }
 

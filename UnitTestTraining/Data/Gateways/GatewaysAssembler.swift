@@ -7,9 +7,11 @@
 //
 
 protocol GatewaysAssembler {
-
+    func resolve() -> ExerciseGatewayType
 }
 
 extension GatewaysAssembler where Self: DefaultAssembler {
-
+    func resolve() -> ExerciseGatewayType {
+        return ExerciseGateway()
+    }
 }

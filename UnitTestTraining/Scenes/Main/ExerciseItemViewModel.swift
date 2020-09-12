@@ -11,7 +11,7 @@ import UIKit
 struct ExerciseItemViewModel {
     let title: String
     
-    init(exercise: MainViewModel.Exercise) {
+    init(exercise: Exercise) {
         self.title = exercise.title
     }
 }

@@ -7,9 +7,9 @@
 //
 
 protocol MainUseCaseType {
-    
+    func getExercies() -> [Exercise]
 }
 
-struct MainUseCase: MainUseCaseType {
-    
+struct MainUseCase: MainUseCaseType, GettingExercises {
+    let exerciseGateway: ExerciseGatewayType
 }

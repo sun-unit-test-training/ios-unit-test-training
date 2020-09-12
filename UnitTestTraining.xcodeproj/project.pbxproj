@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17128481250C6D5200A95A97 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712847D250C6D5200A95A97 /* MainViewControllerTests.swift */; };
+		17128482250C6D5200A95A97 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712847E250C6D5200A95A97 /* MainViewModelTests.swift */; };
+		17128483250C6D5200A95A97 /* MainNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712847F250C6D5200A95A97 /* MainNavigatorMock.swift */; };
+		17128484250C6D5200A95A97 /* MainUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128480250C6D5200A95A97 /* MainUseCaseMock.swift */; };
+		17128486250C6E9D00A95A97 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128485250C6E9D00A95A97 /* Exercise.swift */; };
+		17128489250C6EC900A95A97 /* GettingExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128488250C6EC900A95A97 /* GettingExercises.swift */; };
+		1712848B250C6EFD00A95A97 /* ExerciseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712848A250C6EFD00A95A97 /* ExerciseGateway.swift */; };
+		1712848F250C71D200A95A97 /* GettingExercisesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712848E250C71D200A95A97 /* GettingExercisesTests.swift */; };
+		17128493250C722A00A95A97 /* ExerciseGatewayMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128492250C722A00A95A97 /* ExerciseGatewayMock.swift */; };
+		17128495250C755900A95A97 /* ExerciseCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128494250C755900A95A97 /* ExerciseCellTests.swift */; };
 		1773898925071D8D003B5CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773898725071D8D003B5CD7 /* Main.storyboard */; };
 		1773898B25071D8E003B5CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1773898A25071D8E003B5CD7 /* Assets.xcassets */; };
 		1773898E25071D8E003B5CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773898C25071D8E003B5CD7 /* LaunchScreen.storyboard */; };
@@ -48,6 +58,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1712847D250C6D5200A95A97 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
+		1712847E250C6D5200A95A97 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		1712847F250C6D5200A95A97 /* MainNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigatorMock.swift; sourceTree = "<group>"; };
+		17128480250C6D5200A95A97 /* MainUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUseCaseMock.swift; sourceTree = "<group>"; };
+		17128485250C6E9D00A95A97 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		17128488250C6EC900A95A97 /* GettingExercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingExercises.swift; sourceTree = "<group>"; };
+		1712848A250C6EFD00A95A97 /* ExerciseGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGateway.swift; sourceTree = "<group>"; };
+		1712848E250C71D200A95A97 /* GettingExercisesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingExercisesTests.swift; sourceTree = "<group>"; };
+		17128492250C722A00A95A97 /* ExerciseGatewayMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGatewayMock.swift; sourceTree = "<group>"; };
+		17128494250C755900A95A97 /* ExerciseCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCellTests.swift; sourceTree = "<group>"; };
 		1773897E25071D8D003B5CD7 /* UnitTestTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1773898825071D8D003B5CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1773898A25071D8E003B5CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +121,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1712847B250C6D3900A95A97 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1712847C250C6D4100A95A97 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1712847C250C6D4100A95A97 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1712847D250C6D5200A95A97 /* MainViewControllerTests.swift */,
+				1712847E250C6D5200A95A97 /* MainViewModelTests.swift */,
+				1712847F250C6D5200A95A97 /* MainNavigatorMock.swift */,
+				17128480250C6D5200A95A97 /* MainUseCaseMock.swift */,
+				17128494250C755900A95A97 /* ExerciseCellTests.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		17128487250C6EAF00A95A97 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				17128488250C6EC900A95A97 /* GettingExercises.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		1712848C250C71AB00A95A97 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1712848D250C71B500A95A97 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1712848D250C71B500A95A97 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				1712848E250C71D200A95A97 /* GettingExercisesTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		17128490250C721200A95A97 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				17128491250C721800A95A97 /* Gateways */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		17128491250C721800A95A97 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				17128492250C722A00A95A97 /* ExerciseGatewayMock.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
 		1773897525071D8D003B5CD7 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +221,9 @@
 		1773899725071D8E003B5CD7 /* UnitTestTrainingTests */ = {
 			isa = PBXGroup;
 			children = (
+				17128490250C721200A95A97 /* Data */,
+				1712848C250C71AB00A95A97 /* Domain */,
+				1712847B250C6D3900A95A97 /* Scenes */,
 				1773899A25071D8E003B5CD7 /* Info.plist */,
 			);
 			path = UnitTestTrainingTests;
@@ -158,6 +241,7 @@
 		177389A525071EA2003B5CD7 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				17128487250C6EAF00A95A97 /* Exercise */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -165,6 +249,7 @@
 		177389A625071EA2003B5CD7 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				17128485250C6E9D00A95A97 /* Exercise.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -181,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				177389AC25071EA2003B5CD7 /* GatewaysAssembler.swift */,
+				1712848A250C6EFD00A95A97 /* ExerciseGateway.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -317,6 +403,7 @@
 					};
 					1773899325071D8E003B5CD7 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 						TestTargetID = 1773897D25071D8D003B5CD7;
 					};
 				};
@@ -399,6 +486,9 @@
 				177389D025071EA2003B5CD7 /* UIViewController+.swift in Sources */,
 				177389F525073BA3003B5CD7 /* ExerciseCell.swift in Sources */,
 				177389CF25071EA2003B5CD7 /* AppUseCase.swift in Sources */,
+				17128489250C6EC900A95A97 /* GettingExercises.swift in Sources */,
+				1712848B250C6EFD00A95A97 /* ExerciseGateway.swift in Sources */,
+				17128486250C6E9D00A95A97 /* Exercise.swift in Sources */,
 				177389CE25071EA2003B5CD7 /* AppViewModel.swift in Sources */,
 				177389EB25072442003B5CD7 /* MainUseCase.swift in Sources */,
 				177389F225073B8D003B5CD7 /* ExerciseItemViewModel.swift in Sources */,
@@ -420,6 +510,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17128484250C6D5200A95A97 /* MainUseCaseMock.swift in Sources */,
+				1712848F250C71D200A95A97 /* GettingExercisesTests.swift in Sources */,
+				17128483250C6D5200A95A97 /* MainNavigatorMock.swift in Sources */,
+				17128481250C6D5200A95A97 /* MainViewControllerTests.swift in Sources */,
+				17128495250C755900A95A97 /* ExerciseCellTests.swift in Sources */,
+				17128493250C722A00A95A97 /* ExerciseGatewayMock.swift in Sources */,
+				17128482250C6D5200A95A97 /* MainViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +710,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitTestTrainingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
@@ -623,6 +721,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sun-asterisk.UnitTestTrainingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTestTraining.app/UnitTestTraining";
@@ -634,6 +733,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitTestTrainingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
