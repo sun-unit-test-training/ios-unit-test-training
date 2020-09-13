@@ -10,8 +10,10 @@ import UIKit
 
 struct ExerciseItemViewModel {
     let title: String
+    let description: String
     
     init(exercise: Exercise) {
         self.title = exercise.title
+        self.description = exercise.description
     }
 }

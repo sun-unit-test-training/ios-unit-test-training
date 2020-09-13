@@ -41,7 +41,7 @@ final class MainViewController: UIViewController, Bindable {
         
         tableView.do {
             $0.delegate = self
-            $0.rowHeight = 44
+            $0.rowHeight = 68
             $0.register(cellType: ExerciseCell.self)
         }
     }

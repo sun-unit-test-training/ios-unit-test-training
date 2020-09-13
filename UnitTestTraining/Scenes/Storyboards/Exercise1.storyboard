@@ -109,15 +109,15 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Điều kiện" id="vn4-mW-ccn">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="253" id="Ep7-AZ-cex">
-                                        <rect key="frame" x="0.0" y="206" width="375" height="253"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="190" id="Ep7-AZ-cex">
+                                        <rect key="frame" x="0.0" y="206" width="375" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ep7-AZ-cex" id="ylk-I8-h9d">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwX-Gw-LMa">
-                                                    <rect key="frame" x="16" y="11" width="343" height="231"/>
+                                                    <rect key="frame" x="16" y="11" width="343" height="168"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <mutableString key="text">①：Thông thường giá 1 cốc bia là 490円/yên
 ②：Từ 16:00 đến17:59 là thời gian ưu đãi nên giá 1 cốc là 290円/yên.

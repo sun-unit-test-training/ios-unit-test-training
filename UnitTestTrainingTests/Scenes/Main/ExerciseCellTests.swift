@@ -20,5 +20,6 @@ final class ExerciseCellTests: XCTestCase {
     func test_ibOutlets() {
         XCTAssertNotNil(cell)
         XCTAssertNotNil(cell.titleLabel)
+        XCTAssertNotNil(cell.descriptionLabel)
     }
 }

@@ -12,6 +12,7 @@ import Reusable
 final class ExerciseCell: UITableViewCell, NibReusable {
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +21,6 @@ final class ExerciseCell: UITableViewCell, NibReusable {
 
     func bindViewModel(_ viewModel: ExerciseItemViewModel) {
         titleLabel.text = viewModel.title
+        descriptionLabel.text = viewModel.description
     }
 }

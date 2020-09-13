@@ -8,4 +8,5 @@
 
 struct Exercise {
     var title = ""
+    var description = ""
 }
