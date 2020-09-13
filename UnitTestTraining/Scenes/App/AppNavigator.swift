@@ -17,8 +17,9 @@ struct AppNavigator: AppNavigatorType {
     unowned let window: UIWindow
     
     func toMain() {
-        let vc: MainViewController = assembler.resolve(window: window)
-        let nav = UINavigationController(rootViewController: vc)
+        let nav = UINavigationController()
+        let vc: MainViewController = assembler.resolve(navigationController: nav)
+        nav.viewControllers = [vc]
         window.rootViewController = nav
         window.makeKeyAndVisible()
     }

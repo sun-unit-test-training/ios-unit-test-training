@@ -23,10 +23,13 @@ protocol MainNavigatorType {
 
 struct MainNavigator: MainNavigatorType {
     unowned let assembler: Assembler
-    unowned let window: UIWindow
+    unowned let navigationController: UINavigationController
     
     func toExercise1() {
-        print(#function)
+        let nav = UINavigationController()
+        let vc: Exercise1ViewController = assembler.resolve(navigationController: nav)
+        nav.viewControllers = [vc]
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func toExercise2() {

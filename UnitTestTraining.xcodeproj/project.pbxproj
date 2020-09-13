@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170DCAA9250E1F2400815C14 /* Exercise1Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA4250E1F2400815C14 /* Exercise1Assembler.swift */; };
+		170DCAAA250E1F2400815C14 /* Exercise1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA5250E1F2400815C14 /* Exercise1Navigator.swift */; };
+		170DCAAB250E1F2400815C14 /* Exercise1UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA6250E1F2400815C14 /* Exercise1UseCase.swift */; };
+		170DCAAC250E1F2400815C14 /* Exercise1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA7250E1F2400815C14 /* Exercise1ViewController.swift */; };
+		170DCAAD250E1F2400815C14 /* Exercise1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA8250E1F2400815C14 /* Exercise1ViewModel.swift */; };
+		170DCAAF250E1F5800815C14 /* Exercise1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170DCAAE250E1F5800815C14 /* Exercise1.storyboard */; };
+		170DCAB1250E20D100815C14 /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAB0250E20D100815C14 /* MainAssembler.swift */; };
+		170DCAB3250E25C600815C14 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAB2250E25C600815C14 /* Double+.swift */; };
+		170DCAB5250E287500815C14 /* CalculatingBeerPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAB4250E287500815C14 /* CalculatingBeerPrice.swift */; };
+		170DCABB250E28CD00815C14 /* Exercise1ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAB7250E28CD00815C14 /* Exercise1ViewControllerTests.swift */; };
+		170DCABC250E28CD00815C14 /* Exercise1ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAB8250E28CD00815C14 /* Exercise1ViewModelTests.swift */; };
+		170DCABD250E28CD00815C14 /* Exercise1NavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAB9250E28CD00815C14 /* Exercise1NavigatorMock.swift */; };
+		170DCABE250E28CD00815C14 /* Exercise1UseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCABA250E28CD00815C14 /* Exercise1UseCaseMock.swift */; };
+		170DCAC0250E28EB00815C14 /* CalculatingBeerPriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCABF250E28EB00815C14 /* CalculatingBeerPriceTests.swift */; };
 		17128481250C6D5200A95A97 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712847D250C6D5200A95A97 /* MainViewControllerTests.swift */; };
 		17128482250C6D5200A95A97 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712847E250C6D5200A95A97 /* MainViewModelTests.swift */; };
 		17128483250C6D5200A95A97 /* MainNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712847F250C6D5200A95A97 /* MainNavigatorMock.swift */; };
@@ -39,7 +53,6 @@
 		177389D92507200E003B5CD7 /* MGArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 177389D82507200E003B5CD7 /* MGArchitecture */; };
 		177389DF25072085003B5CD7 /* Dto in Frameworks */ = {isa = PBXBuildFile; productRef = 177389DE25072085003B5CD7 /* Dto */; };
 		177389E225072210003B5CD7 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 177389E125072210003B5CD7 /* Then */; };
-		177389E925072442003B5CD7 /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389E425072442003B5CD7 /* MainAssembler.swift */; };
 		177389EA25072442003B5CD7 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389E525072442003B5CD7 /* MainNavigator.swift */; };
 		177389EB25072442003B5CD7 /* MainUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389E625072442003B5CD7 /* MainUseCase.swift */; };
 		177389EC25072442003B5CD7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389E725072442003B5CD7 /* MainViewController.swift */; };
@@ -61,6 +74,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170DCAA4250E1F2400815C14 /* Exercise1Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1Assembler.swift; sourceTree = "<group>"; };
+		170DCAA5250E1F2400815C14 /* Exercise1Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1Navigator.swift; sourceTree = "<group>"; };
+		170DCAA6250E1F2400815C14 /* Exercise1UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1UseCase.swift; sourceTree = "<group>"; };
+		170DCAA7250E1F2400815C14 /* Exercise1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1ViewController.swift; sourceTree = "<group>"; };
+		170DCAA8250E1F2400815C14 /* Exercise1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1ViewModel.swift; sourceTree = "<group>"; };
+		170DCAAE250E1F5800815C14 /* Exercise1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise1.storyboard; sourceTree = "<group>"; };
+		170DCAB0250E20D100815C14 /* MainAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
+		170DCAB2250E25C600815C14 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		170DCAB4250E287500815C14 /* CalculatingBeerPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingBeerPrice.swift; sourceTree = "<group>"; };
+		170DCAB7250E28CD00815C14 /* Exercise1ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1ViewControllerTests.swift; sourceTree = "<group>"; };
+		170DCAB8250E28CD00815C14 /* Exercise1ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1ViewModelTests.swift; sourceTree = "<group>"; };
+		170DCAB9250E28CD00815C14 /* Exercise1NavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1NavigatorMock.swift; sourceTree = "<group>"; };
+		170DCABA250E28CD00815C14 /* Exercise1UseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1UseCaseMock.swift; sourceTree = "<group>"; };
+		170DCABF250E28EB00815C14 /* CalculatingBeerPriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingBeerPriceTests.swift; sourceTree = "<group>"; };
 		1712847D250C6D5200A95A97 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
 		1712847E250C6D5200A95A97 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
 		1712847F250C6D5200A95A97 /* MainNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigatorMock.swift; sourceTree = "<group>"; };
@@ -94,7 +121,6 @@
 		177389BF25071EA2003B5CD7 /* UIViewController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		177389C025071EA2003B5CD7 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		177389C125071EA2003B5CD7 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		177389E425072442003B5CD7 /* MainAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
 		177389E525072442003B5CD7 /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
 		177389E625072442003B5CD7 /* MainUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUseCase.swift; sourceTree = "<group>"; };
 		177389E725072442003B5CD7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -127,9 +153,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		170DCAA3250E1F1400815C14 /* Exercise1 */ = {
+			isa = PBXGroup;
+			children = (
+				170DCAA4250E1F2400815C14 /* Exercise1Assembler.swift */,
+				170DCAA5250E1F2400815C14 /* Exercise1Navigator.swift */,
+				170DCAA6250E1F2400815C14 /* Exercise1UseCase.swift */,
+				170DCAA7250E1F2400815C14 /* Exercise1ViewController.swift */,
+				170DCAA8250E1F2400815C14 /* Exercise1ViewModel.swift */,
+			);
+			path = Exercise1;
+			sourceTree = "<group>";
+		};
+		170DCAB6250E28BB00815C14 /* Exercise1 */ = {
+			isa = PBXGroup;
+			children = (
+				170DCAB7250E28CD00815C14 /* Exercise1ViewControllerTests.swift */,
+				170DCAB8250E28CD00815C14 /* Exercise1ViewModelTests.swift */,
+				170DCAB9250E28CD00815C14 /* Exercise1NavigatorMock.swift */,
+				170DCABA250E28CD00815C14 /* Exercise1UseCaseMock.swift */,
+			);
+			path = Exercise1;
+			sourceTree = "<group>";
+		};
 		1712847B250C6D3900A95A97 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				170DCAB6250E28BB00815C14 /* Exercise1 */,
 				17128496250C75D100A95A97 /* App */,
 				1712847C250C6D4100A95A97 /* Main */,
 			);
@@ -148,14 +198,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		17128487250C6EAF00A95A97 /* Exercise */ = {
-			isa = PBXGroup;
-			children = (
-				17128488250C6EC900A95A97 /* GettingExercises.swift */,
-			);
-			path = Exercise;
-			sourceTree = "<group>";
-		};
 		1712848C250C71AB00A95A97 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				1712848E250C71D200A95A97 /* GettingExercisesTests.swift */,
+				170DCABF250E28EB00815C14 /* CalculatingBeerPriceTests.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -258,7 +301,8 @@
 		177389A525071EA2003B5CD7 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				17128487250C6EAF00A95A97 /* Exercise */,
+				17128488250C6EC900A95A97 /* GettingExercises.swift */,
+				170DCAB4250E287500815C14 /* CalculatingBeerPrice.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -298,6 +342,7 @@
 		177389B525071EA2003B5CD7 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				170DCAA3250E1F1400815C14 /* Exercise1 */,
 				177389E325072429003B5CD7 /* Main */,
 				177389B625071EA2003B5CD7 /* Storyboards */,
 				177389B825071EA2003B5CD7 /* App */,
@@ -309,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				1773898725071D8D003B5CD7 /* Main.storyboard */,
+				170DCAAE250E1F5800815C14 /* Exercise1.storyboard */,
 				177389B725071EA2003B5CD7 /* Storyboards.swift */,
 			);
 			path = Storyboards;
@@ -339,6 +385,7 @@
 			children = (
 				177389BF25071EA2003B5CD7 /* UIViewController+.swift */,
 				177389C025071EA2003B5CD7 /* UIViewController+Rx.swift */,
+				170DCAB2250E25C600815C14 /* Double+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -346,7 +393,7 @@
 		177389E325072429003B5CD7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				177389E425072442003B5CD7 /* MainAssembler.swift */,
+				170DCAB0250E20D100815C14 /* MainAssembler.swift */,
 				177389E525072442003B5CD7 /* MainNavigator.swift */,
 				177389E625072442003B5CD7 /* MainUseCase.swift */,
 				177389E725072442003B5CD7 /* MainViewController.swift */,
@@ -459,6 +506,7 @@
 				1773898E25071D8E003B5CD7 /* LaunchScreen.storyboard in Resources */,
 				177389F625073BA3003B5CD7 /* ExerciseCell.xib in Resources */,
 				1773898B25071D8E003B5CD7 /* Assets.xcassets in Resources */,
+				170DCAAF250E1F5800815C14 /* Exercise1.storyboard in Resources */,
 				1773898925071D8D003B5CD7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,13 +549,18 @@
 				177389EC25072442003B5CD7 /* MainViewController.swift in Sources */,
 				177389C325071EA2003B5CD7 /* Assembler.swift in Sources */,
 				177389D025071EA2003B5CD7 /* UIViewController+.swift in Sources */,
+				170DCAB5250E287500815C14 /* CalculatingBeerPrice.swift in Sources */,
 				177389F525073BA3003B5CD7 /* ExerciseCell.swift in Sources */,
+				170DCAA9250E1F2400815C14 /* Exercise1Assembler.swift in Sources */,
 				177389CF25071EA2003B5CD7 /* AppUseCase.swift in Sources */,
 				17128489250C6EC900A95A97 /* GettingExercises.swift in Sources */,
+				170DCAAA250E1F2400815C14 /* Exercise1Navigator.swift in Sources */,
+				170DCAAC250E1F2400815C14 /* Exercise1ViewController.swift in Sources */,
 				1712848B250C6EFD00A95A97 /* ExerciseGateway.swift in Sources */,
 				17128486250C6E9D00A95A97 /* Exercise.swift in Sources */,
 				177389CE25071EA2003B5CD7 /* AppViewModel.swift in Sources */,
 				177389EB25072442003B5CD7 /* MainUseCase.swift in Sources */,
+				170DCAAD250E1F2400815C14 /* Exercise1ViewModel.swift in Sources */,
 				177389F225073B8D003B5CD7 /* ExerciseItemViewModel.swift in Sources */,
 				177389D125071EA2003B5CD7 /* UIViewController+Rx.swift in Sources */,
 				177389CA25071EA2003B5CD7 /* AppDelegate.swift in Sources */,
@@ -516,10 +569,12 @@
 				177389CD25071EA2003B5CD7 /* AppNavigator.swift in Sources */,
 				177389CC25071EA2003B5CD7 /* AppAssembler.swift in Sources */,
 				177389CB25071EA2003B5CD7 /* Storyboards.swift in Sources */,
+				170DCAB3250E25C600815C14 /* Double+.swift in Sources */,
+				170DCAAB250E1F2400815C14 /* Exercise1UseCase.swift in Sources */,
 				177389C425071EA2003B5CD7 /* GatewaysAssembler.swift in Sources */,
 				177389C225071EA2003B5CD7 /* UnitTestViewController.swift in Sources */,
-				177389E925072442003B5CD7 /* MainAssembler.swift in Sources */,
 				177389ED25072442003B5CD7 /* MainViewModel.swift in Sources */,
+				170DCAB1250E20D100815C14 /* MainAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,15 +583,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				17128484250C6D5200A95A97 /* MainUseCaseMock.swift in Sources */,
+				170DCAC0250E28EB00815C14 /* CalculatingBeerPriceTests.swift in Sources */,
 				1712848F250C71D200A95A97 /* GettingExercisesTests.swift in Sources */,
 				1712849D250C75E300A95A97 /* AppNavigatorMock.swift in Sources */,
 				17128483250C6D5200A95A97 /* MainNavigatorMock.swift in Sources */,
+				170DCABB250E28CD00815C14 /* Exercise1ViewControllerTests.swift in Sources */,
 				17128481250C6D5200A95A97 /* MainViewControllerTests.swift in Sources */,
 				17128495250C755900A95A97 /* ExerciseCellTests.swift in Sources */,
 				1712849E250C75E300A95A97 /* AppUseCaseMock.swift in Sources */,
+				170DCABC250E28CD00815C14 /* Exercise1ViewModelTests.swift in Sources */,
+				170DCABD250E28CD00815C14 /* Exercise1NavigatorMock.swift in Sources */,
 				17128493250C722A00A95A97 /* ExerciseGatewayMock.swift in Sources */,
 				17128482250C6D5200A95A97 /* MainViewModelTests.swift in Sources */,
 				1712849C250C75E300A95A97 /* AppViewModelTests.swift in Sources */,
+				170DCABE250E28CD00815C14 /* Exercise1UseCaseMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

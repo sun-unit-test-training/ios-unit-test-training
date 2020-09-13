@@ -10,4 +10,5 @@ import UIKit
 
 enum Storyboards {
     static let main = UIStoryboard(name: "Main", bundle: nil)
+    static let exercise1 = UIStoryboard(name: "Exercise1", bundle: nil)
 }

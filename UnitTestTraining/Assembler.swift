@@ -7,6 +7,7 @@
 //
 
 protocol Assembler: class,
+    Exercise1Assembler,
     MainAssembler,
     GatewaysAssembler,
     AppAssembler {
