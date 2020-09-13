@@ -9,7 +9,7 @@
 import Foundation
 
 extension Double {
-    var currency: String {
-        return String(format: "$%.02f", self)
+    var japanCurrency: String {
+        return String(format: "%.02f円", self)
     }
 }

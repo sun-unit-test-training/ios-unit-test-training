@@ -45,6 +45,9 @@ final class Exercise1ViewModelTests: XCTestCase {
         
         // assert
         XCTAssert(useCase.calculateBeerPriceCalled)
+        XCTAssertFalse(useCase.usingVoucher)
+        XCTAssertFalse(useCase.isInPromotionTime)
+        XCTAssertEqual(output.price, (490.0).japanCurrency)
     }
     
     func test_voucherTrigger_calculateBeerPrice() {
@@ -53,6 +56,8 @@ final class Exercise1ViewModelTests: XCTestCase {
         
         // assert
         XCTAssert(useCase.calculateBeerPriceCalled)
+        XCTAssert(useCase.usingVoucher)
+        XCTAssertFalse(useCase.isInPromotionTime)
     }
     
     func test_promotionTimeTrigger_calculateBeerPrice() {
@@ -61,5 +66,7 @@ final class Exercise1ViewModelTests: XCTestCase {
         
         // assert
         XCTAssert(useCase.calculateBeerPriceCalled)
+        XCTAssertFalse(useCase.usingVoucher)
+        XCTAssert(useCase.isInPromotionTime)
     }
 }

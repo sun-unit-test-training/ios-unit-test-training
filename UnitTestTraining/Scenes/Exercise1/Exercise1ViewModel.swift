@@ -48,7 +48,7 @@ extension Exercise1ViewModel: ViewModel {
                 isInPromotionTime: isInPromotionTime
             )
         }
-        .map { $0.currency }
+        .map { $0.japanCurrency }
         .drive(output.$price)
         .disposed(by: disposeBag)
         
