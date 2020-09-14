@@ -8,10 +8,15 @@
 
 protocol GatewaysAssembler {
     func resolve() -> ExerciseGatewayType
+    func resolve() -> DateGatewayType
 }
 
 extension GatewaysAssembler where Self: DefaultAssembler {
     func resolve() -> ExerciseGatewayType {
         return ExerciseGateway()
+    }
+    
+    func resolve() -> DateGatewayType {
+        return DateGateway()
     }
 }

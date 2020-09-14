@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exercise4 View Controller-->
+        <scene sceneID="8A6-UI-klb">
+            <objects>
+                <viewController storyboardIdentifier="Exercise4ViewController" id="eDf-cM-jdK" customClass="Exercise4ViewController" customModule="UnitTestTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pvJ-HC-kq2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7w-fq-3VL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="103.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a7w-fq-3VL" secondAttribute="height" multiplier="4" id="9O7-fW-YhF"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mb-Jn-TYM">
+                                <rect key="frame" x="16" y="85.5" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="fGp-uz-whm">
+                                <rect key="frame" x="16" y="179.5" width="382" height="216"/>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                    <!--2037-12-31 11:00:00 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerValueChange:" destination="eDf-cM-jdK" eventType="valueChanged" id="KAP-Zc-PWY"/>
+                                </connections>
+                            </datePicker>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x76-rx-37X">
+                                <rect key="frame" x="0.0" y="411.5" width="414" height="450.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">● Điều kiện：	
+①：Ngày lễ thì chuyển thành màu đỏ.		
+②：Chủ nhật thì chuyển thành màu đỏ. 			
+③：Thứ 7 không phải là ngày lễ thì để màu xanh lam. ④：Ngày thường không phải là ngày lễ thì để màu đen. ⑤：Các trường hợp mâu thuẫn với điều kiện, không cần tham khảo dưới dạng test case.  Bạn có thể test các ngày như: 01/01, 02/09, 30/04, 01/05			</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fGp-uz-whm" firstAttribute="leading" secondItem="gtY-fY-5dN" secondAttribute="leading" constant="16" id="0vz-LL-xHw"/>
+                            <constraint firstItem="5Mb-Jn-TYM" firstAttribute="centerX" secondItem="a7w-fq-3VL" secondAttribute="centerX" id="60s-iC-eNF"/>
+                            <constraint firstItem="a7w-fq-3VL" firstAttribute="top" secondItem="gtY-fY-5dN" secondAttribute="top" id="7om-7x-ZNm"/>
+                            <constraint firstItem="x76-rx-37X" firstAttribute="top" secondItem="fGp-uz-whm" secondAttribute="bottom" constant="16" id="EFY-im-HEt"/>
+                            <constraint firstItem="x76-rx-37X" firstAttribute="leading" secondItem="gtY-fY-5dN" secondAttribute="leading" id="GXx-1L-e0I"/>
+                            <constraint firstItem="5Mb-Jn-TYM" firstAttribute="centerY" secondItem="a7w-fq-3VL" secondAttribute="centerY" id="InU-SB-OrD"/>
+                            <constraint firstItem="a7w-fq-3VL" firstAttribute="width" secondItem="pvJ-HC-kq2" secondAttribute="width" id="PCz-Us-QhP"/>
+                            <constraint firstItem="a7w-fq-3VL" firstAttribute="centerX" secondItem="gtY-fY-5dN" secondAttribute="centerX" id="XL6-iu-g2d"/>
+                            <constraint firstItem="fGp-uz-whm" firstAttribute="top" secondItem="a7w-fq-3VL" secondAttribute="bottom" constant="32" id="ayP-AV-6Mv"/>
+                            <constraint firstItem="gtY-fY-5dN" firstAttribute="trailing" secondItem="x76-rx-37X" secondAttribute="trailing" id="bFd-ia-pkf"/>
+                            <constraint firstItem="gtY-fY-5dN" firstAttribute="bottom" secondItem="x76-rx-37X" secondAttribute="bottom" id="o1O-aK-Mbq"/>
+                            <constraint firstItem="5Mb-Jn-TYM" firstAttribute="leading" secondItem="a7w-fq-3VL" secondAttribute="leading" constant="16" id="ujd-jO-fqP"/>
+                            <constraint firstItem="fGp-uz-whm" firstAttribute="centerX" secondItem="gtY-fY-5dN" secondAttribute="centerX" id="vtg-0J-bNr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gtY-fY-5dN"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateBackgroundView" destination="a7w-fq-3VL" id="Cxe-fz-D72"/>
+                        <outlet property="dateLabel" destination="5Mb-Jn-TYM" id="f3n-Ec-bHh"/>
+                        <outlet property="datePicker" destination="fGp-uz-whm" id="4SX-lm-6lj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kt-sh-b1S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="135"/>
+        </scene>
+    </scenes>
+</document>
