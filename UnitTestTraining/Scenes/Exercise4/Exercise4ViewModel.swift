@@ -28,25 +28,22 @@ extension Exercise4ViewModel: ViewModel {
     struct Output {
         @Property var dateColor = UIColor.black
         @Property var currentDate = Date()
-        @Property var holidays = [Date]()
     }
     
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
         let output = Output()
         
-        input.loadTrigger
+        let holidays = input.loadTrigger
             .map {
                 self.useCase.getHolidays()
             }
-            .drive(output.$holidays)
-            .disposed(by: disposeBag)
         
         input.dateTrigger
             .drive(output.$currentDate)
             .disposed(by: disposeBag)
         
         Driver.combineLatest(input.dateTrigger,
-                             output.$holidays.asDriverOnErrorJustComplete())
+                             holidays)
             .map {
                 self.useCase.getDateColor(dto: GetDateColorDto(date: $0.0, holidays: $0.1))
             }

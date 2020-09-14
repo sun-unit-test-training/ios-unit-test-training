@@ -41,25 +41,31 @@
                                     <action selector="datePickerValueChange:" destination="eDf-cM-jdK" eventType="valueChanged" id="KAP-Zc-PWY"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn hãy chọn ngày để test màu nền của ngày đó nhé! Các ngày lễ như 1/1,  30/4, 1/5, 2/9" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLm-Ec-mJf">
-                                <rect key="frame" x="16" y="419.5" width="382" height="64.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x76-rx-37X">
+                                <rect key="frame" x="0.0" y="411.5" width="414" height="450.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">● Điều kiện：	
+①：Ngày lễ thì chuyển thành màu đỏ.		
+②：Chủ nhật thì chuyển thành màu đỏ. 			
+③：Thứ 7 không phải là ngày lễ thì để màu xanh lam. ④：Ngày thường không phải là ngày lễ thì để màu đen. ⑤：Các trường hợp mâu thuẫn với điều kiện, không cần tham khảo dưới dạng test case.  Bạn có thể test các ngày như: 01/01, 02/09, 30/04, 01/05			</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="fGp-uz-whm" firstAttribute="leading" secondItem="gtY-fY-5dN" secondAttribute="leading" constant="16" id="0vz-LL-xHw"/>
                             <constraint firstItem="5Mb-Jn-TYM" firstAttribute="centerX" secondItem="a7w-fq-3VL" secondAttribute="centerX" id="60s-iC-eNF"/>
-                            <constraint firstItem="xLm-Ec-mJf" firstAttribute="centerX" secondItem="gtY-fY-5dN" secondAttribute="centerX" id="73D-wf-rd2"/>
                             <constraint firstItem="a7w-fq-3VL" firstAttribute="top" secondItem="gtY-fY-5dN" secondAttribute="top" id="7om-7x-ZNm"/>
-                            <constraint firstItem="xLm-Ec-mJf" firstAttribute="leading" secondItem="gtY-fY-5dN" secondAttribute="leading" constant="16" id="CxQ-hq-k55"/>
+                            <constraint firstItem="x76-rx-37X" firstAttribute="top" secondItem="fGp-uz-whm" secondAttribute="bottom" constant="16" id="EFY-im-HEt"/>
+                            <constraint firstItem="x76-rx-37X" firstAttribute="leading" secondItem="gtY-fY-5dN" secondAttribute="leading" id="GXx-1L-e0I"/>
                             <constraint firstItem="5Mb-Jn-TYM" firstAttribute="centerY" secondItem="a7w-fq-3VL" secondAttribute="centerY" id="InU-SB-OrD"/>
                             <constraint firstItem="a7w-fq-3VL" firstAttribute="width" secondItem="pvJ-HC-kq2" secondAttribute="width" id="PCz-Us-QhP"/>
                             <constraint firstItem="a7w-fq-3VL" firstAttribute="centerX" secondItem="gtY-fY-5dN" secondAttribute="centerX" id="XL6-iu-g2d"/>
                             <constraint firstItem="fGp-uz-whm" firstAttribute="top" secondItem="a7w-fq-3VL" secondAttribute="bottom" constant="32" id="ayP-AV-6Mv"/>
-                            <constraint firstItem="xLm-Ec-mJf" firstAttribute="top" secondItem="fGp-uz-whm" secondAttribute="bottom" constant="24" id="nM3-vs-AGc"/>
+                            <constraint firstItem="gtY-fY-5dN" firstAttribute="trailing" secondItem="x76-rx-37X" secondAttribute="trailing" id="bFd-ia-pkf"/>
+                            <constraint firstItem="gtY-fY-5dN" firstAttribute="bottom" secondItem="x76-rx-37X" secondAttribute="bottom" id="o1O-aK-Mbq"/>
                             <constraint firstItem="5Mb-Jn-TYM" firstAttribute="leading" secondItem="a7w-fq-3VL" secondAttribute="leading" constant="16" id="ujd-jO-fqP"/>
                             <constraint firstItem="fGp-uz-whm" firstAttribute="centerX" secondItem="gtY-fY-5dN" secondAttribute="centerX" id="vtg-0J-bNr"/>
                         </constraints>

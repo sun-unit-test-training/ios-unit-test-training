@@ -17,15 +17,9 @@ final class GettingDatesTests: XCTestCase, GettingDates {
     
     private var dateGatewayMock: DateGatewayMock!
     
-    private var cancelBag: DisposeBag!
-    
     override func setUp() {
         super.setUp()
         dateGatewayMock = DateGatewayMock()
-    }
-    
-    override func setUpWithError() throws {
-        cancelBag = DisposeBag()
     }
     
     func test_getHolidays() {
@@ -47,7 +41,6 @@ final class GettingDatesTests: XCTestCase, GettingDates {
     /// Test case 1
     /// - Holiday
     /// - is Saturday
-    
     func test_dateColor_holiday_isSaturday() {
         let result = self.getDateColor(dto: GetDateColorDto(date: createDayWith(string: "2021/05/01"),
                                                             holidays: self.getHolidays()))
@@ -57,7 +50,6 @@ final class GettingDatesTests: XCTestCase, GettingDates {
     /// Test case 2
     /// - Holiday
     /// - is Sunday
-    
     func test_dateColor_holiday_isSunday() {
         let result = self.getDateColor(dto: GetDateColorDto(date: createDayWith(string: "2018/09/02"),
                                                             holidays: self.getHolidays()))
@@ -68,7 +60,6 @@ final class GettingDatesTests: XCTestCase, GettingDates {
     /// Test case 3
     /// - Holiday
     /// - is Normal
-    
     func test_dateColor_holiday_isNormal() {
         let result = self.getDateColor(dto: GetDateColorDto(date: createDayWith(string: "2020/09/02"),
                                                             holidays: self.getHolidays()))
@@ -79,7 +70,6 @@ final class GettingDatesTests: XCTestCase, GettingDates {
     /// Test case 4
     /// - not Holiday
     /// - is Saturday
-    
     func test_dateColor_notHoliday_isSaturday() {
         let result = self.getDateColor(dto: GetDateColorDto(date: createDayWith(string: "2020/09/12"),
                                                             holidays: self.getHolidays()))
@@ -90,7 +80,6 @@ final class GettingDatesTests: XCTestCase, GettingDates {
     /// Test case 5
     /// - not Holiday
     /// - is Sunday
-    
     func test_dateColor_notHoliday_isSunday() {
         let result = self.getDateColor(dto: GetDateColorDto(date: createDayWith(string: "2020/09/13"),
                                                             holidays: self.getHolidays()))
@@ -101,7 +90,6 @@ final class GettingDatesTests: XCTestCase, GettingDates {
     /// Test case 6
     /// - not Holiday
     /// - is Normal
-    
     func test_dateColor_notHoliday_isNormal() {
         let result = self.getDateColor(dto: GetDateColorDto(date: createDayWith(string: "2020/09/14"),
                                                             holidays: self.getHolidays()))

@@ -40,7 +40,6 @@ final class Exercise4ViewModelTests: XCTestCase {
         
         // assert
         XCTAssert(useCase.getHolidaysCalled)
-//        XCTAssertEqual(output., <#T##expression2: Equatable##Equatable#>)
     }
     
     func test_dateTrigger_getDateColor() {
