@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1206DC250F29190071C1F9 /* Exercise7ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206D7250F29190071C1F9 /* Exercise7ViewModel.swift */; };
+		0E1206DD250F29190071C1F9 /* Exercise7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206D8250F29190071C1F9 /* Exercise7ViewController.swift */; };
+		0E1206DE250F29190071C1F9 /* Exercise7Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206D9250F29190071C1F9 /* Exercise7Navigator.swift */; };
+		0E1206DF250F29190071C1F9 /* Exercise7Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206DA250F29190071C1F9 /* Exercise7Assembler.swift */; };
+		0E1206E0250F29190071C1F9 /* Exercise7UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206DB250F29190071C1F9 /* Exercise7UseCase.swift */; };
+		0E1206E5250F29390071C1F9 /* Exercise7ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206E1250F29380071C1F9 /* Exercise7ViewControllerTests.swift */; };
+		0E1206E7250F29390071C1F9 /* Exercise7ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206E3250F29390071C1F9 /* Exercise7ViewModelTests.swift */; };
+		0E1206E8250F29390071C1F9 /* Exercise7NavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206E4250F29390071C1F9 /* Exercise7NavigatorMock.swift */; };
+		0E1206EA250F295A0071C1F9 /* Exercise7.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1206E9250F295A0071C1F9 /* Exercise7.storyboard */; };
+		0E1206ED250F3E2B0071C1F9 /* CaculatingTransportationFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206EB250F3DFD0071C1F9 /* CaculatingTransportationFee.swift */; };
+		0E1206EF250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206EE250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift */; };
+		0EEF3257251041D6001F2987 /* Exercise7UseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF3256251041D6001F2987 /* Exercise7UseCaseMock.swift */; };
 		170DCAA9250E1F2400815C14 /* Exercise1Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA4250E1F2400815C14 /* Exercise1Assembler.swift */; };
 		170DCAAA250E1F2400815C14 /* Exercise1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA5250E1F2400815C14 /* Exercise1Navigator.swift */; };
 		170DCAAB250E1F2400815C14 /* Exercise1UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA6250E1F2400815C14 /* Exercise1UseCase.swift */; };
@@ -90,6 +102,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E1206D7250F29190071C1F9 /* Exercise7ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise7ViewModel.swift; sourceTree = "<group>"; };
+		0E1206D8250F29190071C1F9 /* Exercise7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise7ViewController.swift; sourceTree = "<group>"; };
+		0E1206D9250F29190071C1F9 /* Exercise7Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise7Navigator.swift; sourceTree = "<group>"; };
+		0E1206DA250F29190071C1F9 /* Exercise7Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise7Assembler.swift; sourceTree = "<group>"; };
+		0E1206DB250F29190071C1F9 /* Exercise7UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise7UseCase.swift; sourceTree = "<group>"; };
+		0E1206E1250F29380071C1F9 /* Exercise7ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise7ViewControllerTests.swift; sourceTree = "<group>"; };
+		0E1206E3250F29390071C1F9 /* Exercise7ViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise7ViewModelTests.swift; sourceTree = "<group>"; };
+		0E1206E4250F29390071C1F9 /* Exercise7NavigatorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise7NavigatorMock.swift; sourceTree = "<group>"; };
+		0E1206E9250F295A0071C1F9 /* Exercise7.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise7.storyboard; sourceTree = "<group>"; };
+		0E1206EB250F3DFD0071C1F9 /* CaculatingTransportationFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculatingTransportationFee.swift; sourceTree = "<group>"; };
+		0E1206EE250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculatingTransportationFeeTests.swift; sourceTree = "<group>"; };
+		0EEF3256251041D6001F2987 /* Exercise7UseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise7UseCaseMock.swift; sourceTree = "<group>"; };
 		170DCAA4250E1F2400815C14 /* Exercise1Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1Assembler.swift; sourceTree = "<group>"; };
 		170DCAA5250E1F2400815C14 /* Exercise1Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1Navigator.swift; sourceTree = "<group>"; };
 		170DCAA6250E1F2400815C14 /* Exercise1UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1UseCase.swift; sourceTree = "<group>"; };
@@ -185,6 +209,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E1206C1250F28CF0071C1F9 /* Exercise7 */ = {
+			isa = PBXGroup;
+			children = (
+				0E1206E4250F29390071C1F9 /* Exercise7NavigatorMock.swift */,
+				0E1206E1250F29380071C1F9 /* Exercise7ViewControllerTests.swift */,
+				0E1206E3250F29390071C1F9 /* Exercise7ViewModelTests.swift */,
+				0EEF3256251041D6001F2987 /* Exercise7UseCaseMock.swift */,
+			);
+			path = Exercise7;
+			sourceTree = "<group>";
+		};
+		0E1206D6250F29190071C1F9 /* Exercise7 */ = {
+			isa = PBXGroup;
+			children = (
+				0E1206D7250F29190071C1F9 /* Exercise7ViewModel.swift */,
+				0E1206D8250F29190071C1F9 /* Exercise7ViewController.swift */,
+				0E1206D9250F29190071C1F9 /* Exercise7Navigator.swift */,
+				0E1206DA250F29190071C1F9 /* Exercise7Assembler.swift */,
+				0E1206DB250F29190071C1F9 /* Exercise7UseCase.swift */,
+			);
+			path = Exercise7;
+			sourceTree = "<group>";
+		};
 		170DCAA3250E1F1400815C14 /* Exercise1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +258,7 @@
 		1712847B250C6D3900A95A97 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0E1206C1250F28CF0071C1F9 /* Exercise7 */,
 				170DCAB6250E28BB00815C14 /* Exercise1 */,
 				C96892F4250A2A5E000FFF5F /* Exercise4 */,
 				17128496250C75D100A95A97 /* App */,
@@ -245,6 +293,7 @@
 				1712848E250C71D200A95A97 /* GettingExercisesTests.swift */,
 				170DCABF250E28EB00815C14 /* CalculatingBeerPriceTests.swift */,
 				C968930C250B74DC000FFF5F /* GettingDatesTests.swift */,
+				0E1206EE250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -340,6 +389,7 @@
 				C98D573F250F1197005BCB35 /* GettingDates.swift */,
 				17128488250C6EC900A95A97 /* GettingExercises.swift */,
 				170DCAB4250E287500815C14 /* CalculatingBeerPrice.swift */,
+				0E1206EB250F3DFD0071C1F9 /* CaculatingTransportationFee.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -380,6 +430,7 @@
 		177389B525071EA2003B5CD7 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0E1206D6250F29190071C1F9 /* Exercise7 */,
 				170DCAA3250E1F1400815C14 /* Exercise1 */,
 				C96892E9250A2916000FFF5F /* Exercise4 */,
 				177389E325072429003B5CD7 /* Main */,
@@ -396,6 +447,7 @@
 				170DCAAE250E1F5800815C14 /* Exercise1.storyboard */,
 				C96892FD250A334D000FFF5F /* Exercise4.storyboard */,
 				177389B725071EA2003B5CD7 /* Storyboards.swift */,
+				0E1206E9250F295A0071C1F9 /* Exercise7.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -571,6 +623,7 @@
 				177389F625073BA3003B5CD7 /* ExerciseCell.xib in Resources */,
 				1773898B25071D8E003B5CD7 /* Assets.xcassets in Resources */,
 				170DCAAF250E1F5800815C14 /* Exercise1.storyboard in Resources */,
+				0E1206EA250F295A0071C1F9 /* Exercise7.storyboard in Resources */,
 				1773898925071D8D003B5CD7 /* Main.storyboard in Resources */,
 				C96892FE250A334D000FFF5F /* Exercise4.storyboard in Resources */,
 			);
@@ -617,6 +670,7 @@
 				177389C325071EA2003B5CD7 /* Assembler.swift in Sources */,
 				177389D025071EA2003B5CD7 /* UIViewController+.swift in Sources */,
 				170DCAB5250E287500815C14 /* CalculatingBeerPrice.swift in Sources */,
+				0E1206DC250F29190071C1F9 /* Exercise7ViewModel.swift in Sources */,
 				177389F525073BA3003B5CD7 /* ExerciseCell.swift in Sources */,
 				170DCAA9250E1F2400815C14 /* Exercise1Assembler.swift in Sources */,
 				177389CF25071EA2003B5CD7 /* AppUseCase.swift in Sources */,
@@ -625,12 +679,14 @@
 				170DCAAC250E1F2400815C14 /* Exercise1ViewController.swift in Sources */,
 				1712848B250C6EFD00A95A97 /* ExerciseGateway.swift in Sources */,
 				17128486250C6E9D00A95A97 /* Exercise.swift in Sources */,
+				0E1206DE250F29190071C1F9 /* Exercise7Navigator.swift in Sources */,
 				177389CE25071EA2003B5CD7 /* AppViewModel.swift in Sources */,
 				177389EB25072442003B5CD7 /* MainUseCase.swift in Sources */,
 				170DCAAD250E1F2400815C14 /* Exercise1ViewModel.swift in Sources */,
 				177389F225073B8D003B5CD7 /* ExerciseItemViewModel.swift in Sources */,
 				177389D125071EA2003B5CD7 /* UIViewController+Rx.swift in Sources */,
 				C96892F3250A2A2E000FFF5F /* Exercise4ViewModel.swift in Sources */,
+				0E1206DD250F29190071C1F9 /* Exercise7ViewController.swift in Sources */,
 				177389CA25071EA2003B5CD7 /* AppDelegate.swift in Sources */,
 				177389D225071EA2003B5CD7 /* Utils.swift in Sources */,
 				C98D5741250F1197005BCB35 /* GettingDates.swift in Sources */,
@@ -645,7 +701,10 @@
 				C96892EF250A2A2E000FFF5F /* Exercise4UseCase.swift in Sources */,
 				C96892F2250A2A2E000FFF5F /* Exercise4ViewController.swift in Sources */,
 				C98D5740250F1197005BCB35 /* GetDateColorDto.swift in Sources */,
+				0E1206ED250F3E2B0071C1F9 /* CaculatingTransportationFee.swift in Sources */,
 				177389C425071EA2003B5CD7 /* GatewaysAssembler.swift in Sources */,
+				0E1206E0250F29190071C1F9 /* Exercise7UseCase.swift in Sources */,
+				0E1206DF250F29190071C1F9 /* Exercise7Assembler.swift in Sources */,
 				177389C225071EA2003B5CD7 /* UnitTestViewController.swift in Sources */,
 				177389ED25072442003B5CD7 /* MainViewModel.swift in Sources */,
 				170DCAB1250E20D100815C14 /* MainAssembler.swift in Sources */,
@@ -662,10 +721,15 @@
 				1712849D250C75E300A95A97 /* AppNavigatorMock.swift in Sources */,
 				17128483250C6D5200A95A97 /* MainNavigatorMock.swift in Sources */,
 				170DCABB250E28CD00815C14 /* Exercise1ViewControllerTests.swift in Sources */,
+				0E1206E5250F29390071C1F9 /* Exercise7ViewControllerTests.swift in Sources */,
 				17128481250C6D5200A95A97 /* MainViewControllerTests.swift in Sources */,
 				17128495250C755900A95A97 /* ExerciseCellTests.swift in Sources */,
 				1712849E250C75E300A95A97 /* AppUseCaseMock.swift in Sources */,
+				0EEF3257251041D6001F2987 /* Exercise7UseCaseMock.swift in Sources */,
+				0E1206EF250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift in Sources */,
 				170DCABC250E28CD00815C14 /* Exercise1ViewModelTests.swift in Sources */,
+				0E1206E7250F29390071C1F9 /* Exercise7ViewModelTests.swift in Sources */,
+				0E1206E8250F29390071C1F9 /* Exercise7NavigatorMock.swift in Sources */,
 				170DCABD250E28CD00815C14 /* Exercise1NavigatorMock.swift in Sources */,
 				17128493250C722A00A95A97 /* ExerciseGatewayMock.swift in Sources */,
 				17128482250C6D5200A95A97 /* MainViewModelTests.swift in Sources */,
@@ -746,6 +810,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -806,6 +871,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -831,7 +897,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitTestTraining/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -852,7 +918,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitTestTraining/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -873,7 +939,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitTestTrainingTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -896,7 +962,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitTestTrainingTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
