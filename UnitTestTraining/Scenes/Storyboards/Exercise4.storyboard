@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exercise4 View Controller-->
+        <scene sceneID="8A6-UI-klb">
+            <objects>
+                <viewController storyboardIdentifier="Exercise4ViewController" id="eDf-cM-jdK" customClass="Exercise4ViewController" customModule="UnitTestTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pvJ-HC-kq2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7w-fq-3VL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="103.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a7w-fq-3VL" secondAttribute="height" multiplier="4" id="9O7-fW-YhF"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mb-Jn-TYM">
+                                <rect key="frame" x="16" y="85.5" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="fGp-uz-whm">
+                                <rect key="frame" x="16" y="179.5" width="382" height="216"/>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                    <!--2037-12-31 11:00:00 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerValueChange:" destination="eDf-cM-jdK" eventType="valueChanged" id="KAP-Zc-PWY"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn hãy chọn ngày để test màu nền của ngày đó nhé! Các ngày lễ như 1/1,  30/4, 1/5, 2/9" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLm-Ec-mJf">
+                                <rect key="frame" x="16" y="419.5" width="382" height="64.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fGp-uz-whm" firstAttribute="leading" secondItem="gtY-fY-5dN" secondAttribute="leading" constant="16" id="0vz-LL-xHw"/>
+                            <constraint firstItem="5Mb-Jn-TYM" firstAttribute="centerX" secondItem="a7w-fq-3VL" secondAttribute="centerX" id="60s-iC-eNF"/>
+                            <constraint firstItem="xLm-Ec-mJf" firstAttribute="centerX" secondItem="gtY-fY-5dN" secondAttribute="centerX" id="73D-wf-rd2"/>
+                            <constraint firstItem="a7w-fq-3VL" firstAttribute="top" secondItem="gtY-fY-5dN" secondAttribute="top" id="7om-7x-ZNm"/>
+                            <constraint firstItem="xLm-Ec-mJf" firstAttribute="leading" secondItem="gtY-fY-5dN" secondAttribute="leading" constant="16" id="CxQ-hq-k55"/>
+                            <constraint firstItem="5Mb-Jn-TYM" firstAttribute="centerY" secondItem="a7w-fq-3VL" secondAttribute="centerY" id="InU-SB-OrD"/>
+                            <constraint firstItem="a7w-fq-3VL" firstAttribute="width" secondItem="pvJ-HC-kq2" secondAttribute="width" id="PCz-Us-QhP"/>
+                            <constraint firstItem="a7w-fq-3VL" firstAttribute="centerX" secondItem="gtY-fY-5dN" secondAttribute="centerX" id="XL6-iu-g2d"/>
+                            <constraint firstItem="fGp-uz-whm" firstAttribute="top" secondItem="a7w-fq-3VL" secondAttribute="bottom" constant="32" id="ayP-AV-6Mv"/>
+                            <constraint firstItem="xLm-Ec-mJf" firstAttribute="top" secondItem="fGp-uz-whm" secondAttribute="bottom" constant="24" id="nM3-vs-AGc"/>
+                            <constraint firstItem="5Mb-Jn-TYM" firstAttribute="leading" secondItem="a7w-fq-3VL" secondAttribute="leading" constant="16" id="ujd-jO-fqP"/>
+                            <constraint firstItem="fGp-uz-whm" firstAttribute="centerX" secondItem="gtY-fY-5dN" secondAttribute="centerX" id="vtg-0J-bNr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gtY-fY-5dN"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateBackgroundView" destination="a7w-fq-3VL" id="Cxe-fz-D72"/>
+                        <outlet property="dateLabel" destination="5Mb-Jn-TYM" id="f3n-Ec-bHh"/>
+                        <outlet property="datePicker" destination="fGp-uz-whm" id="4SX-lm-6lj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kt-sh-b1S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="135"/>
+        </scene>
+    </scenes>
+</document>
