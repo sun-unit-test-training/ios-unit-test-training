@@ -13,6 +13,7 @@ protocol Assembler: class,
     Exercise7Assembler,
     MainAssembler,
     GatewaysAssembler,
+    Exercise3Assembler,
     AppAssembler {
     
 }

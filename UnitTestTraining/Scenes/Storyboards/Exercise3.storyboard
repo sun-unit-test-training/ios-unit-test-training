@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exercise3 View Controller-->
+        <scene sceneID="jxg-26-jha">
+            <objects>
+                <viewController storyboardIdentifier="Exercise3ViewController" id="iXJ-x9-D9W" customClass="Exercise3ViewController" customModule="UnitTestTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SYa-25-pmA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyd-PH-nFZ">
+                                <rect key="frame" x="0.0" y="831" width="414" height="65"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.098039215690000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLV-Pb-miC">
+                                <rect key="frame" x="0.0" y="833" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.098039215690000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eOp-AI-Dnf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quần áo nam Hoàn Kiếm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hal-yc-65T">
+                                <rect key="frame" x="0.0" y="54" width="414" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tạo đơn hàng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5I9-gT-HVi">
+                                <rect key="frame" x="0.0" y="92" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ObN-F8-zbC">
+                                <rect key="frame" x="0.0" y="117.5" width="414" height="165"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="zD8-xj-sJy"/>
+                                </constraints>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="py0-5v-dY6">
+                                <rect key="frame" x="16" y="292.5" width="382" height="530.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">● Điều kiện：	
+①：Trong số các mặt hàng mua, có cả áo sơ mi trắng và cà vạt, thì sẽ được giảm 5% trên tổng hoá đơn. 		
+②：Trường hợp mua từ trên 7 mặt hàng, được giảm 7% trên tổng hoá đơn. 		
+③：Có thể áp dụng đồng thời ưu đãi ① và ②, tức là sẽ được giảm 12% trên tổng hoá đơn.		
+④：Thứ tự ưu tiên về logic áp dụng giảm giá như bên dưới: 		
+・Có mua từ 7 mặt hàng trở lên hay không? 		
+・Có bao gồm áo sơ mi trắng hay không? 		
+・Có bao gồm cà vạt hay không? 		</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nyd-PH-nFZ" firstAttribute="leading" secondItem="BxM-7C-pxj" secondAttribute="leading" id="4ms-jZ-tur"/>
+                            <constraint firstItem="qLV-Pb-miC" firstAttribute="trailing" secondItem="BxM-7C-pxj" secondAttribute="trailing" id="6ff-uk-14k"/>
+                            <constraint firstItem="hal-yc-65T" firstAttribute="leading" secondItem="BxM-7C-pxj" secondAttribute="leading" id="DFM-Vt-BBY"/>
+                            <constraint firstItem="BxM-7C-pxj" firstAttribute="trailing" secondItem="py0-5v-dY6" secondAttribute="trailing" constant="16" id="Fdi-xE-rcO"/>
+                            <constraint firstItem="qLV-Pb-miC" firstAttribute="leading" secondItem="BxM-7C-pxj" secondAttribute="leading" id="Mun-Ow-BMz"/>
+                            <constraint firstItem="BxM-7C-pxj" firstAttribute="trailing" secondItem="ObN-F8-zbC" secondAttribute="trailing" id="OXh-gE-6la"/>
+                            <constraint firstItem="hal-yc-65T" firstAttribute="top" secondItem="BxM-7C-pxj" secondAttribute="top" constant="10" id="Tj5-Dp-BXU"/>
+                            <constraint firstItem="BxM-7C-pxj" firstAttribute="trailing" secondItem="hal-yc-65T" secondAttribute="trailing" id="VFp-Bm-7UV"/>
+                            <constraint firstAttribute="bottom" secondItem="qLV-Pb-miC" secondAttribute="bottom" constant="13" id="Y9m-Hh-qNU"/>
+                            <constraint firstItem="ObN-F8-zbC" firstAttribute="leading" secondItem="BxM-7C-pxj" secondAttribute="leading" id="aCy-Yu-1s4"/>
+                            <constraint firstItem="py0-5v-dY6" firstAttribute="top" secondItem="ObN-F8-zbC" secondAttribute="bottom" constant="10" id="bAH-pV-kbi"/>
+                            <constraint firstItem="qLV-Pb-miC" firstAttribute="top" secondItem="py0-5v-dY6" secondAttribute="bottom" constant="10" id="cFK-Na-xpP"/>
+                            <constraint firstAttribute="bottom" secondItem="nyd-PH-nFZ" secondAttribute="bottom" id="fPF-l9-iPb"/>
+                            <constraint firstItem="5I9-gT-HVi" firstAttribute="top" secondItem="hal-yc-65T" secondAttribute="bottom" constant="15" id="gf9-O9-hRy"/>
+                            <constraint firstItem="py0-5v-dY6" firstAttribute="leading" secondItem="BxM-7C-pxj" secondAttribute="leading" constant="16" id="h0h-T9-M2L"/>
+                            <constraint firstItem="nyd-PH-nFZ" firstAttribute="top" secondItem="py0-5v-dY6" secondAttribute="bottom" constant="8" id="itc-Vd-aYn"/>
+                            <constraint firstItem="nyd-PH-nFZ" firstAttribute="trailing" secondItem="BxM-7C-pxj" secondAttribute="trailing" id="jLA-iD-T3X"/>
+                            <constraint firstItem="ObN-F8-zbC" firstAttribute="top" secondItem="5I9-gT-HVi" secondAttribute="bottom" constant="5" id="m7l-a6-P1v"/>
+                            <constraint firstItem="BxM-7C-pxj" firstAttribute="trailing" secondItem="5I9-gT-HVi" secondAttribute="trailing" id="maw-PM-yWJ"/>
+                            <constraint firstItem="5I9-gT-HVi" firstAttribute="leading" secondItem="BxM-7C-pxj" secondAttribute="leading" id="s2U-Tb-cvb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BxM-7C-pxj"/>
+                    </view>
+                    <connections>
+                        <outlet property="discountLabel" destination="qLV-Pb-miC" id="aPY-hE-S6x"/>
+                        <outlet property="tableView" destination="ObN-F8-zbC" id="3aW-Jf-r2K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xz5-Hn-98T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.53623188405798" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>

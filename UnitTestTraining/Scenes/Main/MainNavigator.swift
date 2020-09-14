@@ -40,7 +40,10 @@ struct MainNavigator: MainNavigatorType {
     }
     
     func toExercise3() {
-        print(#function)
+        let nav = UINavigationController()
+        let vc: Exercise3ViewController = assembler.resolve(navigationController: nav)
+        nav.viewControllers = [vc]
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func toExercise4() {
