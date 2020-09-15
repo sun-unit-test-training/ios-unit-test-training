@@ -10,6 +10,8 @@ import XCTest
 
 final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportationFee {
 
+    let errorMessage = "Incorrect"
+    
     override func setUp() {
         super.setUp()
     }
@@ -20,7 +22,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     /// - Giao hàng siêu tốc - Y
     
     func testCase1_calculationFee() {
-        let result = self.calculationFee(isPremiumMember: true, isQuickDeliver: true, isCartAmountGreaterThan5000: true)
+        let result = self.calculationFee(isPremiumMember: true, isQuickDeliver: true, cartAmount: 6000.0)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 500.0)
     }
@@ -33,7 +35,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     func testCase2_calculationFee() {
         let result = self.calculationFee(isPremiumMember: true,
                                          isQuickDeliver: false,
-                                         isCartAmountGreaterThan5000: true)
+                                         cartAmount: 5100.0)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 0.0)
     }
@@ -46,7 +48,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     func testCase3_calculationFee() {
         let result = self.calculationFee(isPremiumMember: true,
                                          isQuickDeliver: true,
-                                         isCartAmountGreaterThan5000: false)
+                                         cartAmount: 4900.0)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 500.0)
     }
@@ -59,7 +61,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     func testCase4_calculationFee() {
         let result = self.calculationFee(isPremiumMember: true,
                                          isQuickDeliver: false,
-                                         isCartAmountGreaterThan5000: false)
+                                         cartAmount: 3000.0)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 0.0)
     }
@@ -72,7 +74,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     func testCase5_calculationFee() {
         let result = self.calculationFee(isPremiumMember: false,
                                          isQuickDeliver: true,
-                                         isCartAmountGreaterThan5000: true)
+                                         cartAmount: 7000.0)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 500.0)
     }
@@ -85,7 +87,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     func testCase6_calculationFee() {
         let result = self.calculationFee(isPremiumMember: false,
                                          isQuickDeliver: false,
-                                         isCartAmountGreaterThan5000: true)
+                                         cartAmount: 5100.0)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 0.0)
     }
@@ -98,7 +100,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     func testCase7_calculationFee() {
         let result = self.calculationFee(isPremiumMember: false,
                                          isQuickDeliver: true,
-                                         isCartAmountGreaterThan5000: false)
+                                         cartAmount: 4750.0)
         XCTAssertEqual(result.standardFee, 500.0)
         XCTAssertEqual(result.quickFee, 500.0)
     }
@@ -111,8 +113,29 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     func testCase8_calculationFee() {
         let result = self.calculationFee(isPremiumMember: false,
                                          isQuickDeliver: false,
-                                         isCartAmountGreaterThan5000: false)
+                                         cartAmount: 3400.0)
         XCTAssertEqual(result.standardFee, 500.0)
         XCTAssertEqual(result.quickFee, 0.0)
+    }
+    
+    /// Testcase 9
+    func test_cartAmountInputInvalid1() {
+        let result = self.validateCardAmount("abca")
+        XCTAssertEqual(result, errorMessage)
+    }
+    
+    func test_cartAmountInputInvalid2() {
+        let result = self.validateCardAmount("ab41ca")
+        XCTAssertEqual(result, errorMessage)
+    }
+    
+    func test_cartAmountInputValid1() {
+        let result = self.validateCardAmount("500")
+        XCTAssertEqual(result, "")
+    }
+    
+    func test_cartAmountInputValid2() {
+        let result = self.validateCardAmount("5000")
+        XCTAssertEqual(result, "")
     }
 }

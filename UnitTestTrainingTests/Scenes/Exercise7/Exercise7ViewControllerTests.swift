@@ -20,11 +20,12 @@ final class Exercise7ViewControllerTests: XCTestCase {
 
     func test_ibOutlets() {
         _ = viewController.view
-        XCTAssertNotNil(viewController.lbTotalFee)
-        XCTAssertNotNil(viewController.lbStandardFee)
-        XCTAssertNotNil(viewController.lbQTFee)
-        XCTAssertNotNil(viewController.swMemberShip)
-        XCTAssertNotNil(viewController.swCartAmount)
-        XCTAssertNotNil(viewController.swQuickDeliver)
+        XCTAssertNotNil(viewController.totalFeeLabel)
+        XCTAssertNotNil(viewController.standardFeeLabel)
+        XCTAssertNotNil(viewController.quickTransportFeeLabel)
+        XCTAssertNotNil(viewController.membershipSwitch)
+        XCTAssertNotNil(viewController.cartAmountTextField)
+        XCTAssertNotNil(viewController.quickDeliverSwitch)
+        XCTAssertNotNil(viewController.errorLabel)
     }
 }

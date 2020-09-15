@@ -13,12 +13,17 @@ protocol CaculatingTransportationFee {
 }
 
 extension CaculatingTransportationFee {
+    func validateCardAmount(_ amount: String) -> String {
+        let isValid = Double(amount) ?? 0
+        return isValid > 0 ? "" : "Incorrect"
+    }
+    
     func calculationFee(isPremiumMember: Bool,
                         isQuickDeliver: Bool,
-                        isCartAmountGreaterThan5000: Bool) -> (standardFee: Double, quickFee: Double) {
+                        cartAmount: Double) -> (standardFee: Double, quickFee: Double) {
         var standardDeliver = 500.0
         var quickDeliver = 0.0
-        if isCartAmountGreaterThan5000 || isPremiumMember {
+        if cartAmount > 5000 || isPremiumMember {
             standardDeliver = 0.0
         }
         if isQuickDeliver {

@@ -22,7 +22,7 @@ final class Exercise7ViewModelTests: XCTestCase {
     
     private let loadTrigger = PublishSubject<Void>()
     private let isPremiumTrigger = PublishSubject<Bool>()
-    private let isCartAmountGreaterThan5000 = PublishSubject<Bool>()
+    private let cartAmount = PublishSubject<String>()
     private let isSelectQuickDeliver = PublishSubject<Bool>()
 
     override func setUp() {
@@ -34,7 +34,7 @@ final class Exercise7ViewModelTests: XCTestCase {
         input = Exercise7ViewModel.Input(
             loadTrigger: loadTrigger.asDriverOnErrorJustComplete(),
             isPremiumTrigger: isPremiumTrigger.asDriverOnErrorJustComplete(),
-            isCartAmountGreaterThan5000: isCartAmountGreaterThan5000.asDriverOnErrorJustComplete(),
+            cartAmount: cartAmount.asDriverOnErrorJustComplete(),
             isSelectQuickDeliver: isSelectQuickDeliver.asDriverOnErrorJustComplete())
         output = viewModel.transform(input, disposeBag: disposeBag)
         
@@ -46,16 +46,15 @@ final class Exercise7ViewModelTests: XCTestCase {
         loadTrigger.onNext(())
         XCTAssert(useCase.isCalculationFeeCalled)
         XCTAssertFalse(useCase.isQuickDeliver)
-        XCTAssertFalse(useCase.isCartAmountGreaterThan5000)
         XCTAssertFalse(useCase.isPremiumMember)
         XCTAssertEqual(output.fee.standardFee, 500.0)
+        XCTAssertEqual(useCase.cartAmount, 5000.0)
     }
 
     func test_isPremiumMemberTrigger() {
         isPremiumTrigger.onNext(true)
         XCTAssert(useCase.isCalculationFeeCalled)
         XCTAssertFalse(useCase.isQuickDeliver)
-        XCTAssertFalse(useCase.isCartAmountGreaterThan5000)
         XCTAssert(useCase.isPremiumMember)
     }
     
@@ -63,16 +62,15 @@ final class Exercise7ViewModelTests: XCTestCase {
         isSelectQuickDeliver.onNext(true)
         XCTAssert(useCase.isCalculationFeeCalled)
         XCTAssert(useCase.isQuickDeliver)
-        XCTAssertFalse(useCase.isCartAmountGreaterThan5000)
         XCTAssertFalse(useCase.isPremiumMember)
     }
     
     func test_isCartAmountGreaterThan5000Trigger() {
-        isCartAmountGreaterThan5000.onNext(true)
+        cartAmount.onNext("6000.0")
         XCTAssert(useCase.isCalculationFeeCalled)
         XCTAssertFalse(useCase.isQuickDeliver)
-        XCTAssert(useCase.isCartAmountGreaterThan5000)
         XCTAssertFalse(useCase.isPremiumMember)
+        XCTAssertEqual(useCase.cartAmount, 6000.0)
     }
     
 }

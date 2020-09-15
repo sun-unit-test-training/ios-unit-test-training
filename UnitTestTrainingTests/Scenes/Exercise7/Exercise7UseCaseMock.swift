@@ -6,24 +6,29 @@
 //  Copyright © 2020 Sun Asterisk. All rights reserved.
 //
 
-
 @testable import UnitTestTraining
 import RxSwift
 
 final class Exercise7UseCaseMock: Exercise7UseCaseType {
+    
     var fee = (standardFee: 500.0, quickFee: 0.0)
-    var isCalculationFeeCalled = false
+    var cartAmount = 5000.0
     var isPremiumMember = false
     var isQuickDeliver = false
-    var isCartAmountGreaterThan5000 = false
+    var isCalculationFeeCalled = false
     
     func calculationFee(isPremiumMember: Bool,
                         isQuickDeliver: Bool,
-                        isCartAmountGreaterThan5000: Bool) -> (standardFee: Double, quickFee: Double) {
-        self.isCalculationFeeCalled = true
-        self.isQuickDeliver = isQuickDeliver
-        self.isPremiumMember = isPremiumMember
-        self.isCartAmountGreaterThan5000 = isCartAmountGreaterThan5000
-        return fee
+                        cartAmount: Double) -> (standardFee: Double, quickFee: Double) {
+     self.isCalculationFeeCalled = true
+     self.isQuickDeliver = isQuickDeliver
+     self.isPremiumMember = isPremiumMember
+     self.cartAmount = cartAmount
+     return fee
     }
+    
+    func validateCardAmount(_ amount: String) -> String {
+        return ""
+    }
+    
 }

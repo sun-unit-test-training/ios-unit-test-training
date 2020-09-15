@@ -10,7 +10,8 @@ import RxSwift
 protocol Exercise7UseCaseType {
     func calculationFee(isPremiumMember: Bool,
                         isQuickDeliver: Bool,
-                        isCartAmountGreaterThan5000: Bool) -> (standardFee: Double, quickFee: Double)
+                        cartAmount: Double) -> (standardFee: Double, quickFee: Double)
+    func validateCardAmount(_ amount: String) -> String
 }
 
 struct Exercise7UseCase: Exercise7UseCaseType, CaculatingTransportationFee {

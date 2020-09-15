@@ -16,13 +16,14 @@ import Then
 final class Exercise7ViewController: UITableViewController, Bindable {
     
     // MARK: - IBOutlets
+    @IBOutlet weak var cartAmountTextField: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var totalFeeLabel: UILabel!
+    @IBOutlet weak var standardFeeLabel: UILabel!
+    @IBOutlet weak var quickTransportFeeLabel: UILabel!
+    @IBOutlet weak var membershipSwitch: UISwitch!
+    @IBOutlet weak var quickDeliverSwitch: UISwitch!
     
-    @IBOutlet weak var lbTotalFee: UILabel!
-    @IBOutlet weak var lbStandardFee: UILabel!
-    @IBOutlet weak var lbQTFee: UILabel!
-    @IBOutlet weak var swMemberShip: UISwitch!
-    @IBOutlet weak var swCartAmount: UISwitch!
-    @IBOutlet weak var swQuickDeliver: UISwitch!
     // MARK: - Properties
     var viewModel: Exercise7ViewModel!
     var disposeBag = DisposeBag()
@@ -44,30 +45,36 @@ final class Exercise7ViewController: UITableViewController, Bindable {
     }
 
     func bindViewModel() {
+        
         let input = Exercise7ViewModel.Input(
             loadTrigger: Driver.just(()),
-            isPremiumTrigger: swMemberShip.rx.value.changed.asDriver(),
-            isCartAmountGreaterThan5000: swCartAmount.rx.value.changed.asDriver(),
-            isSelectQuickDeliver: swQuickDeliver.rx.value.changed.asDriver())
+            isPremiumTrigger: membershipSwitch.rx.value.changed.asDriver(),
+            cartAmount: cartAmountTextField.rx.text.orEmpty.asDriver(),
+            isSelectQuickDeliver: quickDeliverSwitch.rx.value.changed.asDriver())
         let output = viewModel.transform(input, disposeBag: disposeBag)
+        
         output.$fee
             .asDriver()
             .map { $0.standardFee.japanCurrency }
-            .drive(lbStandardFee.rx.text)
+            .drive(standardFeeLabel.rx.text)
             .disposed(by: disposeBag)
         
         output.$fee
-        .asDriver()
+            .asDriver()
             .map { $0.quickFee.japanCurrency }
-        .drive(lbQTFee.rx.text)
-        .disposed(by: disposeBag)
+            .drive(quickTransportFeeLabel.rx.text)
+            .disposed(by: disposeBag)
         
         output.$fee
-        .asDriver()
+            .asDriver()
             .map { ($0.standardFee + $0.quickFee).japanCurrency }
-        .drive(lbTotalFee.rx.text)
-        .disposed(by: disposeBag)
+            .drive(totalFeeLabel.rx.text)
+            .disposed(by: disposeBag)
         
+        output.$errorMessage
+            .asDriver()
+            .drive(errorLabel.rx.text)
+            .disposed(by: disposeBag)
     }
 }
 

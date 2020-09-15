@@ -18,31 +18,36 @@
                         <sections>
                             <tableViewSection headerTitle="Giá trị đơn hàng" id="MAe-Hg-Umy">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="48" id="ZQQ-5d-rse">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="48"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="98" id="ZQQ-5d-rse">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZQQ-5d-rse" id="CMy-00-NgK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lớn hơn 5,000円/yên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqD-ne-cwG">
-                                                    <rect key="frame" x="20" y="14" width="161" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISF-nl-nyZ">
+                                                    <rect key="frame" x="20" y="69" width="374" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="6A3-pw-r5a"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jtf-lK-2wA">
-                                                    <rect key="frame" x="349" y="9" width="51" height="31"/>
-                                                </switch>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tcs-po-vJh">
+                                                    <rect key="frame" x="40" y="21" width="334" height="33.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="Jtf-lK-2wA" secondAttribute="bottom" constant="8" id="124-rt-PjC"/>
-                                                <constraint firstItem="JqD-ne-cwG" firstAttribute="top" secondItem="CMy-00-NgK" secondAttribute="top" constant="14" id="6gM-Uj-Hwh"/>
-                                                <constraint firstAttribute="trailing" secondItem="Jtf-lK-2wA" secondAttribute="trailing" constant="16" id="8tq-Ts-gAS"/>
-                                                <constraint firstItem="Jtf-lK-2wA" firstAttribute="top" secondItem="CMy-00-NgK" secondAttribute="top" constant="9" id="BeP-3t-oTv"/>
-                                                <constraint firstAttribute="bottom" secondItem="JqD-ne-cwG" secondAttribute="bottom" constant="13" id="H30-5U-qZK"/>
-                                                <constraint firstAttribute="trailing" secondItem="Jtf-lK-2wA" secondAttribute="trailing" constant="16" id="ILI-ca-Yem"/>
-                                                <constraint firstItem="JqD-ne-cwG" firstAttribute="leading" secondItem="CMy-00-NgK" secondAttribute="leading" constant="20" id="pQk-HN-o3z"/>
+                                                <constraint firstItem="tcs-po-vJh" firstAttribute="top" secondItem="CMy-00-NgK" secondAttribute="topMargin" constant="10" id="5PI-r6-ruy"/>
+                                                <constraint firstItem="ISF-nl-nyZ" firstAttribute="top" secondItem="tcs-po-vJh" secondAttribute="bottom" constant="14.5" id="9xk-Mx-2t0"/>
+                                                <constraint firstItem="tcs-po-vJh" firstAttribute="leading" secondItem="CMy-00-NgK" secondAttribute="leadingMargin" constant="20" id="KpB-nq-DXH"/>
+                                                <constraint firstAttribute="trailing" secondItem="ISF-nl-nyZ" secondAttribute="trailing" constant="20" id="a9z-fY-dy8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="tcs-po-vJh" secondAttribute="trailing" constant="20" id="bZV-9b-vvN"/>
+                                                <constraint firstItem="ISF-nl-nyZ" firstAttribute="leading" secondItem="CMy-00-NgK" secondAttribute="leading" constant="20" id="bsb-ok-kuo"/>
+                                                <constraint firstAttribute="bottom" secondItem="ISF-nl-nyZ" secondAttribute="bottom" constant="8" id="dJE-3z-Bwh"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -51,7 +56,7 @@
                             <tableViewSection headerTitle="Membership" id="aOs-N2-Zm5">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="48" id="IAu-vb-RgB">
-                                        <rect key="frame" x="0.0" y="132" width="414" height="48"/>
+                                        <rect key="frame" x="0.0" y="182" width="414" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IAu-vb-RgB" id="pgB-jv-GM2">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
@@ -82,7 +87,7 @@
                             <tableViewSection headerTitle="Giao hàng siêu tốc" id="UsL-DV-YlQ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Deliver" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="48" id="occ-nD-NRF">
-                                        <rect key="frame" x="0.0" y="236" width="414" height="48"/>
+                                        <rect key="frame" x="0.0" y="286" width="414" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="occ-nD-NRF" id="ePM-hJ-JDJ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
@@ -113,7 +118,7 @@
                             <tableViewSection headerTitle="Phí vận chuyển nhanh" id="NQo-2c-HRR">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="48" id="sDp-KR-2eM">
-                                        <rect key="frame" x="0.0" y="340" width="414" height="48"/>
+                                        <rect key="frame" x="0.0" y="390" width="414" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sDp-KR-2eM" id="kSp-Mx-WbQ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
@@ -150,7 +155,7 @@
                             <tableViewSection headerTitle="Phí vận chuyển thường" id="fg4-x1-zGD">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="dFC-9e-8CE">
-                                        <rect key="frame" x="0.0" y="444" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="494" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dFC-9e-8CE" id="jFF-lF-Nk2">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -187,7 +192,7 @@
                             <tableViewSection headerTitle="Tổng phí vận chuyển" id="ydl-db-jnU">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="46" id="P5k-OX-vgP">
-                                        <rect key="frame" x="0.0" y="550" width="414" height="46"/>
+                                        <rect key="frame" x="0.0" y="600" width="414" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P5k-OX-vgP" id="4D4-iE-gH2">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="46"/>
@@ -224,7 +229,7 @@
                             <tableViewSection headerTitle="Điều kiện" id="pNP-fh-aXJ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="436" id="uzd-xv-yFW">
-                                        <rect key="frame" x="0.0" y="652" width="414" height="436"/>
+                                        <rect key="frame" x="0.0" y="702" width="414" height="436"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uzd-xv-yFW" id="C7R-F1-CJM">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="436"/>
@@ -264,12 +269,13 @@ Trường hợp chọn "Giao hàng siêu tốc", được miễn phí vận chuy
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="lbQTFee" destination="lr3-2o-n5v" id="pXI-Ou-9dk"/>
-                        <outlet property="lbStandardFee" destination="lYg-jD-ElX" id="onN-OV-1vX"/>
-                        <outlet property="lbTotalFee" destination="lr3-Ik-LOa" id="ofe-ZG-k7Z"/>
-                        <outlet property="swCartAmount" destination="Jtf-lK-2wA" id="kFa-Xp-apc"/>
-                        <outlet property="swMemberShip" destination="av0-RJ-KQg" id="tiX-JU-eqW"/>
-                        <outlet property="swQuickDeliver" destination="Bcg-lb-eaC" id="WES-4x-oWs"/>
+                        <outlet property="cartAmountTextField" destination="tcs-po-vJh" id="bzD-kX-XMU"/>
+                        <outlet property="errorLabel" destination="ISF-nl-nyZ" id="mfr-mB-PfN"/>
+                        <outlet property="membershipSwitch" destination="av0-RJ-KQg" id="tiX-JU-eqW"/>
+                        <outlet property="quickDeliverSwitch" destination="Bcg-lb-eaC" id="WES-4x-oWs"/>
+                        <outlet property="quickTransportFeeLabel" destination="lr3-2o-n5v" id="pXI-Ou-9dk"/>
+                        <outlet property="standardFeeLabel" destination="lYg-jD-ElX" id="onN-OV-1vX"/>
+                        <outlet property="totalFeeLabel" destination="lr3-Ik-LOa" id="ofe-ZG-k7Z"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWb-dY-bsu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
