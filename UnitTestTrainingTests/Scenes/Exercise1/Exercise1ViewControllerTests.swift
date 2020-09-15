@@ -22,7 +22,7 @@ final class Exercise1ViewControllerTests: XCTestCase {
     func test_ibOutlets() {
         _ = viewController.view
         XCTAssertNotNil(viewController.voucherSwitch)
-        XCTAssertNotNil(viewController.promotionTimeSwitch)
+        XCTAssertNotNil(viewController.purchaseDatePicker)
         XCTAssertNotNil(viewController.priceLabel)
     }
 }

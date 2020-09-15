@@ -43,32 +43,35 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="rcp-Az-rvg">
-                                        <rect key="frame" x="0.0" y="62" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="205" id="rcp-Az-rvg">
+                                        <rect key="frame" x="0.0" y="62" width="375" height="205"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rcp-Az-rvg" id="JuH-vN-0F0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Đang trong thời gian ưu đãi:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cx1-Et-ei1">
-                                                    <rect key="frame" x="16" y="12" width="213" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thời gian mua:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cx1-Et-ei1">
+                                                    <rect key="frame" x="16" y="11" width="113" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s9d-dD-nza">
-                                                    <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                </switch>
+                                                <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zha-AK-AXH">
+                                                    <rect key="frame" x="0.0" y="40" width="375" height="165"/>
+                                                </datePicker>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="s9d-dD-nza" secondAttribute="trailing" id="d65-II-Thg"/>
-                                                <constraint firstItem="s9d-dD-nza" firstAttribute="centerY" secondItem="JuH-vN-0F0" secondAttribute="centerY" id="h61-Q8-h6i"/>
+                                                <constraint firstItem="Zha-AK-AXH" firstAttribute="leading" secondItem="JuH-vN-0F0" secondAttribute="leading" id="82c-GF-yPa"/>
+                                                <constraint firstItem="Cx1-Et-ei1" firstAttribute="top" secondItem="JuH-vN-0F0" secondAttribute="topMargin" id="9A2-zl-8vN"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zha-AK-AXH" secondAttribute="trailing" id="Bry-m7-Nt7"/>
+                                                <constraint firstItem="Cx1-Et-ei1" firstAttribute="leading" secondItem="JuH-vN-0F0" secondAttribute="leadingMargin" id="Yaz-73-YOI"/>
+                                                <constraint firstItem="Zha-AK-AXH" firstAttribute="top" secondItem="Cx1-Et-ei1" secondAttribute="bottom" constant="8" id="tqC-Xi-174"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zha-AK-AXH" secondAttribute="bottom" id="wOp-Zp-eCM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="ih4-TD-iX3">
-                                        <rect key="frame" x="0.0" y="106" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="267" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ih4-TD-iX3" id="X0P-Ns-Zdw">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -110,7 +113,7 @@
                             <tableViewSection headerTitle="Điều kiện" id="vn4-mW-ccn">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="190" id="Ep7-AZ-cex">
-                                        <rect key="frame" x="0.0" y="206" width="375" height="190"/>
+                                        <rect key="frame" x="0.0" y="367" width="375" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ep7-AZ-cex" id="ylk-I8-h9d">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
@@ -119,11 +122,11 @@
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwX-Gw-LMa">
                                                     <rect key="frame" x="16" y="11" width="343" height="168"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <mutableString key="text">①：Thông thường giá 1 cốc bia là 490円/yên
+                                                    <string key="text">①：Thông thường giá 1 cốc bia là 490円/yên
 ②：Từ 16:00 đến17:59 là thời gian ưu đãi nên giá 1 cốc là 290円/yên.
-③：Nếu có voucher giảm giá thid được ưu đãi cốc đầu tiên là 100 円/yên, bất kể thời gian nào.
+③：Nếu có voucher giảm giá thì được ưu đãi cốc đầu tiên là 100 円/yên, bất kể thời gian nào.
 ④：Voucher giảm giá được sử dụng kể cả trong thời gian ưu đãi
-⑤：Tính theo giá rẻ nhất vào thời điểm order		</mutableString>
+⑤：Tính theo giá rẻ nhất vào thời điểm order		</string>
                                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -148,7 +151,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="priceLabel" destination="Rk4-Bz-257" id="3Hk-Cn-Q2Y"/>
-                        <outlet property="promotionTimeSwitch" destination="s9d-dD-nza" id="U6c-fH-eOb"/>
+                        <outlet property="purchaseDatePicker" destination="Zha-AK-AXH" id="xXz-rc-ccj"/>
                         <outlet property="voucherSwitch" destination="j2B-EB-RYG" id="3sg-Xk-Xbi"/>
                     </connections>
                 </tableViewController>

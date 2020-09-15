@@ -22,7 +22,7 @@ final class Exercise1ViewModelTests: XCTestCase {
     // Triggers
     private let loadTrigger = PublishSubject<Void>()
     private let voucherTrigger = PublishSubject<Bool>()
-    private let promotionTimeTrigger = PublishSubject<Bool>()
+    private let purchaseTimeTrigger = PublishSubject<Date>()
     
     override func setUp() {
         super.setUp()
@@ -33,7 +33,7 @@ final class Exercise1ViewModelTests: XCTestCase {
         input = Exercise1ViewModel.Input(
             loadTrigger: loadTrigger.asDriverOnErrorJustComplete(),
             voucherTrigger: voucherTrigger.asDriverOnErrorJustComplete(),
-            promotionTimeTrigger: promotionTimeTrigger.asDriverOnErrorJustComplete()
+            purchaseTimeTrigger: purchaseTimeTrigger.asDriverOnErrorJustComplete()
         )
         disposeBag = DisposeBag()
         output = viewModel.transform(input, disposeBag: disposeBag)
@@ -46,7 +46,6 @@ final class Exercise1ViewModelTests: XCTestCase {
         // assert
         XCTAssert(useCase.calculateBeerPriceCalled)
         XCTAssertFalse(useCase.usingVoucher)
-        XCTAssertFalse(useCase.isInPromotionTime)
         XCTAssertEqual(output.price, (490.0).japanCurrency)
     }
     
@@ -57,16 +56,14 @@ final class Exercise1ViewModelTests: XCTestCase {
         // assert
         XCTAssert(useCase.calculateBeerPriceCalled)
         XCTAssert(useCase.usingVoucher)
-        XCTAssertFalse(useCase.isInPromotionTime)
     }
     
     func test_promotionTimeTrigger_calculateBeerPrice() {
         // act
-        promotionTimeTrigger.onNext(true)
+        purchaseTimeTrigger.onNext(Date())
         
         // assert
         XCTAssert(useCase.calculateBeerPriceCalled)
         XCTAssertFalse(useCase.usingVoucher)
-        XCTAssert(useCase.isInPromotionTime)
     }
 }

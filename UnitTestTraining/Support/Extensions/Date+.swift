@@ -30,4 +30,18 @@ extension Date {
         case friday
         case saturday
     }
+    
+    init?(hour: Int, minute: Int = 0, second: Int = 0) {
+        let calendar = Calendar(identifier: .gregorian)
+        var dateComponents = calendar.dateComponents([.year, .month, .day], from: Date())
+        dateComponents.hour = hour
+        dateComponents.minute = minute
+        dateComponents.second = second
+        
+        guard let date = calendar.date(from: dateComponents) else {
+            return nil
+        }
+        
+        self = date
+    }
 }
