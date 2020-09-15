@@ -18,6 +18,8 @@
 		0E1206EA250F295A0071C1F9 /* Exercise7.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1206E9250F295A0071C1F9 /* Exercise7.storyboard */; };
 		0E1206ED250F3E2B0071C1F9 /* CaculatingTransportationFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206EB250F3DFD0071C1F9 /* CaculatingTransportationFee.swift */; };
 		0E1206EF250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206EE250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift */; };
+		0EA1C05F251194CA008560B0 /* CartAmountDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA1C05E251194CA008560B0 /* CartAmountDto.swift */; };
+		0EA1C06125119F8F008560B0 /* Validation+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA1C06025119F8F008560B0 /* Validation+Ext.swift */; };
 		0EEF3257251041D6001F2987 /* Exercise7UseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF3256251041D6001F2987 /* Exercise7UseCaseMock.swift */; };
 		170DCAA9250E1F2400815C14 /* Exercise1Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA4250E1F2400815C14 /* Exercise1Assembler.swift */; };
 		170DCAAA250E1F2400815C14 /* Exercise1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA5250E1F2400815C14 /* Exercise1Navigator.swift */; };
@@ -73,6 +75,7 @@
 		177389F225073B8D003B5CD7 /* ExerciseItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389F125073B8D003B5CD7 /* ExerciseItemViewModel.swift */; };
 		177389F525073BA3003B5CD7 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389F325073BA3003B5CD7 /* ExerciseCell.swift */; };
 		177389F625073BA3003B5CD7 /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177389F425073BA3003B5CD7 /* ExerciseCell.xib */; };
+		B6D5557C2510EE6D00439F84 /* CaculatingTransportationFeeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5557B2510EE6D00439F84 /* CaculatingTransportationFeeDto.swift */; };
 		C96892EF250A2A2E000FFF5F /* Exercise4UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96892EA250A2A2E000FFF5F /* Exercise4UseCase.swift */; };
 		C96892F0250A2A2E000FFF5F /* Exercise4Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96892EB250A2A2E000FFF5F /* Exercise4Assembler.swift */; };
 		C96892F1250A2A2E000FFF5F /* Exercise4Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96892EC250A2A2E000FFF5F /* Exercise4Navigator.swift */; };
@@ -113,6 +116,8 @@
 		0E1206E9250F295A0071C1F9 /* Exercise7.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise7.storyboard; sourceTree = "<group>"; };
 		0E1206EB250F3DFD0071C1F9 /* CaculatingTransportationFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculatingTransportationFee.swift; sourceTree = "<group>"; };
 		0E1206EE250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculatingTransportationFeeTests.swift; sourceTree = "<group>"; };
+		0EA1C05E251194CA008560B0 /* CartAmountDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartAmountDto.swift; sourceTree = "<group>"; };
+		0EA1C06025119F8F008560B0 /* Validation+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validation+Ext.swift"; sourceTree = "<group>"; };
 		0EEF3256251041D6001F2987 /* Exercise7UseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise7UseCaseMock.swift; sourceTree = "<group>"; };
 		170DCAA4250E1F2400815C14 /* Exercise1Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1Assembler.swift; sourceTree = "<group>"; };
 		170DCAA5250E1F2400815C14 /* Exercise1Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1Navigator.swift; sourceTree = "<group>"; };
@@ -168,6 +173,7 @@
 		177389F125073B8D003B5CD7 /* ExerciseItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseItemViewModel.swift; sourceTree = "<group>"; };
 		177389F325073BA3003B5CD7 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		177389F425073BA3003B5CD7 /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
+		B6D5557B2510EE6D00439F84 /* CaculatingTransportationFeeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculatingTransportationFeeDto.swift; sourceTree = "<group>"; };
 		C96892EA250A2A2E000FFF5F /* Exercise4UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise4UseCase.swift; sourceTree = "<group>"; };
 		C96892EB250A2A2E000FFF5F /* Exercise4Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise4Assembler.swift; sourceTree = "<group>"; };
 		C96892EC250A2A2E000FFF5F /* Exercise4Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise4Navigator.swift; sourceTree = "<group>"; };
@@ -385,11 +391,11 @@
 		177389A525071EA2003B5CD7 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				B6D5557A2510EE5000439F84 /* Exercise7 */,
 				C98D573E250F1197005BCB35 /* GetDateColorDto.swift */,
 				C98D573F250F1197005BCB35 /* GettingDates.swift */,
 				17128488250C6EC900A95A97 /* GettingExercises.swift */,
 				170DCAB4250E287500815C14 /* CalculatingBeerPrice.swift */,
-				0E1206EB250F3DFD0071C1F9 /* CaculatingTransportationFee.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -479,6 +485,7 @@
 				177389C025071EA2003B5CD7 /* UIViewController+Rx.swift */,
 				170DCAB2250E25C600815C14 /* Double+.swift */,
 				C9689306250B6666000FFF5F /* Date+.swift */,
+				0EA1C06025119F8F008560B0 /* Validation+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -496,6 +503,16 @@
 				177389F425073BA3003B5CD7 /* ExerciseCell.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		B6D5557A2510EE5000439F84 /* Exercise7 */ = {
+			isa = PBXGroup;
+			children = (
+				0E1206EB250F3DFD0071C1F9 /* CaculatingTransportationFee.swift */,
+				B6D5557B2510EE6D00439F84 /* CaculatingTransportationFeeDto.swift */,
+				0EA1C05E251194CA008560B0 /* CartAmountDto.swift */,
+			);
+			path = Exercise7;
 			sourceTree = "<group>";
 		};
 		C96892E9250A2916000FFF5F /* Exercise4 */ = {
@@ -683,6 +700,7 @@
 				177389CE25071EA2003B5CD7 /* AppViewModel.swift in Sources */,
 				177389EB25072442003B5CD7 /* MainUseCase.swift in Sources */,
 				170DCAAD250E1F2400815C14 /* Exercise1ViewModel.swift in Sources */,
+				0EA1C06125119F8F008560B0 /* Validation+Ext.swift in Sources */,
 				177389F225073B8D003B5CD7 /* ExerciseItemViewModel.swift in Sources */,
 				177389D125071EA2003B5CD7 /* UIViewController+Rx.swift in Sources */,
 				C96892F3250A2A2E000FFF5F /* Exercise4ViewModel.swift in Sources */,
@@ -694,6 +712,7 @@
 				C96892F0250A2A2E000FFF5F /* Exercise4Assembler.swift in Sources */,
 				177389CD25071EA2003B5CD7 /* AppNavigator.swift in Sources */,
 				170DCAB3250E25C600815C14 /* Double+.swift in Sources */,
+				B6D5557C2510EE6D00439F84 /* CaculatingTransportationFeeDto.swift in Sources */,
 				170DCAAB250E1F2400815C14 /* Exercise1UseCase.swift in Sources */,
 				C96892F1250A2A2E000FFF5F /* Exercise4Navigator.swift in Sources */,
 				177389CC25071EA2003B5CD7 /* AppAssembler.swift in Sources */,
@@ -708,6 +727,7 @@
 				177389C225071EA2003B5CD7 /* UnitTestViewController.swift in Sources */,
 				177389ED25072442003B5CD7 /* MainViewModel.swift in Sources */,
 				170DCAB1250E20D100815C14 /* MainAssembler.swift in Sources */,
+				0EA1C05F251194CA008560B0 /* CartAmountDto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

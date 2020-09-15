@@ -8,6 +8,8 @@
 
 @testable import UnitTestTraining
 import RxSwift
+import ValidatedPropertyKit
+import Dto
 
 final class Exercise7UseCaseMock: Exercise7UseCaseType {
     
@@ -17,18 +19,20 @@ final class Exercise7UseCaseMock: Exercise7UseCaseType {
     var isQuickDeliver = false
     var isCalculationFeeCalled = false
     
-    func calculationFee(isPremiumMember: Bool,
-                        isQuickDeliver: Bool,
-                        cartAmount: Double) -> (standardFee: Double, quickFee: Double) {
-     self.isCalculationFeeCalled = true
-     self.isQuickDeliver = isQuickDeliver
-     self.isPremiumMember = isPremiumMember
-     self.cartAmount = cartAmount
-     return fee
+    var isvalidateCardAmountCalled = false
+    var validateCartAmountSuccess = ValidationResult.success(())
+    
+    func calculationFee(dto: CaculatingTransportationFeeDto) -> (standardFee: Double, quickFee: Double) {
+        self.isCalculationFeeCalled = true
+        self.isQuickDeliver = dto.isQuickDeliver
+        self.isPremiumMember = dto.isPremiumMember
+        self.cartAmount = dto.cartAmount
+        return fee
     }
     
-    func validateCardAmount(_ amount: String) -> String {
-        return ""
+    func validateCardAmount(_ amount: String) -> ValidationResult {
+        isvalidateCardAmountCalled = true
+        return validateCartAmountSuccess
     }
     
 }

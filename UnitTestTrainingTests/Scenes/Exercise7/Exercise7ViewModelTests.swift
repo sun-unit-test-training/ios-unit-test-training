@@ -73,4 +73,11 @@ final class Exercise7ViewModelTests: XCTestCase {
         XCTAssertEqual(useCase.cartAmount, 6000.0)
     }
     
+    func test_cartAmountTrigger_validateCartAmount() {
+        // act
+        cartAmount.onNext("6000.0")
+        // assert
+        XCTAssert(useCase.isvalidateCardAmountCalled)
+    }
+    
 }

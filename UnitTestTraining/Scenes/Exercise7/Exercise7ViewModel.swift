@@ -40,6 +40,7 @@ extension Exercise7ViewModel: ViewModel {
             .asDriver()
             .map { $0 }
             .map(useCase.validateCardAmount(_:))
+            .map { $0.message }
             .drive(output.$errorMessage)
             .disposed(by: disposeBag)
         
@@ -47,14 +48,15 @@ extension Exercise7ViewModel: ViewModel {
                      input.isPremiumTrigger.mapToVoid(),
                      input.cartAmount.mapToVoid(),
                      input.isSelectQuickDeliver.mapToVoid()
-        )
+            )
             .withLatestFrom(Driver.combineLatest(isPremium, cartAmount, isQuickDeliver))
             .map { isPremium, cartAmount, isQuickDeliver -> (standardFee: Double, quickFee: Double) in
                 let amount = Double(cartAmount) ?? 0.0
-                return self.useCase.calculationFee(
-                    isPremiumMember: isPremium,
-                    isQuickDeliver: isQuickDeliver,
-                    cartAmount: amount)
+                let dto =
+                    CaculatingTransportationFeeDto(isPremiumMember: isPremium,
+                                                   isQuickDeliver: isQuickDeliver,
+                                                   cartAmount: amount)
+                return self.useCase.calculationFee(dto: dto)
             }
             .map { ($0.standardFee, $0.quickFee) }
             .drive(output.$fee)

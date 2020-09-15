@@ -6,27 +6,27 @@
 //  Copyright © 2020 Sun Asterisk. All rights reserved.
 //
 
-import Foundation
+import Dto
+import RxSwift
+import ValidatedPropertyKit
 
 protocol CaculatingTransportationFee {
     
 }
 
 extension CaculatingTransportationFee {
-    func validateCardAmount(_ amount: String) -> String {
-        let isValid = Double(amount) ?? 0
-        return isValid > 0 ? "" : "Incorrect"
+    
+    func validateCardAmount(_ amount: String) -> ValidationResult {
+        return CartAmountDto.validateCartAmount(amount).mapToVoid()
     }
     
-    func calculationFee(isPremiumMember: Bool,
-                        isQuickDeliver: Bool,
-                        cartAmount: Double) -> (standardFee: Double, quickFee: Double) {
+    func calculationFee(dto: CaculatingTransportationFeeDto) -> (standardFee: Double, quickFee: Double) {
         var standardDeliver = 500.0
         var quickDeliver = 0.0
-        if cartAmount > 5000 || isPremiumMember {
+        if dto.cartAmount > 5000 || dto.isPremiumMember {
             standardDeliver = 0.0
         }
-        if isQuickDeliver {
+        if dto.isQuickDeliver {
             quickDeliver = 500.0
         }
         return (standardDeliver, quickDeliver)
