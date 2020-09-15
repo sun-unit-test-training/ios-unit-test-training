@@ -20,7 +20,9 @@ final class CalculatingBeerPriceTests: XCTestCase, CalculatingBeerPrice {
     /// - Not in promotion time
     func test_calculateBeerPrice_usingVoucher() {
         // act
-        let result = self.calculateBeerPrice(usingVoucher: true, isInPromotionTime: false)
+        guard let purchaseTime = Date(hour: 9) else { return }
+        let dto = CalculateBeerPriceDto(usingVoucher: true, purchaseTime: purchaseTime)
+        let result = self.calculateBeerPrice(dto: dto)
         
         // assert
         XCTAssertEqual(result, 100.0)
@@ -31,7 +33,9 @@ final class CalculatingBeerPriceTests: XCTestCase, CalculatingBeerPrice {
     /// - In promotion time
     func test_calculateBeerPrice_inPromotionTime() {
         // act
-        let result = self.calculateBeerPrice(usingVoucher: false, isInPromotionTime: true)
+        guard let purchaseTime = Date(hour: 16) else { return }
+        let dto = CalculateBeerPriceDto(usingVoucher: false, purchaseTime: purchaseTime)
+        let result = self.calculateBeerPrice(dto: dto)
         
         // assert
         XCTAssertEqual(result, 290.0)
@@ -42,7 +46,9 @@ final class CalculatingBeerPriceTests: XCTestCase, CalculatingBeerPrice {
     /// - Not in promotion time
     func test_calculateBeerPrice() {
         // act
-        let result = self.calculateBeerPrice(usingVoucher: false, isInPromotionTime: false)
+        guard let purchaseTime = Date(hour: 9) else { return }
+        let dto = CalculateBeerPriceDto(usingVoucher: false, purchaseTime: purchaseTime)
+        let result = self.calculateBeerPrice(dto: dto)
         
         // assert
         XCTAssertEqual(result, 490.0)

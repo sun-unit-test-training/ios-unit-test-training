@@ -18,7 +18,7 @@ final class Exercise1ViewController: UITableViewController, Bindable {
     // MARK: - IBOutlets
     
     @IBOutlet weak var voucherSwitch: UISwitch!
-    @IBOutlet weak var promotionTimeSwitch: UISwitch!
+    @IBOutlet weak var purchaseDatePicker: UIDatePicker!
     @IBOutlet weak var priceLabel: UILabel!
     
     // MARK: - Properties
@@ -47,7 +47,7 @@ final class Exercise1ViewController: UITableViewController, Bindable {
         let input = Exercise1ViewModel.Input(
             loadTrigger: Driver.just(()),
             voucherTrigger: voucherSwitch.rx.value.changed.asDriver(),
-            promotionTimeTrigger: promotionTimeSwitch.rx.value.changed.asDriver()
+            purchaseTimeTrigger: purchaseDatePicker.rx.value.changed.asDriver()
         )
         
         let output = viewModel.transform(input, disposeBag: disposeBag)

@@ -6,6 +6,7 @@
 //  Copyright © 2020 Sun Asterisk. All rights reserved.
 //
 
+import Foundation
 import MGArchitecture
 import RxSwift
 import RxCocoa
@@ -20,7 +21,7 @@ extension Exercise1ViewModel: ViewModel {
     struct Input {
         let loadTrigger: Driver<Void>
         let voucherTrigger: Driver<Bool>
-        let promotionTimeTrigger: Driver<Bool>
+        let purchaseTimeTrigger: Driver<Date>
     }
     
     struct Output {
@@ -33,20 +34,18 @@ extension Exercise1ViewModel: ViewModel {
         let usingVoucher = input.voucherTrigger
             .startWith(false)
         
-        let isInPromotionTime = input.promotionTimeTrigger
-            .startWith(false)
+        let purchaseTime = input.purchaseTimeTrigger
+            .startWith(Date())
         
         Driver.merge(
             input.loadTrigger,
             input.voucherTrigger.mapToVoid(),
-            input.promotionTimeTrigger.mapToVoid()
+            input.purchaseTimeTrigger.mapToVoid()
         )
-        .withLatestFrom(Driver.combineLatest(usingVoucher, isInPromotionTime))
-        .map { usingVoucher, isInPromotionTime -> Double in
-            return self.useCase.calculateBeerPrice(
-                usingVoucher: usingVoucher,
-                isInPromotionTime: isInPromotionTime
-            )
+        .withLatestFrom(Driver.combineLatest(usingVoucher, purchaseTime))
+        .map { usingVoucher, purchaseTime -> Double in
+            let dto = CalculateBeerPriceDto(usingVoucher: usingVoucher, purchaseTime: purchaseTime)
+            return self.useCase.calculateBeerPrice(dto: dto)
         }
         .map { $0.japanCurrency }
         .drive(output.$price)

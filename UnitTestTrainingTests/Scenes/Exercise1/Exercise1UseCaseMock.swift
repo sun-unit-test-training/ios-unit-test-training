@@ -8,20 +8,21 @@
 
 @testable import UnitTestTraining
 import RxSwift
+import Foundation
+import Dto
 
 final class Exercise1UseCaseMock: Exercise1UseCaseType {
-    
     // MARK: - calculateBeerPrice
     
     var calculateBeerPriceCalled = false
     var calculateBeerPriceReturnValue = 490.0
     var usingVoucher = false
-    var isInPromotionTime = false
+    var purchaseTime = Date()
     
-    func calculateBeerPrice(usingVoucher: Bool, isInPromotionTime: Bool) -> Double {
+    func calculateBeerPrice(dto: CalculateBeerPriceDto) -> Double {
         calculateBeerPriceCalled = true
-        self.usingVoucher = usingVoucher
-        self.isInPromotionTime = isInPromotionTime
+        self.usingVoucher = dto.usingVoucher
+        self.purchaseTime = dto.purchaseTime
         return calculateBeerPriceReturnValue
     }
 }
