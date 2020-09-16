@@ -17,7 +17,7 @@ protocol CaculatingTransportationFee {
 extension CaculatingTransportationFee {
     
     func validateCardAmount(_ amount: String) -> ValidationResult {
-        return CartAmountDto.validateCartAmount(amount).mapToVoid()
+        return CaculatingTransportationFeeDto.validateCartAmount(amount).mapToVoid()
     }
     
     func calculationFee(dto: CaculatingTransportationFeeDto) -> (standardFee: Double, quickFee: Double) {

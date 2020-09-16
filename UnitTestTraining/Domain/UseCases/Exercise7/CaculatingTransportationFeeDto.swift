@@ -8,24 +8,25 @@
 
 import Foundation
 import Dto
+import ValidatedPropertyKit
 
 struct CaculatingTransportationFeeDto: Dto {
     
-    var isPremiumMember: Bool
-    var isQuickDeliver: Bool
-    var cartAmount: Double
+    @Validated(.isValidCartAmount(message: "Must input number"))
+    var cartAmountString: String? = ""
     
-    init(isPremiumMember: Bool, isQuickDeliver: Bool, cartAmount: Double) {
-        self.isPremiumMember = isPremiumMember
-        self.isQuickDeliver = isQuickDeliver
-        self.cartAmount = cartAmount
-    }
+    var isPremiumMember: Bool = false
+    var isQuickDeliver: Bool = false
+    var cartAmount: Double = 0.0
     
     var validatedProperties: [ValidatedProperty] {
-        return []
+        return [_cartAmountString]
     }
+    
 }
 
 extension CaculatingTransportationFeeDto {
-    
+    static func validateCartAmount(_ amount: String) -> Result<String, ValidationError> {
+        return CaculatingTransportationFeeDto()._cartAmountString.isValid(value: amount)
+    }
 }
