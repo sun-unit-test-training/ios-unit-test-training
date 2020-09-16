@@ -24,10 +24,10 @@ final class Exercise3UseCaseMock: Exercise3UseCaseType {
         return getClotherDataReturnValue
     }
     
-    var getDiscountReturnValue = "12%"
+    var getDiscountReturnValue = 0.12
     var getDiscountCalled = false
     
-    func getDiscount(clothers: [ClotherOrderItem]) -> String {
+    func getDiscount(clothers: [ClotherOrderItem]) -> Double {
         getDiscountCalled = true
         return getDiscountReturnValue
     }
@@ -37,9 +37,9 @@ final class Exercise3UseCaseMock: Exercise3UseCaseType {
     func minus(dto: CaculatingClotherDiscountDto) -> [ClotherOrderItem] {
         minusCalled = true
         return [
-            ClotherOrderItem(count: 1, type: .whiteShirt),
-            ClotherOrderItem(count: 1, type: .tie),
-            ClotherOrderItem(count: 1, type: .other)
+            ClotherOrderItem(total: 1, type: .whiteShirt),
+            ClotherOrderItem(total: 1, type: .tie),
+            ClotherOrderItem(total: 1, type: .other)
         ]
     }
     
@@ -48,9 +48,9 @@ final class Exercise3UseCaseMock: Exercise3UseCaseType {
     func add(dto: CaculatingClotherDiscountDto) -> [ClotherOrderItem] {
         addCalled = true
         return [
-            ClotherOrderItem(count: 1, type: .whiteShirt),
-            ClotherOrderItem(count: 1, type: .tie),
-            ClotherOrderItem(count: 1, type: .other)
+            ClotherOrderItem(total: 1, type: .whiteShirt),
+            ClotherOrderItem(total: 1, type: .tie),
+            ClotherOrderItem(total: 1, type: .other)
         ]
     }
 }

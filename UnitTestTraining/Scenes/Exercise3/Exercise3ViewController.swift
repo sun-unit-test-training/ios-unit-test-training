@@ -66,25 +66,25 @@ final class Exercise3ViewController: UIViewController, Bindable {
                 return tableView.dequeueReusableCell(
                     for: IndexPath(row: index, section: 0),
                     cellType: ClotherCell.self
-                    )
-                    .then {
-                        $0.bindViewModel(clother)
-                        $0.selectionStyle = .none
-                        $0.addButtonAction = { [weak self] in
-                            self?.addTrigger.onNext(IndexPath(row: index, section: 0))
-                        }
-                        
-                        $0.minusButtonAction = { [weak self] in
-                            self?.minusTrigger.onNext(IndexPath(row: index, section: 0))
-                        }
+                )
+                .then {
+                    $0.bindViewModel(clother)
+                    $0.selectionStyle = .none
+                    $0.addButtonAction = {
+                        self?.addTrigger.onNext(IndexPath(row: index, section: 0))
                     }
+                        
+                    $0.minusButtonAction = {
+                        self?.minusTrigger.onNext(IndexPath(row: index, section: 0))
+                    }
+                }
             }
             .disposed(by: disposeBag)
         
         output.$discount
             .asDriver()
-            .drive(onNext: {[unowned self] discount in
-                self.discountLabel.text = "Discount \(discount)"
+            .drive(onNext: { [unowned self] discount in
+                self.discountLabel.text = String(format: "Discount %.f%%", discount * 100)
             })
             .disposed(by: disposeBag)
     }

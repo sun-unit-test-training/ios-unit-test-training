@@ -27,12 +27,12 @@ final class ClotherCell: UITableViewCell, NibReusable {
         addButtonAction?()
     }
     
-    func bindViewModel(_ viewModel: ClotherViewModel?) {
-        countLabel.text = viewModel?.count ?? ""
-        nameLabel.text = viewModel?.type.name
+    func bindViewModel(_ viewModel: ClotherViewModel) {
+        countLabel.text = viewModel.count
+        nameLabel.text = viewModel.type.name
         minusButton.do {
-            $0.alpha = !(viewModel?.minusButtonIsEnable ?? false) ? 0.5 : 1
-            $0.isEnabled = viewModel?.minusButtonIsEnable ?? false
+            $0.alpha = !viewModel.minusButtonIsEnable ? 0.5 : 1
+            $0.isEnabled = viewModel.minusButtonIsEnable
         }
     }
 }

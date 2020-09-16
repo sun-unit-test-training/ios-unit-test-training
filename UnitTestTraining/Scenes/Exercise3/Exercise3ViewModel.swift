@@ -26,7 +26,7 @@ extension Exercise3ViewModel: ViewModel {
     }
 
     struct Output {
-        @Property var discount = ""
+        @Property var discount: Double = 0
         @Property var clotherList = [ClotherViewModel]()
     }
     
@@ -35,9 +35,7 @@ extension Exercise3ViewModel: ViewModel {
         let clotherListSubject = BehaviorRelay<[ClotherOrderItem]>(value: [])
                 
         input.loadTrigger
-            .map { _ in
-                return self.useCase.getClotherData()
-            }
+            .map { self.useCase.getClotherData() }
             .drive(clotherListSubject)
             .disposed(by: disposeBag)
         
@@ -63,13 +61,11 @@ extension Exercise3ViewModel: ViewModel {
             .drive(clotherListSubject)
             .disposed(by: disposeBag)
         
-        let getDiscount = clotherListSubject
+        clotherListSubject
             .asDriver()
             .map { subject in
                 self.useCase.getDiscount(clothers: subject)
             }
-        
-        getDiscount
             .drive(output.$discount)
             .disposed(by: disposeBag)
         

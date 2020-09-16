@@ -23,20 +23,20 @@ protocol CaculatingClotherDiscount {
 }
 
 extension CaculatingClotherDiscount {
-    func getDiscount(clothers: [ClotherOrderItem]) -> String {
+    func getDiscount(clothers: [ClotherOrderItem]) -> Double {
         let total = clothers.reduce(0, { $0 + $1.total })
         let haveWhiteShirt = (clothers.first(where: { $0.type == .whiteShirt })?.total ?? 0) > 0
         let haveTie = (clothers.first(where: { $0.type == .tie })?.total ?? 0) > 0
         
         if total >= 7 {
             if haveWhiteShirt {
-                return haveTie ? "12%" : "7%"
+                return haveTie ? 0.12 : 0.07
             }
-            return "7%"
+            return 0.07
         } else if haveWhiteShirt {
-            return haveTie ? "5%" : "0%"
+            return haveTie ? 0.05 : 0
         }
-        return "0%"
+        return 0
     }
     
     func getClotherData() -> [ClotherOrderItem] {

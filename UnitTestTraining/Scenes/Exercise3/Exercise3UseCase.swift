@@ -10,7 +10,7 @@ import RxSwift
 
 protocol Exercise3UseCaseType {
     func getClotherData() -> [ClotherOrderItem]
-    func getDiscount(clothers: [ClotherOrderItem]) -> String
+    func getDiscount(clothers: [ClotherOrderItem]) -> Double
     func minus(dto: CaculatingClotherDiscountDto) -> [ClotherOrderItem]
     func add(dto: CaculatingClotherDiscountDto) -> [ClotherOrderItem]
 }
