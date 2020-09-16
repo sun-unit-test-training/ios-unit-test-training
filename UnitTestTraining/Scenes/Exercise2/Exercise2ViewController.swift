@@ -15,7 +15,10 @@ import RxCocoa
 final class Exercise2ViewController: UIViewController, Bindable {
     
     // MARK: - IBOutlets
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var vipSwitch: UISwitch!
+    @IBOutlet weak var feeLabel: UILabel!
     @IBOutlet weak var submitButton: UIButton!
     
     // MARK: - Properties
@@ -42,7 +45,8 @@ final class Exercise2ViewController: UIViewController, Bindable {
 
     func bindViewModel() {
         let input = Exercise2ViewModel.Input(
-            isVIP: vipSwitch.rx.isOn.asDriver(),
+            isVIPTrigger: vipSwitch.rx.isOn.asDriver(),
+            dateTrigger: datePicker.rx.value.asDriver(),
             submitTrigger: submitButton.rx.tap.asDriver()
         )
         let output = viewModel.transform(input, disposeBag: disposeBag)
@@ -51,15 +55,33 @@ final class Exercise2ViewController: UIViewController, Bindable {
             .asDriver()
             .drive(fee)
             .disposed(by: disposeBag)
+        
+        output.$pickedDate
+            .asDriver()
+            .drive(pickedDate)
+            .disposed(by: disposeBag)
+    }
+    
+    private func configLabelWith(_ date: Date) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy HH:mm"
+        let selectedDate: String = dateFormatter.string(from: date)
+        dateLabel.text = selectedDate
     }
 }
 
 // MARK: - Binders
 extension Exercise2ViewController {
+    
+    var pickedDate: Binder<Date> {
+        return Binder(self) { vc, date in
+            vc.configLabelWith(date)
+        }
+    }
 
     var fee: Binder<Int> {
         return Binder(self) { vc, fee in
-            vc.showAutoCloseMessage(image: nil, title: "Charge Fee", message: "\(fee)円")
+            vc.feeLabel.text = "Fee: \(fee)円"
         }
     }
 }

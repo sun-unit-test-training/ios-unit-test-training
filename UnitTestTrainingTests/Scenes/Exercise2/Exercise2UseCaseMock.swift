@@ -13,17 +13,19 @@ import Dto
 
 final class Exercise2UseCaseMock: Exercise2UseCaseType {
     
-    var getHolidays_Called = false
-    var getHolidays_Values = [Date()]
+    var getHolidaysCalled = false
+    var getHolidaysValues = [Date()]
+    
     func getHolidays() -> [Date] {
-        getHolidays_Called = true
-        return getHolidays_Values
+        getHolidaysCalled = true
+        return getHolidaysValues
     }
     
-    var calculateFee_Called = false
-    var calculateFee_Values = 0
+    var calculateFeeCalled = false
+    var calculateFeeValues = 0
+    
     func calculateFee(dto: CalculateChargeFeeDto) -> Int {
-        calculateFee_Called = true
-        return calculateFee_Values
+        calculateFeeCalled = true
+        return calculateFeeValues
     }
 }

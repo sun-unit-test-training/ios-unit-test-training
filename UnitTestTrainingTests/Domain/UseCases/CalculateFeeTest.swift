@@ -11,7 +11,7 @@ import XCTest
 import RxSwift
 import RxCocoa
 
-class CalculateFeeTest: XCTestCase, CalculatingFee, GettingDates {
+final class CalculateFeeTest: XCTestCase, CalculatingFee, GettingDates {
     var dateGateway: DateGatewayType {
         return dateGatewayMock
     }

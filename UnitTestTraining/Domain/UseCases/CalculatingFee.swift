@@ -28,7 +28,7 @@ extension CalculatingFee {
     func calculateFee(dto: CalculateChargeFeeDto) -> Int {
         guard !dto.isVIP else { return 0 }
         
-        let calendar = Calendar.current
+        let calendar = Calendar(identifier: .gregorian)
         let currentDate = dto.date
         // 1 is Sunday and 7 is Saturday
         let currentWeekDay = calendar.component(.weekday, from: currentDate)

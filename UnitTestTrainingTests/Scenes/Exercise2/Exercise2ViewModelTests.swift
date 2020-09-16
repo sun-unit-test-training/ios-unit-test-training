@@ -22,6 +22,7 @@ final class Exercise2ViewModelTests: XCTestCase {
     private var disposeBag: DisposeBag!
     
     private let isVIPTrigger = BehaviorRelay<Bool>(value: true)
+    private let dateTrigger = BehaviorRelay<Date>(value: Date())
     private let submitTrigger = PublishSubject<Void>()
 
     override func setUp() {
@@ -34,7 +35,8 @@ final class Exercise2ViewModelTests: XCTestCase {
         viewModel = Exercise2ViewModel(navigator: navigator, useCase: useCase)
 
         input = Exercise2ViewModel.Input(
-            isVIP: isVIPTrigger.asDriver(),
+            isVIPTrigger: isVIPTrigger.asDriver(),
+            dateTrigger: dateTrigger.asDriver(),
             submitTrigger: submitTrigger.asDriverOnErrorJustComplete()
         )
         output = viewModel.transform(input, disposeBag: disposeBag)
@@ -43,12 +45,12 @@ final class Exercise2ViewModelTests: XCTestCase {
     func test_submitTriggerInvoked_loadHolidays() {
         submitTrigger.onNext(())
         
-        XCTAssert(self.useCase.getHolidays_Called)
+        XCTAssert(self.useCase.getHolidaysCalled)
     }
     
     func test_submitTriggerInvoked_celculateFee() {
         submitTrigger.onNext(())
         
-        XCTAssert(self.useCase.calculateFee_Called)
+        XCTAssert(self.useCase.calculateFeeCalled)
     }
 }
