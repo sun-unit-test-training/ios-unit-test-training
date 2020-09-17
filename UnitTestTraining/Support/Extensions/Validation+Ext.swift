@@ -9,10 +9,23 @@
 import ValidatedPropertyKit
 
 extension Validation where Value == String {
-    public static func isValidCartAmount(message: String) -> Validation {
+    public static func isNumber(message: String) -> Validation {
         return .init { value in
-            let cart = Double(value) ?? 0
-            if cart > 0 {
+            let number = Double(value) ?? 0
+            if number > 0 {
+                return .success(())
+            } else {
+                return .failure(ValidationError(message: message))
+            }
+        }
+    }
+    
+    public static func isValidAge(message: String) -> Validation {
+        return .init { value in
+            guard let age = Int(value) else {
+                return .failure(ValidationError(message: message))
+            }
+            if (0...150).contains(age) {
                 return .success(())
             } else {
                 return .failure(ValidationError(message: message))

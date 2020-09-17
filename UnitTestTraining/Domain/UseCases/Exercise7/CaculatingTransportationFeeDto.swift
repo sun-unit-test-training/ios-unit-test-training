@@ -12,7 +12,8 @@ import ValidatedPropertyKit
 
 struct CaculatingTransportationFeeDto: Dto {
     
-    @Validated(.isValidCartAmount(message: "Must input number"))
+    @Validated(.isNumber(message: "Must input number"))
+    
     var cartAmountString: String? = ""
     
     var isPremiumMember: Bool = false
