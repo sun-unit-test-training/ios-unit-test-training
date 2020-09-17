@@ -8,6 +8,7 @@
 
 protocol Assembler: class,
     Exercise1Assembler,
+    Exercise2Assembler,
     Exercise4Assembler,
     Exercise7Assembler,
     MainAssembler,

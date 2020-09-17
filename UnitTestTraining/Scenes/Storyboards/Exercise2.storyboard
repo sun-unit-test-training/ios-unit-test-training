@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exercise2 View Controller-->
+        <scene sceneID="iNl-L9-Gjf">
+            <objects>
+                <viewController storyboardIdentifier="Exercise2ViewController" id="vnf-u5-c5z" customClass="Exercise2ViewController" customModule="UnitTestTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7s4-Ow-wbW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50r-TD-exe">
+                                <rect key="frame" x="32" y="478.5" width="350" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="vtV-y6-eQ4"/>
+                                </constraints>
+                                <state key="normal" title="Rút Tiền">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="khn-vm-PG5">
+                                <rect key="frame" x="333" y="415.5" width="51" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="onTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="V.I.P" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-TN-ZOf">
+                                <rect key="frame" x="260.5" y="415.5" width="56.5" height="31"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="26"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Km6-ba-pxO">
+                                <rect key="frame" x="0.0" y="175.5" width="414" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="ABQ-9b-viN"/>
+                                </constraints>
+                                <locale key="locale" localeIdentifier="vi_VN"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rt0-Ya-f2X">
+                                <rect key="frame" x="32" y="545.5" width="350" height="284.5"/>
+                                <mutableString key="text">●Điều kiện tiên quyết：
+①：Ngày thường từ 0:00～8:44, phí là 110円/yên.
+②：Ngày thường từ 8:45～17:59, phí là 0円/yên.
+③：Ngày thường từ 18:00～23:59, phí là 110円/yên.
+④：Thứ 7, chủ nhật, ngày nghỉ lễ phí cho tất cả các khung giờ là 110円/yên.
+⑤：Khách hàng đáp ứng các tiêu chí đặc thù (khách vip) , phí là 0円/yên.
+⑥：Điều kiện được ưu tiên cao nhất là "Khách hàng đáp ứng các tiêu chí đặc thù (khách vip) , phí là 0円/yên".</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fee:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZu-wZ-GHg">
+                                <rect key="frame" x="32" y="419.5" width="212.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mQ-ue-PbI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="131.5"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Km6-ba-pxO" firstAttribute="leading" secondItem="j5l-ds-Aks" secondAttribute="leading" id="0p4-iF-To7"/>
+                            <constraint firstItem="50r-TD-exe" firstAttribute="top" secondItem="khn-vm-PG5" secondAttribute="bottom" constant="32" id="2hC-jD-hNh"/>
+                            <constraint firstItem="2mQ-ue-PbI" firstAttribute="leading" secondItem="j5l-ds-Aks" secondAttribute="leading" id="6bY-14-HyR"/>
+                            <constraint firstItem="j5l-ds-Aks" firstAttribute="trailing" secondItem="Rt0-Ya-f2X" secondAttribute="trailing" constant="32" id="BaQ-5O-eue"/>
+                            <constraint firstItem="OZu-wZ-GHg" firstAttribute="leading" secondItem="j5l-ds-Aks" secondAttribute="leading" constant="32" id="DKF-Sq-jq3"/>
+                            <constraint firstItem="j5l-ds-Aks" firstAttribute="trailing" secondItem="2mQ-ue-PbI" secondAttribute="trailing" id="ErC-u8-h9R"/>
+                            <constraint firstItem="CjM-TN-ZOf" firstAttribute="leading" secondItem="OZu-wZ-GHg" secondAttribute="trailing" constant="16" id="FWs-FR-lVw"/>
+                            <constraint firstItem="khn-vm-PG5" firstAttribute="top" secondItem="CjM-TN-ZOf" secondAttribute="top" id="J3e-X8-gt8"/>
+                            <constraint firstItem="j5l-ds-Aks" firstAttribute="trailing" secondItem="khn-vm-PG5" secondAttribute="trailing" constant="32" id="KSL-lH-H1v"/>
+                            <constraint firstItem="CjM-TN-ZOf" firstAttribute="top" secondItem="Km6-ba-pxO" secondAttribute="bottom" constant="30" id="M8C-hS-dcs"/>
+                            <constraint firstItem="2mQ-ue-PbI" firstAttribute="top" secondItem="j5l-ds-Aks" secondAttribute="top" id="Mhr-zV-emC"/>
+                            <constraint firstItem="Rt0-Ya-f2X" firstAttribute="leading" secondItem="j5l-ds-Aks" secondAttribute="leading" constant="32" id="PY6-7f-OtZ"/>
+                            <constraint firstItem="50r-TD-exe" firstAttribute="top" secondItem="CjM-TN-ZOf" secondAttribute="bottom" constant="32" id="VXW-pZ-1VN"/>
+                            <constraint firstItem="khn-vm-PG5" firstAttribute="bottom" secondItem="CjM-TN-ZOf" secondAttribute="bottom" id="YEz-Gb-TJm"/>
+                            <constraint firstItem="Km6-ba-pxO" firstAttribute="top" secondItem="2mQ-ue-PbI" secondAttribute="bottom" id="ZLu-Dk-75x"/>
+                            <constraint firstItem="khn-vm-PG5" firstAttribute="leading" secondItem="CjM-TN-ZOf" secondAttribute="trailing" constant="16" id="Zwg-BS-MNt"/>
+                            <constraint firstItem="j5l-ds-Aks" firstAttribute="bottom" secondItem="Rt0-Ya-f2X" secondAttribute="bottom" constant="32" id="ckt-XI-tXz"/>
+                            <constraint firstItem="CjM-TN-ZOf" firstAttribute="centerY" secondItem="OZu-wZ-GHg" secondAttribute="centerY" id="fKx-ft-7mj"/>
+                            <constraint firstItem="50r-TD-exe" firstAttribute="leading" secondItem="j5l-ds-Aks" secondAttribute="leading" constant="32" id="j9q-sD-3ef"/>
+                            <constraint firstItem="j5l-ds-Aks" firstAttribute="trailing" secondItem="50r-TD-exe" secondAttribute="trailing" constant="32" id="rhG-tq-G9C"/>
+                            <constraint firstItem="Km6-ba-pxO" firstAttribute="trailing" secondItem="j5l-ds-Aks" secondAttribute="trailing" id="uRm-nl-PxY"/>
+                            <constraint firstItem="Rt0-Ya-f2X" firstAttribute="top" secondItem="50r-TD-exe" secondAttribute="bottom" constant="32" id="z7D-St-tLd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j5l-ds-Aks"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="2mQ-ue-PbI" id="gwD-Ha-CGM"/>
+                        <outlet property="datePicker" destination="Km6-ba-pxO" id="fGk-4i-Hq7"/>
+                        <outlet property="feeLabel" destination="OZu-wZ-GHg" id="oYP-jH-FQt"/>
+                        <outlet property="submitButton" destination="50r-TD-exe" id="FN1-ec-opK"/>
+                        <outlet property="vipSwitch" destination="khn-vm-PG5" id="wKs-PH-DHZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iuf-JC-0cp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="153"/>
+        </scene>
+    </scenes>
+</document>
