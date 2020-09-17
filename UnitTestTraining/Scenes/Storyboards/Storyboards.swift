@@ -14,4 +14,5 @@ enum Storyboards {
     static let exercise2 = UIStoryboard(name: "Exercise2", bundle: nil)
     static let exercise4 = UIStoryboard(name: "Exercise4", bundle: nil)
     static let exercise7 = UIStoryboard(name: "Exercise7", bundle: nil)
+    static let exercise3 = UIStoryboard(name: "Exercise3", bundle: nil)
 }
