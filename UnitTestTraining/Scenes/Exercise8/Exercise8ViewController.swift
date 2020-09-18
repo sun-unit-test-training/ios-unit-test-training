@@ -45,18 +45,11 @@ final class Exercise8ViewController: UITableViewController, Bindable {
     }
 
     func bindViewModel() {
-        let genderTrigger = genderSwitch.rx.value.changed.asDriver()
         let input = Exercise8ViewModel.Input(loadTrigger: Driver.just(()),
                                              ageTrigger: ageTextField.rx.text.orEmpty.asDriver(),
-                                             isMaleTrigger: genderTrigger,
+                                             isMaleTrigger: genderSwitch.rx.value.changed.asDriver(),
                                              dateTrigger: datePicker.rx.value.changed.asDriver())
         let output = viewModel.transform(input, disposeBag: disposeBag)
-        
-        genderTrigger.asObservable()
-            .subscribe(onNext: { [weak self] bool in
-                self?.genderLabel.text = !bool ? "Nữ" : "Nam"
-            })
-            .disposed(by: disposeBag)
         
         output.$errorMessage
             .asDriver()
@@ -67,6 +60,11 @@ final class Exercise8ViewController: UITableViewController, Bindable {
             .asDriver()
             .map { $0.japanCurrency }
             .drive(feeLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        output.$genderString
+            .asDriver()
+            .drive(genderLabel.rx.text)
             .disposed(by: disposeBag)
     }
 }

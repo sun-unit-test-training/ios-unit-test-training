@@ -22,10 +22,11 @@ extension Validation where Value == String {
     
     public static func isValidAge(message: String) -> Validation {
         return .init { value in
+            print("value: \(value)")
             guard let age = Int(value) else {
                 return .failure(ValidationError(message: message))
             }
-            if (0...150).contains(age) {
+            if (0...120).contains(age) {
                 return .success(())
             } else {
                 return .failure(ValidationError(message: message))

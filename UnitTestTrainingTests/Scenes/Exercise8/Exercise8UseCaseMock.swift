@@ -15,7 +15,7 @@ final class Exercise8UseCaseMock: Exercise8UseCaseType {
     
     var fee = 0.0
     var isMale = false
-    var age = "0"
+    var age = 0
     var date = Date()
     
     var isValidateAgeCalled = false
@@ -29,7 +29,7 @@ final class Exercise8UseCaseMock: Exercise8UseCaseType {
     
     func calculatePlayFee(dto: CalculateBadmintonFeeDto) -> Double {
         isCalculatePlayFeeCalled = true
-        self.age = dto.age ?? "0"
+        self.age = dto.age
         self.isMale = dto.isMale
         self.date = dto.playDate
         return fee

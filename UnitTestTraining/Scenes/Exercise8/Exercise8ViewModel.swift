@@ -29,34 +29,45 @@ extension Exercise8ViewModel: ViewModel {
     struct Output {
         @Property var errorMessage = ""
         @Property var fee = 0.0
+        @Property var genderString = "Nữ"
     }
 
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
         let output = Output()
-        let ageTrigger = input.ageTrigger.startWith("")
-        let isMaleTrigger = input.isMaleTrigger.startWith(false)
-        let dateTrigger = input.dateTrigger.startWith(Date())
+        let age = input.ageTrigger.startWith("")
+        let isMale = input.isMaleTrigger.startWith(false)
+        let date = input.dateTrigger.startWith(Date())
         
         input.ageTrigger.asDriver()
-            .map { $0 }
             .map(useCase.validateAge(_:))
             .map { $0.message }
             .drive(output.$errorMessage)
             .disposed(by: disposeBag)
         
-        Driver.merge(input.loadTrigger,
-                     input.ageTrigger.mapToVoid(),
-                     input.isMaleTrigger.mapToVoid(),
-                     input.dateTrigger.mapToVoid()
+        input.isMaleTrigger
+        .asDriver()
+        .map { (isMale) -> String in
+            return !isMale ? "Nữ" : "Nam"
+        }
+        .drive(output.$genderString)
+        .disposed(by: disposeBag)
+        
+        Driver.merge(
+            input.loadTrigger,
+            input.ageTrigger.mapToVoid(),
+            input.isMaleTrigger.mapToVoid(),
+            input.dateTrigger.mapToVoid()
         )
-            .withLatestFrom(Driver.combineLatest(ageTrigger, isMaleTrigger, dateTrigger))
-            .map { (age, isMale, date) -> Double in
-                let dto = CalculateBadmintonFeeDto(isMale: isMale, playDate: date, age: age)
-                return self.useCase.calculatePlayFee(dto: dto)
-            }
-            .map { ($0) }
-            .drive(output.$fee)
-            .disposed(by: disposeBag)
+        .withLatestFrom(Driver.combineLatest(age, isMale, date))
+        .map { (age, isMale, date) -> Double in
+            let age = Int(age) ?? 0
+            let dto = CalculateBadmintonFeeDto(isMale: isMale, playDate: date, age: age)
+            return self.useCase.calculatePlayFee(dto: dto)
+        }
+        .map { ($0) }
+        .drive(output.$fee)
+        .disposed(by: disposeBag)
+        
         return output
     }
     

@@ -10,6 +10,7 @@ import Foundation
 extension String {
     func toDate() -> Date {
         let formatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .gregorian)
         formatter.dateFormat = "yyyy/MM/dd"
         formatter.timeZone = TimeZone(secondsFromGMT: 7)
         return formatter.date(from: self) ?? Date()

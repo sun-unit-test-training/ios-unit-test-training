@@ -23,7 +23,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
         let dto = CaculatingTransportationFeeDto(isPremiumMember: true, isQuickDeliver: true, cartAmount: 6000.0)
         let result = self.calculationFee(dto: dto)
         XCTAssertEqual(result.standardFee, 0.0)
-        XCTAssertEqual(result.quickFee, 500.0)
+        XCTAssertEqual(result.quickFee, 0.0)
     }
     
     /// Test case 2
@@ -71,7 +71,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
         let dto = CaculatingTransportationFeeDto(isPremiumMember: false, isQuickDeliver: true, cartAmount: 7000.0)
         let result = self.calculationFee(dto: dto)
         XCTAssertEqual(result.standardFee, 0.0)
-        XCTAssertEqual(result.quickFee, 500.0)
+        XCTAssertEqual(result.quickFee, 0.0)
     }
     
     /// Test case 6

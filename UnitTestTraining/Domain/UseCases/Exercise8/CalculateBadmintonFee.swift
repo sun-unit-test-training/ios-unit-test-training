@@ -20,10 +20,9 @@ extension CalculateBadmintonFee {
     }
     
     func calculatePlayFee(dto: CalculateBadmintonFeeDto) -> Double {
-        guard let ageString = dto.age,
-            let age = Double(ageString),
-            (0...120).contains(age) else { return 0.0 }
-        if age < 13 {
+        guard dto.validationError == nil else { return 0.0 }
+        
+        if dto.age < 13 {
             return 1800.0 / 2
         }
         
@@ -35,7 +34,7 @@ extension CalculateBadmintonFee {
             return 1400.0
         }
         
-        if age > 65 {
+        if dto.age > 65 {
             return 1600.0
         }
         

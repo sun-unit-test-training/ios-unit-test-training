@@ -11,21 +11,30 @@ import Dto
 import ValidatedPropertyKit
 
 struct CalculateBadmintonFeeDto: Dto {
+    
+    // swiftlint:disable:next
+    @Validated(.isValidAge(message: "Độ tuổi từ 0 - 120 tuổi"))
+    var ageString: String? = ""
+    
     var isMale = false
     var playDate = Date()
-    
-    @Validated(.isValidAge(message: "Độ tuổi từ 0 - 120 tuổi"))
-    
-    var age: String? = ""
-    
+    var age = 0
+
     var validatedProperties: [ValidatedProperty] {
-        return [_age]
+        return [_ageString]
     }
-    
 }
 
 extension CalculateBadmintonFeeDto {
-    static func validateAge(_ age: String) -> Result<String, ValidationError> {
-        return CalculateBadmintonFeeDto()._age.isValid(value: age)
+    
+    init(isMale: Bool, playDate: Date, age: Int) {
+        self.isMale = isMale
+        self.playDate = playDate
+        self.age = age
+        self.ageString = String(describing: age)
+    }
+    
+    static func validateAge(_ ageString: String) -> Result<String, ValidationError> {
+        return CalculateBadmintonFeeDto()._ageString.isValid(value: ageString)
     }
 }

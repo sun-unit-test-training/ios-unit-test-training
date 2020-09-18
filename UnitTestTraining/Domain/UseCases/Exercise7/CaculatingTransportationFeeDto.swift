@@ -11,9 +11,8 @@ import Dto
 import ValidatedPropertyKit
 
 struct CaculatingTransportationFeeDto: Dto {
-    
+    // swiftlint:disable:next
     @Validated(.isNumber(message: "Must input number"))
-    
     var cartAmountString: String? = ""
     
     var isPremiumMember: Bool = false
