@@ -24,7 +24,7 @@ extension Date {
         case none = 0
         case sunday
         case monday
-        case tuseday
+        case tuesday
         case wednesday
         case thursday
         case friday

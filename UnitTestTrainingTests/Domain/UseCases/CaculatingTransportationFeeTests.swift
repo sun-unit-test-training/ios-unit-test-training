@@ -110,4 +110,15 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
         XCTAssertEqual(result.quickFee, 0.0)
     }
     
+    /// Test case 9
+    /// - Thành viên premium - N
+    /// - Mua hàng trên 5,000円/yên - Y
+    /// - Giao hàng siêu tốc - Y
+    
+    func testCase9_calculationFee() {
+        let dto = CaculatingTransportationFeeDto(isPremiumMember: false, isQuickDeliver: true, cartAmount: 5000.0)
+        let result = self.calculationFee(dto: dto)
+        XCTAssertEqual(result.standardFee, 0.0)
+        XCTAssertEqual(result.quickFee, 500.0)
+    }
 }

@@ -18,7 +18,21 @@
 		0E1206EA250F295A0071C1F9 /* Exercise7.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1206E9250F295A0071C1F9 /* Exercise7.storyboard */; };
 		0E1206ED250F3E2B0071C1F9 /* CaculatingTransportationFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206EB250F3DFD0071C1F9 /* CaculatingTransportationFee.swift */; };
 		0E1206EF250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1206EE250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift */; };
+		0E4C36112512E0ED006A2047 /* Exercise8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C360C2512E0EC006A2047 /* Exercise8ViewController.swift */; };
+		0E4C36122512E0ED006A2047 /* Exercise8UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C360D2512E0EC006A2047 /* Exercise8UseCase.swift */; };
+		0E4C36132512E0ED006A2047 /* Exercise8ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C360E2512E0EC006A2047 /* Exercise8ViewModel.swift */; };
+		0E4C36142512E0ED006A2047 /* Exercise8Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C360F2512E0ED006A2047 /* Exercise8Navigator.swift */; };
+		0E4C36152512E0ED006A2047 /* Exercise8Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C36102512E0ED006A2047 /* Exercise8Assembler.swift */; };
+		0E4C361B2512E10B006A2047 /* Exercise8ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C36172512E10B006A2047 /* Exercise8ViewControllerTests.swift */; };
+		0E4C361C2512E10B006A2047 /* Exercise8ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C36182512E10B006A2047 /* Exercise8ViewModelTests.swift */; };
+		0E4C361D2512E10B006A2047 /* Exercise8NavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C36192512E10B006A2047 /* Exercise8NavigatorMock.swift */; };
+		0E4C361E2512E10B006A2047 /* Exercise8UseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C361A2512E10B006A2047 /* Exercise8UseCaseMock.swift */; };
+		0E4C36202512E1CE006A2047 /* Exercise8.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4C361F2512E1CE006A2047 /* Exercise8.storyboard */; };
+		0E4C36232512E7BD006A2047 /* CalculateBadmintonFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C36222512E7BD006A2047 /* CalculateBadmintonFee.swift */; };
+		0E4C36252512E7C6006A2047 /* CalculateBadmintonFeeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C36242512E7C6006A2047 /* CalculateBadmintonFeeDto.swift */; };
 		0EA1C06125119F8F008560B0 /* Validation+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA1C06025119F8F008560B0 /* Validation+Ext.swift */; };
+		0EE3245125133D5F00AB95E2 /* CalculateBadmintonFeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3245025133D5F00AB95E2 /* CalculateBadmintonFeeTests.swift */; };
+		0EE324532513401500AB95E2 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE324522513401500AB95E2 /* String+Ext.swift */; };
 		0EEF3257251041D6001F2987 /* Exercise7UseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF3256251041D6001F2987 /* Exercise7UseCaseMock.swift */; };
 		170DCAA9250E1F2400815C14 /* Exercise1Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA4250E1F2400815C14 /* Exercise1Assembler.swift */; };
 		170DCAAA250E1F2400815C14 /* Exercise1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA5250E1F2400815C14 /* Exercise1Navigator.swift */; };
@@ -143,7 +157,21 @@
 		0E1206E9250F295A0071C1F9 /* Exercise7.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise7.storyboard; sourceTree = "<group>"; };
 		0E1206EB250F3DFD0071C1F9 /* CaculatingTransportationFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculatingTransportationFee.swift; sourceTree = "<group>"; };
 		0E1206EE250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculatingTransportationFeeTests.swift; sourceTree = "<group>"; };
+		0E4C360C2512E0EC006A2047 /* Exercise8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise8ViewController.swift; sourceTree = "<group>"; };
+		0E4C360D2512E0EC006A2047 /* Exercise8UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise8UseCase.swift; sourceTree = "<group>"; };
+		0E4C360E2512E0EC006A2047 /* Exercise8ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise8ViewModel.swift; sourceTree = "<group>"; };
+		0E4C360F2512E0ED006A2047 /* Exercise8Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise8Navigator.swift; sourceTree = "<group>"; };
+		0E4C36102512E0ED006A2047 /* Exercise8Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise8Assembler.swift; sourceTree = "<group>"; };
+		0E4C36172512E10B006A2047 /* Exercise8ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise8ViewControllerTests.swift; sourceTree = "<group>"; };
+		0E4C36182512E10B006A2047 /* Exercise8ViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise8ViewModelTests.swift; sourceTree = "<group>"; };
+		0E4C36192512E10B006A2047 /* Exercise8NavigatorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise8NavigatorMock.swift; sourceTree = "<group>"; };
+		0E4C361A2512E10B006A2047 /* Exercise8UseCaseMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise8UseCaseMock.swift; sourceTree = "<group>"; };
+		0E4C361F2512E1CE006A2047 /* Exercise8.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise8.storyboard; sourceTree = "<group>"; };
+		0E4C36222512E7BD006A2047 /* CalculateBadmintonFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBadmintonFee.swift; sourceTree = "<group>"; };
+		0E4C36242512E7C6006A2047 /* CalculateBadmintonFeeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBadmintonFeeDto.swift; sourceTree = "<group>"; };
 		0EA1C06025119F8F008560B0 /* Validation+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validation+Ext.swift"; sourceTree = "<group>"; };
+		0EE3245025133D5F00AB95E2 /* CalculateBadmintonFeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBadmintonFeeTests.swift; sourceTree = "<group>"; };
+		0EE324522513401500AB95E2 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		0EEF3256251041D6001F2987 /* Exercise7UseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise7UseCaseMock.swift; sourceTree = "<group>"; };
 		170DCAA4250E1F2400815C14 /* Exercise1Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1Assembler.swift; sourceTree = "<group>"; };
 		170DCAA5250E1F2400815C14 /* Exercise1Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1Navigator.swift; sourceTree = "<group>"; };
@@ -292,6 +320,38 @@
 			path = Exercise7;
 			sourceTree = "<group>";
 		};
+		0E4C360B2512E0E1006A2047 /* Exercise8 */ = {
+			isa = PBXGroup;
+			children = (
+				0E4C36102512E0ED006A2047 /* Exercise8Assembler.swift */,
+				0E4C360F2512E0ED006A2047 /* Exercise8Navigator.swift */,
+				0E4C360D2512E0EC006A2047 /* Exercise8UseCase.swift */,
+				0E4C360C2512E0EC006A2047 /* Exercise8ViewController.swift */,
+				0E4C360E2512E0EC006A2047 /* Exercise8ViewModel.swift */,
+			);
+			path = Exercise8;
+			sourceTree = "<group>";
+		};
+		0E4C36162512E0FF006A2047 /* Exercise8 */ = {
+			isa = PBXGroup;
+			children = (
+				0E4C36192512E10B006A2047 /* Exercise8NavigatorMock.swift */,
+				0E4C361A2512E10B006A2047 /* Exercise8UseCaseMock.swift */,
+				0E4C36172512E10B006A2047 /* Exercise8ViewControllerTests.swift */,
+				0E4C36182512E10B006A2047 /* Exercise8ViewModelTests.swift */,
+			);
+			path = Exercise8;
+			sourceTree = "<group>";
+		};
+		0E4C36212512E780006A2047 /* Exercise8 */ = {
+			isa = PBXGroup;
+			children = (
+				0E4C36222512E7BD006A2047 /* CalculateBadmintonFee.swift */,
+				0E4C36242512E7C6006A2047 /* CalculateBadmintonFeeDto.swift */,
+			);
+			path = Exercise8;
+			sourceTree = "<group>";
+		};
 		170DCAA3250E1F1400815C14 /* Exercise1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +378,7 @@
 		1712847B250C6D3900A95A97 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0E4C36162512E0FF006A2047 /* Exercise8 */,
 				0E1206C1250F28CF0071C1F9 /* Exercise7 */,
 				716A53772511C7740034DC60 /* Exercise2 */,
 				170DCAB6250E28BB00815C14 /* Exercise1 */,
@@ -358,6 +419,7 @@
 				0E1206EE250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift */,
 				716A53802511E6FC0034DC60 /* CalculateFeeTest.swift */,
 				52C5417A250F290F0092CA4A /* CaculatingClotherDiscountTest.swift */,
+				0EE3245025133D5F00AB95E2 /* CalculateBadmintonFeeTests.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -449,6 +511,7 @@
 		177389A525071EA2003B5CD7 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				0E4C36212512E780006A2047 /* Exercise8 */,
 				B6D5557A2510EE5000439F84 /* Exercise7 */,
 				C98D573E250F1197005BCB35 /* GetDateColorDto.swift */,
 				C98D573F250F1197005BCB35 /* GettingDates.swift */,
@@ -497,6 +560,7 @@
 		177389B525071EA2003B5CD7 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0E4C360B2512E0E1006A2047 /* Exercise8 */,
 				0E1206D6250F29190071C1F9 /* Exercise7 */,
 				716A53662511A79E0034DC60 /* Exercise2 */,
 				170DCAA3250E1F1400815C14 /* Exercise1 */,
@@ -519,6 +583,7 @@
 				177389B725071EA2003B5CD7 /* Storyboards.swift */,
 				0E1206E9250F295A0071C1F9 /* Exercise7.storyboard */,
 				5297A251250B2ED0002745A9 /* Exercise3.storyboard */,
+				0E4C361F2512E1CE006A2047 /* Exercise8.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -551,6 +616,7 @@
 				170DCAB2250E25C600815C14 /* Double+.swift */,
 				C9689306250B6666000FFF5F /* Date+.swift */,
 				0EA1C06025119F8F008560B0 /* Validation+Ext.swift */,
+				0EE324522513401500AB95E2 /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -754,6 +820,7 @@
 				177389F625073BA3003B5CD7 /* ExerciseCell.xib in Resources */,
 				5297A252250B2ED0002745A9 /* Exercise3.storyboard in Resources */,
 				1773898B25071D8E003B5CD7 /* Assets.xcassets in Resources */,
+				0E4C36202512E1CE006A2047 /* Exercise8.storyboard in Resources */,
 				170DCAAF250E1F5800815C14 /* Exercise1.storyboard in Resources */,
 				0E1206EA250F295A0071C1F9 /* Exercise7.storyboard in Resources */,
 				1773898925071D8D003B5CD7 /* Main.storyboard in Resources */,
@@ -799,6 +866,7 @@
 			files = (
 				C9689307250B6666000FFF5F /* Date+.swift in Sources */,
 				C9689301250B3FBC000FFF5F /* DateGateway.swift in Sources */,
+				0E4C36142512E0ED006A2047 /* Exercise8Navigator.swift in Sources */,
 				177389EC25072442003B5CD7 /* MainViewController.swift in Sources */,
 				5297A24C250B27A1002745A9 /* Exercise3ViewController.swift in Sources */,
 				5297A24E250B27A1002745A9 /* Exercise3Navigator.swift in Sources */,
@@ -809,10 +877,12 @@
 				170DCAB5250E287500815C14 /* CalculatingBeerPrice.swift in Sources */,
 				0E1206DC250F29190071C1F9 /* Exercise7ViewModel.swift in Sources */,
 				5297A256250E648F002745A9 /* ClotherCell.swift in Sources */,
+				0E4C36232512E7BD006A2047 /* CalculateBadmintonFee.swift in Sources */,
 				177389F525073BA3003B5CD7 /* ExerciseCell.swift in Sources */,
 				716A536E2511A7AE0034DC60 /* Exercise2Navigator.swift in Sources */,
 				170DCAA9250E1F2400815C14 /* Exercise1Assembler.swift in Sources */,
 				177389CF25071EA2003B5CD7 /* AppUseCase.swift in Sources */,
+				0E4C36112512E0ED006A2047 /* Exercise8ViewController.swift in Sources */,
 				17128489250C6EC900A95A97 /* GettingExercises.swift in Sources */,
 				52C54179250F0EB40092CA4A /* CaculatingClotherDiscount.swift in Sources */,
 				170DCAAA250E1F2400815C14 /* Exercise1Navigator.swift in Sources */,
@@ -823,6 +893,7 @@
 				0E1206DE250F29190071C1F9 /* Exercise7Navigator.swift in Sources */,
 				177389CE25071EA2003B5CD7 /* AppViewModel.swift in Sources */,
 				177389EB25072442003B5CD7 /* MainUseCase.swift in Sources */,
+				0E4C36252512E7C6006A2047 /* CalculateBadmintonFeeDto.swift in Sources */,
 				170DCAAD250E1F2400815C14 /* Exercise1ViewModel.swift in Sources */,
 				0EA1C06125119F8F008560B0 /* Validation+Ext.swift in Sources */,
 				5297A24D250B27A1002745A9 /* Exercise3ViewModel.swift in Sources */,
@@ -832,10 +903,14 @@
 				C96892F3250A2A2E000FFF5F /* Exercise4ViewModel.swift in Sources */,
 				0E1206DD250F29190071C1F9 /* Exercise7ViewController.swift in Sources */,
 				177389CA25071EA2003B5CD7 /* AppDelegate.swift in Sources */,
+				0E4C36122512E0ED006A2047 /* Exercise8UseCase.swift in Sources */,
 				177389D225071EA2003B5CD7 /* Utils.swift in Sources */,
 				C98D5741250F1197005BCB35 /* GettingDates.swift in Sources */,
 				177389EA25072442003B5CD7 /* MainNavigator.swift in Sources */,
+				0E4C36152512E0ED006A2047 /* Exercise8Assembler.swift in Sources */,
 				C96892F0250A2A2E000FFF5F /* Exercise4Assembler.swift in Sources */,
+				0E4C36132512E0ED006A2047 /* Exercise8ViewModel.swift in Sources */,
+				0EE324532513401500AB95E2 /* String+Ext.swift in Sources */,
 				177389CD25071EA2003B5CD7 /* AppNavigator.swift in Sources */,
 				177389CC25071EA2003B5CD7 /* AppAssembler.swift in Sources */,
 				5297A25B250E7943002745A9 /* ClotherOrderItem.swift in Sources */,
@@ -877,6 +952,9 @@
 				17128481250C6D5200A95A97 /* MainViewControllerTests.swift in Sources */,
 				716A537C2511C7880034DC60 /* Exercise2ViewModelTests.swift in Sources */,
 				17128495250C755900A95A97 /* ExerciseCellTests.swift in Sources */,
+				0E4C361D2512E10B006A2047 /* Exercise8NavigatorMock.swift in Sources */,
+				0E4C361E2512E10B006A2047 /* Exercise8UseCaseMock.swift in Sources */,
+				0E4C361B2512E10B006A2047 /* Exercise8ViewControllerTests.swift in Sources */,
 				1712849E250C75E300A95A97 /* AppUseCaseMock.swift in Sources */,
 				0EEF3257251041D6001F2987 /* Exercise7UseCaseMock.swift in Sources */,
 				0E1206EF250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift in Sources */,
@@ -892,7 +970,9 @@
 				170DCABE250E28CD00815C14 /* Exercise1UseCaseMock.swift in Sources */,
 				C98D5747250F17C9005BCB35 /* DateGatewayMock.swift in Sources */,
 				716A53812511E6FC0034DC60 /* CalculateFeeTest.swift in Sources */,
+				0EE3245125133D5F00AB95E2 /* CalculateBadmintonFeeTests.swift in Sources */,
 				C96892FA250A2A71000FFF5F /* Exercise4NavigatorMock.swift in Sources */,
+				0E4C361C2512E10B006A2047 /* Exercise8ViewModelTests.swift in Sources */,
 				C968930D250B74DC000FFF5F /* GettingDatesTests.swift in Sources */,
 				C96892FB250A2A71000FFF5F /* Exercise4ViewModelTests.swift in Sources */,
 				C96892F9250A2A71000FFF5F /* Exercise4UseCaseMock.swift in Sources */,
