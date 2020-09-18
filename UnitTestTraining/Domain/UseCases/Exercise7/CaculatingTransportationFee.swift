@@ -23,18 +23,11 @@ extension CaculatingTransportationFee {
     func calculationFee(dto: CaculatingTransportationFeeDto) -> (standardFee: Double, quickFee: Double) {
         var standardDeliver = 500.0
         var quickDeliver = 0.0
-        
-        if dto.isPremiumMember {
+        if dto.cartAmount >= 5000 || dto.isPremiumMember {
             standardDeliver = 0.0
         }
-        
         if dto.isQuickDeliver {
             quickDeliver = 500.0
-        }
-        
-        if dto.cartAmount > 5000 {
-            standardDeliver = 0.0
-            quickDeliver = 0.0
         }
         return (standardDeliver, quickDeliver)
     }

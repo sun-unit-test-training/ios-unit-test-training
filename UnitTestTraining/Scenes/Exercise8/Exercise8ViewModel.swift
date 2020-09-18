@@ -45,12 +45,12 @@ extension Exercise8ViewModel: ViewModel {
             .disposed(by: disposeBag)
         
         input.isMaleTrigger
-        .asDriver()
-        .map { (isMale) -> String in
-            return !isMale ? "Nữ" : "Nam"
-        }
-        .drive(output.$genderString)
-        .disposed(by: disposeBag)
+            .asDriver()
+            .map { (isMale) -> String in
+                return !isMale ? "Nữ" : "Nam"
+            }
+            .drive(output.$genderString)
+            .disposed(by: disposeBag)
         
         Driver.merge(
             input.loadTrigger,
