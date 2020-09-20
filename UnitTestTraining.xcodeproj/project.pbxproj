@@ -104,6 +104,13 @@
 		5297A264250EC6DB002745A9 /* Exercise3ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297A260250EC6DB002745A9 /* Exercise3ViewModelTests.swift */; };
 		52C54179250F0EB40092CA4A /* CaculatingClotherDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C54178250F0EB40092CA4A /* CaculatingClotherDiscount.swift */; };
 		52C5417B250F290F0092CA4A /* CaculatingClotherDiscountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5417A250F290F0092CA4A /* CaculatingClotherDiscountTest.swift */; };
+		619C0CC32513152200A9457A /* Exercise5Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C0CC22513152200A9457A /* Exercise5Assembler.swift */; };
+		619C0CC52513152C00A9457A /* Exercise5Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C0CC42513152C00A9457A /* Exercise5Navigator.swift */; };
+		619C0CC72513153700A9457A /* Exercise5UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C0CC62513153700A9457A /* Exercise5UseCase.swift */; };
+		619C0CC92513154600A9457A /* Exercise5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C0CC82513154600A9457A /* Exercise5ViewController.swift */; };
+		619C0CCB2513154E00A9457A /* Exercise5ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C0CCA2513154E00A9457A /* Exercise5ViewModel.swift */; };
+		619C0CCD251333C800A9457A /* Exercise5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619C0CCC251333C800A9457A /* Exercise5.storyboard */; };
+		619C0CD02513642900A9457A /* CalculatePizzaFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C0CCF2513642900A9457A /* CalculatePizzaFee.swift */; };
 		716A53652511A5DA0034DC60 /* Exercise2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A53642511A5DA0034DC60 /* Exercise2.storyboard */; };
 		716A536C2511A7AE0034DC60 /* Exercise2UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716A53672511A7AE0034DC60 /* Exercise2UseCase.swift */; };
 		716A536D2511A7AE0034DC60 /* Exercise2Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716A53682511A7AE0034DC60 /* Exercise2Assembler.swift */; };
@@ -255,6 +262,13 @@
 		5297A260250EC6DB002745A9 /* Exercise3ViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise3ViewModelTests.swift; sourceTree = "<group>"; };
 		52C54178250F0EB40092CA4A /* CaculatingClotherDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculatingClotherDiscount.swift; sourceTree = "<group>"; };
 		52C5417A250F290F0092CA4A /* CaculatingClotherDiscountTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculatingClotherDiscountTest.swift; sourceTree = "<group>"; };
+		619C0CC22513152200A9457A /* Exercise5Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise5Assembler.swift; sourceTree = "<group>"; };
+		619C0CC42513152C00A9457A /* Exercise5Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise5Navigator.swift; sourceTree = "<group>"; };
+		619C0CC62513153700A9457A /* Exercise5UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise5UseCase.swift; sourceTree = "<group>"; };
+		619C0CC82513154600A9457A /* Exercise5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise5ViewController.swift; sourceTree = "<group>"; };
+		619C0CCA2513154E00A9457A /* Exercise5ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise5ViewModel.swift; sourceTree = "<group>"; };
+		619C0CCC251333C800A9457A /* Exercise5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise5.storyboard; sourceTree = "<group>"; };
+		619C0CCF2513642900A9457A /* CalculatePizzaFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePizzaFee.swift; sourceTree = "<group>"; };
 		716A53642511A5DA0034DC60 /* Exercise2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise2.storyboard; sourceTree = "<group>"; };
 		716A53672511A7AE0034DC60 /* Exercise2UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise2UseCase.swift; sourceTree = "<group>"; };
 		716A53682511A7AE0034DC60 /* Exercise2Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise2Assembler.swift; sourceTree = "<group>"; };
@@ -538,6 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				0E4C36212512E780006A2047 /* Exercise8 */,
+				619C0CCE251363E600A9457A /* Exercise5 */,
 				B6D5557A2510EE5000439F84 /* Exercise7 */,
 				C98D573E250F1197005BCB35 /* GetDateColorDto.swift */,
 				C98D573F250F1197005BCB35 /* GettingDates.swift */,
@@ -589,6 +604,7 @@
 			children = (
 				9C90E27A25148AD600EFE188 /* Exercise6 */,
 				0E4C360B2512E0E1006A2047 /* Exercise8 */,
+				619C0CC1251314F700A9457A /* Exercise5 */,
 				0E1206D6250F29190071C1F9 /* Exercise7 */,
 				716A53662511A79E0034DC60 /* Exercise2 */,
 				170DCAA3250E1F1400815C14 /* Exercise1 */,
@@ -613,6 +629,7 @@
 				0E1206E9250F295A0071C1F9 /* Exercise7.storyboard */,
 				5297A251250B2ED0002745A9 /* Exercise3.storyboard */,
 				0E4C361F2512E1CE006A2047 /* Exercise8.storyboard */,
+				619C0CCC251333C800A9457A /* Exercise5.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -689,6 +706,26 @@
 				5297A260250EC6DB002745A9 /* Exercise3ViewModelTests.swift */,
 			);
 			path = Exercise3;
+            sourceTree = "<group>";
+        };
+		619C0CC1251314F700A9457A /* Exercise5 */ = {
+			isa = PBXGroup;
+			children = (
+				619C0CC22513152200A9457A /* Exercise5Assembler.swift */,
+				619C0CC42513152C00A9457A /* Exercise5Navigator.swift */,
+				619C0CC62513153700A9457A /* Exercise5UseCase.swift */,
+				619C0CC82513154600A9457A /* Exercise5ViewController.swift */,
+				619C0CCA2513154E00A9457A /* Exercise5ViewModel.swift */,
+			);
+			path = Exercise5;
+			sourceTree = "<group>";
+		};
+		619C0CCE251363E600A9457A /* Exercise5 */ = {
+			isa = PBXGroup;
+			children = (
+				619C0CCF2513642900A9457A /* CalculatePizzaFee.swift */,
+			);
+			path = Exercise5;
 			sourceTree = "<group>";
 		};
 		716A53662511A79E0034DC60 /* Exercise2 */ = {
@@ -878,6 +915,7 @@
 				0E1206EA250F295A0071C1F9 /* Exercise7.storyboard in Resources */,
 				1773898925071D8D003B5CD7 /* Main.storyboard in Resources */,
 				C96892FE250A334D000FFF5F /* Exercise4.storyboard in Resources */,
+				619C0CCD251333C800A9457A /* Exercise5.storyboard in Resources */,
 				716A53652511A5DA0034DC60 /* Exercise2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -953,6 +991,7 @@
 				170DCAAD250E1F2400815C14 /* Exercise1ViewModel.swift in Sources */,
 				0EA1C06125119F8F008560B0 /* Validation+Ext.swift in Sources */,
 				5297A24D250B27A1002745A9 /* Exercise3ViewModel.swift in Sources */,
+				619C0CC32513152200A9457A /* Exercise5Assembler.swift in Sources */,
 				177389F225073B8D003B5CD7 /* ExerciseItemViewModel.swift in Sources */,
 				5297A24F250B27A1002745A9 /* Exercise3UseCase.swift in Sources */,
 				177389D125071EA2003B5CD7 /* UIViewController+Rx.swift in Sources */,
@@ -960,6 +999,7 @@
 				0E1206DD250F29190071C1F9 /* Exercise7ViewController.swift in Sources */,
 				177389CA25071EA2003B5CD7 /* AppDelegate.swift in Sources */,
 				0E4C36122512E0ED006A2047 /* Exercise8UseCase.swift in Sources */,
+				619C0CC92513154600A9457A /* Exercise5ViewController.swift in Sources */,
 				177389D225071EA2003B5CD7 /* Utils.swift in Sources */,
 				C98D5741250F1197005BCB35 /* GettingDates.swift in Sources */,
 				177389EA25072442003B5CD7 /* MainNavigator.swift in Sources */,
@@ -971,12 +1011,16 @@
 				177389CC25071EA2003B5CD7 /* AppAssembler.swift in Sources */,
 				5297A25B250E7943002745A9 /* ClotherOrderItem.swift in Sources */,
 				177389CB25071EA2003B5CD7 /* Storyboards.swift in Sources */,
+				619C0CC72513153700A9457A /* Exercise5UseCase.swift in Sources */,
+				619C0CCB2513154E00A9457A /* Exercise5ViewModel.swift in Sources */,
 				170DCAB3250E25C600815C14 /* Double+.swift in Sources */,
 				B6D5557C2510EE6D00439F84 /* CaculatingTransportationFeeDto.swift in Sources */,
+				619C0CC52513152C00A9457A /* Exercise5Navigator.swift in Sources */,
 				716A536D2511A7AE0034DC60 /* Exercise2Assembler.swift in Sources */,
 				716A53722511AE650034DC60 /* CalculatingFee.swift in Sources */,
 				9C90E28325148AD600EFE188 /* Exersice6ViewModel.swift in Sources */,
 				170DCAAB250E1F2400815C14 /* Exercise1UseCase.swift in Sources */,
+				619C0CD02513642900A9457A /* CalculatePizzaFee.swift in Sources */,
 				C96892F1250A2A2E000FFF5F /* Exercise4Navigator.swift in Sources */,
 				177389CC25071EA2003B5CD7 /* AppAssembler.swift in Sources */,
 				177389CB25071EA2003B5CD7 /* Storyboards.swift in Sources */,
@@ -1203,7 +1247,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitTestTraining/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1224,7 +1268,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitTestTraining/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

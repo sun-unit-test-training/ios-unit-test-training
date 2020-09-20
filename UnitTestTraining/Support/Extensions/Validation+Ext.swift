@@ -33,4 +33,11 @@ extension Validation where Value == String {
             }
         }
     }
+    
+    public static func isValidPizzaPrice(message: String) -> Validation {
+        return .init { value in
+            let price = Double(value) ?? 0
+            return price > 0 ? .success(()) : .failure(ValidationError(message: message))
+        }
+    }
 }
