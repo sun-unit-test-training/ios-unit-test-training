@@ -11,6 +11,7 @@ import Dto
 import ValidatedPropertyKit
 
 struct CalculatePizzaFeeDto: Dto {
+    // swiftlint:disable:next
     @Validated(.isNumber(message: "Giá thành phải lớn hơn 0"))
     var priceString: String? = ""
     
@@ -51,7 +52,7 @@ extension CalculatePizzaFee {
             promotions.append(.freeOnMonday)
         } else if dto.usingCoupon && dto.receiveMethod == .deliver {
             promotions.append(.discount20Percent)
-            price = price * 0.8
+            price *= 0.8
         }
         
         return CalculatePizzaFeeResult(fee: price, promotions: promotions)
