@@ -54,7 +54,10 @@ struct MainNavigator: MainNavigatorType {
     }
     
     func toExercise5() {
-        print(#function)
+        let nav = UINavigationController()
+        let vc: Exercise5ViewController = assembler.resolve(navigationController: navigationController)
+        nav.viewControllers = [vc]
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func toExercise6() {
