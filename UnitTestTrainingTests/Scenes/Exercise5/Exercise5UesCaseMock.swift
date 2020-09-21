@@ -33,5 +33,4 @@ final class Exercise5UseCaseMock: Exercise5UseCaseType {
         return validationResult
     }
     
-    
 }
