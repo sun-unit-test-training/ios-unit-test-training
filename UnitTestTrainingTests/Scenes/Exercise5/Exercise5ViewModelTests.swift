@@ -41,12 +41,18 @@ final class Exercise5ViewModelTests: XCTestCase {
     }
     
     func test_validationInvoked_onType() {
+        // act
         priceTrigger.onNext("1500")
+        
+        // assert
         XCTAssert(useCase.validationIsCalled)
     }
     
     func test_intoMoneyTriggerInvoked_onClick() {
+        // act
         intoMoneyTrigger.onNext(())
+        
+        // assert
         XCTAssert(useCase.calculateFeeIsCalled)
     }
 }

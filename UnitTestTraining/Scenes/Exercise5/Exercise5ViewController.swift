@@ -12,7 +12,7 @@ import MGArchitecture
 import RxCocoa
 import RxSwift
 
-class Exercise5ViewController: UIViewController, Bindable {
+final class Exercise5ViewController: UIViewController, Bindable {
     
     // MARK: - IBOutlets
     
@@ -26,7 +26,7 @@ class Exercise5ViewController: UIViewController, Bindable {
     @IBOutlet weak var discountButton: UIButton!
     @IBOutlet weak var potatoPromotionButton: UIButton!
     @IBOutlet weak var freeMondayPromotionButton: UIButton!
-    @IBOutlet weak var errorMessage: UILabel!
+    @IBOutlet weak var errorMessageLabel: UILabel!
     
     // MARK: - Properties
     
@@ -82,20 +82,20 @@ extension Exercise5ViewController {
     
     var inputPriceErrorMessage: Binder<String> {
         return Binder(self) { vc, errorMessage in
-            vc.errorMessage.isHidden = errorMessage.isEmpty
-            vc.errorMessage.text = errorMessage
+            vc.errorMessageLabel.isHidden = errorMessage.isEmpty
+            vc.errorMessageLabel.text = errorMessage
         }
     }
     
-    var fee: Binder<(fee: Double, promotions: [PromotionType])> {
-        return Binder(self) { vc, fee in
-            let hasPotatoPromotion = fee.promotions.contains(.freePotato)
-            let hasMondayPromotion = fee.promotions.contains(.freeOnMonday)
-            vc.discountButton.isHidden = !fee.promotions.contains(.discount20Percent)
+    var fee: Binder<CalculatePizzaFeeResult> {
+        return Binder(self) { vc, result in
+            let hasPotatoPromotion = result.promotions.contains(.freePotato)
+            let hasMondayPromotion = result.promotions.contains(.freeOnMonday)
+            vc.discountButton.isHidden = !result.promotions.contains(.discount20Percent)
             vc.potatoPromotionButton.isHidden = !hasPotatoPromotion
             vc.freeMondayPromotionButton.isHidden = !hasMondayPromotion
-            vc.promotionView.isHidden = !hasPotatoPromotion && !hasPotatoPromotion
-            vc.intoMoneyValueLabel.text = "\(fee.fee) 円"
+            vc.promotionView.isHidden = !hasPotatoPromotion && !hasMondayPromotion
+            vc.intoMoneyValueLabel.text = "\(result.fee) 円"
         }
     }
 }

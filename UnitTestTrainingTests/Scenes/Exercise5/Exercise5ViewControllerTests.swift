@@ -31,6 +31,6 @@ final class Exercise5ViewControllerTests: XCTestCase {
         XCTAssertNotNil(viewController.discountButton)
         XCTAssertNotNil(viewController.potatoPromotionButton)
         XCTAssertNotNil(viewController.freeMondayPromotionButton)
-        XCTAssertNotNil(viewController.errorMessage)
+        XCTAssertNotNil(viewController.errorMessageLabel)
     }
 }

@@ -116,6 +116,7 @@
 		619D1377251757B70001FF53 /* Exercise5UesCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D1376251757B70001FF53 /* Exercise5UesCaseMock.swift */; };
 		619D137925175A9B0001FF53 /* Exercise5ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D137825175A9B0001FF53 /* Exercise5ViewControllerTests.swift */; };
 		619D137B25175C550001FF53 /* Exercise5ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D137A25175C550001FF53 /* Exercise5ViewModelTests.swift */; };
+		619D137D25184A640001FF53 /* PizzaBillElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D137C25184A640001FF53 /* PizzaBillElement.swift */; };
 		716A53652511A5DA0034DC60 /* Exercise2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A53642511A5DA0034DC60 /* Exercise2.storyboard */; };
 		716A536C2511A7AE0034DC60 /* Exercise2UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716A53672511A7AE0034DC60 /* Exercise2UseCase.swift */; };
 		716A536D2511A7AE0034DC60 /* Exercise2Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716A53682511A7AE0034DC60 /* Exercise2Assembler.swift */; };
@@ -279,6 +280,7 @@
 		619D1376251757B70001FF53 /* Exercise5UesCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise5UesCaseMock.swift; sourceTree = "<group>"; };
 		619D137825175A9B0001FF53 /* Exercise5ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise5ViewControllerTests.swift; sourceTree = "<group>"; };
 		619D137A25175C550001FF53 /* Exercise5ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise5ViewModelTests.swift; sourceTree = "<group>"; };
+		619D137C25184A640001FF53 /* PizzaBillElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaBillElement.swift; sourceTree = "<group>"; };
 		716A53642511A5DA0034DC60 /* Exercise2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise2.storyboard; sourceTree = "<group>"; };
 		716A53672511A7AE0034DC60 /* Exercise2UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise2UseCase.swift; sourceTree = "<group>"; };
 		716A53682511A7AE0034DC60 /* Exercise2Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise2Assembler.swift; sourceTree = "<group>"; };
@@ -582,6 +584,7 @@
 			children = (
 				17128485250C6E9D00A95A97 /* Exercise.swift */,
 				5297A25A250E7943002745A9 /* ClotherOrderItem.swift */,
+				619D137C25184A640001FF53 /* PizzaBillElement.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -1002,6 +1005,7 @@
 				0E4C36112512E0ED006A2047 /* Exercise8ViewController.swift in Sources */,
 				17128489250C6EC900A95A97 /* GettingExercises.swift in Sources */,
 				52C54179250F0EB40092CA4A /* CaculatingClotherDiscount.swift in Sources */,
+				619D137D25184A640001FF53 /* PizzaBillElement.swift in Sources */,
 				170DCAAA250E1F2400815C14 /* Exercise1Navigator.swift in Sources */,
 				170DCAAC250E1F2400815C14 /* Exercise1ViewController.swift in Sources */,
 				716A536F2511A7AE0034DC60 /* Exercise2ViewModel.swift in Sources */,

@@ -10,18 +10,6 @@ import RxSwift
 import RxCocoa
 import MGArchitecture
 
-enum ReceiveMethod: Int {
-    case deliver
-    case takeAway
-}
-
-enum PromotionType {
-    case discount20Percent
-    case freePotato
-    case freeOnMonday
-    case none
-}
-
 struct Exercise5ViewModel {
     let navigator: Exercise5NavigatorType
     let useCase: Exercise5UseCaseType
@@ -41,7 +29,7 @@ extension Exercise5ViewModel: ViewModel {
     struct Output {
         @Property var isHiddenUsingCoupon = false
         @Property var errorMessage = ""
-        @Property var fee: (fee: Double, promotions: [PromotionType]) = (fee: 0, promotions: [])
+        @Property var fee = CalculatePizzaFeeResult(fee: 0.0, promotions: [])
     }
     
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
@@ -65,7 +53,7 @@ extension Exercise5ViewModel: ViewModel {
         
         input.intoMoneyTrigger
             .withLatestFrom(Driver.combineLatest(price, receiveMethod, usingCoupon))
-            .map { price, receiveMethod, usingCoupon -> (fee: Double, promotions: [PromotionType]) in
+            .map { price, receiveMethod, usingCoupon -> CalculatePizzaFeeResult in
                 let dto = CalculatePizzaFeeDto(priceString: price,
                                                receiveMethod: receiveMethod,
                                                usingCoupon: usingCoupon)

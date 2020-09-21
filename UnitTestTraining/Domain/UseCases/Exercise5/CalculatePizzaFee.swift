@@ -11,8 +11,9 @@ import Dto
 import ValidatedPropertyKit
 
 struct CalculatePizzaFeeDto: Dto {
-    @Validated(.isValidPizzaPrice(message: "Giá thành phải lớn hơn 0"))
+    @Validated(.isNumber(message: "Giá thành phải lớn hơn 0"))
     var priceString: String? = ""
+    
     var receiveMethod: ReceiveMethod = .deliver
     var usingCoupon: Bool = false
     
@@ -36,24 +37,23 @@ extension CalculatePizzaFee {
         return CalculatePizzaFeeDto.validatePizzaPrice(price).mapToVoid()
     }
     
-    func calculateFee(dto: CalculatePizzaFeeDto) -> (fee: Double, promotions: [PromotionType]) {
+    func calculateFee(dto: CalculatePizzaFeeDto) -> CalculatePizzaFeeResult {
         var promotions: [PromotionType] = []
-        guard var price = Double(dto.priceString ?? "") else {
-            return (fee: 0, promotions: [])
+        guard var price = Double(dto.priceString ?? ""), dto.validationError == nil else {
+            return CalculatePizzaFeeResult(fee: 0.0, promotions: [])
         }
         
         if price > 1500 {
             promotions.append(.freePotato)
         }
+        
         if dto.receiveMethod == .takeAway {
             promotions.append(.freeOnMonday)
-        } else {
-            if dto.usingCoupon {
-                promotions.append(.discount20Percent)
-                price = price * 0.8
-            }
+        } else if dto.usingCoupon && dto.receiveMethod == .deliver {
+            promotions.append(.discount20Percent)
+            price = price * 0.8
         }
         
-        return (fee: price, promotions: promotions)
+        return CalculatePizzaFeeResult(fee: price, promotions: promotions)
     }
 }

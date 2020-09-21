@@ -11,7 +11,7 @@ import Dto
 import ValidatedPropertyKit
 
 protocol Exercise5UseCaseType {
-    func calculateFee(dto: CalculatePizzaFeeDto) -> (fee: Double, promotions: [PromotionType])
+    func calculateFee(dto: CalculatePizzaFeeDto) -> CalculatePizzaFeeResult
     func validatePizzaPrice(_ price: String) -> ValidationResult
 }
 
