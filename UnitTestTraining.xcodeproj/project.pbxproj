@@ -117,6 +117,15 @@
 		619D137925175A9B0001FF53 /* Exercise5ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D137825175A9B0001FF53 /* Exercise5ViewControllerTests.swift */; };
 		619D137B25175C550001FF53 /* Exercise5ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D137A25175C550001FF53 /* Exercise5ViewModelTests.swift */; };
 		619D137D25184A640001FF53 /* PizzaBillElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D137C25184A640001FF53 /* PizzaBillElement.swift */; };
+		61E202A2251B3A9C00995E27 /* CalculateRestaurantPromotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E202A1251B3A9C00995E27 /* CalculateRestaurantPromotion.swift */; };
+		61E202A4251B3BA700995E27 /* RestaurantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E202A3251B3BA700995E27 /* RestaurantInfo.swift */; };
+		61E202B2251B437600995E27 /* Exercise10Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E202B1251B437600995E27 /* Exercise10Assembler.swift */; };
+		61E202B4251B437D00995E27 /* Exercise10Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E202B3251B437D00995E27 /* Exercise10Navigator.swift */; };
+		61E202B6251B438A00995E27 /* Exercise10UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E202B5251B438A00995E27 /* Exercise10UseCase.swift */; };
+		61E202B8251B439400995E27 /* Exercise10ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E202B7251B439400995E27 /* Exercise10ViewModel.swift */; };
+		61E202BA251B439D00995E27 /* Exercise10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E202B9251B439D00995E27 /* Exercise10ViewController.swift */; };
+		61E202BE251C20F300995E27 /* Exercise10.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E202BD251C20F300995E27 /* Exercise10.storyboard */; };
+		61E202C0251CBD2200995E27 /* CalculateRestaurantPromotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E202BF251CBD2200995E27 /* CalculateRestaurantPromotionTests.swift */; };
 		716A53652511A5DA0034DC60 /* Exercise2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A53642511A5DA0034DC60 /* Exercise2.storyboard */; };
 		716A536C2511A7AE0034DC60 /* Exercise2UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716A53672511A7AE0034DC60 /* Exercise2UseCase.swift */; };
 		716A536D2511A7AE0034DC60 /* Exercise2Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716A53682511A7AE0034DC60 /* Exercise2Assembler.swift */; };
@@ -281,6 +290,15 @@
 		619D137825175A9B0001FF53 /* Exercise5ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise5ViewControllerTests.swift; sourceTree = "<group>"; };
 		619D137A25175C550001FF53 /* Exercise5ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise5ViewModelTests.swift; sourceTree = "<group>"; };
 		619D137C25184A640001FF53 /* PizzaBillElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaBillElement.swift; sourceTree = "<group>"; };
+		61E202A1251B3A9C00995E27 /* CalculateRestaurantPromotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateRestaurantPromotion.swift; sourceTree = "<group>"; };
+		61E202A3251B3BA700995E27 /* RestaurantInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfo.swift; sourceTree = "<group>"; };
+		61E202B1251B437600995E27 /* Exercise10Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise10Assembler.swift; sourceTree = "<group>"; };
+		61E202B3251B437D00995E27 /* Exercise10Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise10Navigator.swift; sourceTree = "<group>"; };
+		61E202B5251B438A00995E27 /* Exercise10UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise10UseCase.swift; sourceTree = "<group>"; };
+		61E202B7251B439400995E27 /* Exercise10ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise10ViewModel.swift; sourceTree = "<group>"; };
+		61E202B9251B439D00995E27 /* Exercise10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise10ViewController.swift; sourceTree = "<group>"; };
+		61E202BD251C20F300995E27 /* Exercise10.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise10.storyboard; sourceTree = "<group>"; };
+		61E202BF251CBD2200995E27 /* CalculateRestaurantPromotionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateRestaurantPromotionTests.swift; sourceTree = "<group>"; };
 		716A53642511A5DA0034DC60 /* Exercise2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise2.storyboard; sourceTree = "<group>"; };
 		716A53672511A7AE0034DC60 /* Exercise2UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise2UseCase.swift; sourceTree = "<group>"; };
 		716A53682511A7AE0034DC60 /* Exercise2Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise2Assembler.swift; sourceTree = "<group>"; };
@@ -474,6 +492,7 @@
 				0EE3245025133D5F00AB95E2 /* CalculateBadmintonFeeTests.swift */,
 				9C90E29225148C5F00EFE188 /* CalculateFreeMinutes.swift */,
 				619D1371251751F40001FF53 /* CalculatePizzaFeeTest.swift */,
+				61E202BF251CBD2200995E27 /* CalculateRestaurantPromotionTests.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -565,6 +584,7 @@
 		177389A525071EA2003B5CD7 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				61E202A0251B3A6100995E27 /* Exercise10 */,
 				0E4C36212512E780006A2047 /* Exercise8 */,
 				619C0CCE251363E600A9457A /* Exercise5 */,
 				B6D5557A2510EE5000439F84 /* Exercise7 */,
@@ -585,6 +605,7 @@
 				17128485250C6E9D00A95A97 /* Exercise.swift */,
 				5297A25A250E7943002745A9 /* ClotherOrderItem.swift */,
 				619D137C25184A640001FF53 /* PizzaBillElement.swift */,
+				61E202A3251B3BA700995E27 /* RestaurantInfo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -617,6 +638,7 @@
 		177389B525071EA2003B5CD7 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				61E202B0251B436B00995E27 /* Exercise10 */,
 				9C90E27A25148AD600EFE188 /* Exercise6 */,
 				0E4C360B2512E0E1006A2047 /* Exercise8 */,
 				619C0CC1251314F700A9457A /* Exercise5 */,
@@ -645,6 +667,7 @@
 				5297A251250B2ED0002745A9 /* Exercise3.storyboard */,
 				0E4C361F2512E1CE006A2047 /* Exercise8.storyboard */,
 				619C0CCC251333C800A9457A /* Exercise5.storyboard */,
+				61E202BD251C20F300995E27 /* Exercise10.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -752,6 +775,26 @@
 				619D137A25175C550001FF53 /* Exercise5ViewModelTests.swift */,
 			);
 			path = Exercise5;
+			sourceTree = "<group>";
+		};
+		61E202A0251B3A6100995E27 /* Exercise10 */ = {
+			isa = PBXGroup;
+			children = (
+				61E202A1251B3A9C00995E27 /* CalculateRestaurantPromotion.swift */,
+			);
+			path = Exercise10;
+			sourceTree = "<group>";
+		};
+		61E202B0251B436B00995E27 /* Exercise10 */ = {
+			isa = PBXGroup;
+			children = (
+				61E202B1251B437600995E27 /* Exercise10Assembler.swift */,
+				61E202B3251B437D00995E27 /* Exercise10Navigator.swift */,
+				61E202B5251B438A00995E27 /* Exercise10UseCase.swift */,
+				61E202B7251B439400995E27 /* Exercise10ViewModel.swift */,
+				61E202B9251B439D00995E27 /* Exercise10ViewController.swift */,
+			);
+			path = Exercise10;
 			sourceTree = "<group>";
 		};
 		716A53662511A79E0034DC60 /* Exercise2 */ = {
@@ -931,6 +974,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1773898E25071D8E003B5CD7 /* LaunchScreen.storyboard in Resources */,
+				61E202BE251C20F300995E27 /* Exercise10.storyboard in Resources */,
 				9C90E29125148B7300EFE188 /* Exercise6.storyboard in Resources */,
 				5297A257250E6490002745A9 /* ClotherCell.xib in Resources */,
 				177389F625073BA3003B5CD7 /* ExerciseCell.xib in Resources */,
@@ -1011,6 +1055,7 @@
 				716A536F2511A7AE0034DC60 /* Exercise2ViewModel.swift in Sources */,
 				1712848B250C6EFD00A95A97 /* ExerciseGateway.swift in Sources */,
 				17128486250C6E9D00A95A97 /* Exercise.swift in Sources */,
+				61E202B2251B437600995E27 /* Exercise10Assembler.swift in Sources */,
 				0E1206DE250F29190071C1F9 /* Exercise7Navigator.swift in Sources */,
 				177389CE25071EA2003B5CD7 /* AppViewModel.swift in Sources */,
 				177389EB25072442003B5CD7 /* MainUseCase.swift in Sources */,
@@ -1041,19 +1086,24 @@
 				619C0CC72513153700A9457A /* Exercise5UseCase.swift in Sources */,
 				619C0CCB2513154E00A9457A /* Exercise5ViewModel.swift in Sources */,
 				170DCAB3250E25C600815C14 /* Double+.swift in Sources */,
+				61E202B8251B439400995E27 /* Exercise10ViewModel.swift in Sources */,
 				B6D5557C2510EE6D00439F84 /* CaculatingTransportationFeeDto.swift in Sources */,
 				619C0CC52513152C00A9457A /* Exercise5Navigator.swift in Sources */,
 				716A536D2511A7AE0034DC60 /* Exercise2Assembler.swift in Sources */,
+				61E202B4251B437D00995E27 /* Exercise10Navigator.swift in Sources */,
 				716A53722511AE650034DC60 /* CalculatingFee.swift in Sources */,
 				9C90E28325148AD600EFE188 /* Exersice6ViewModel.swift in Sources */,
 				170DCAAB250E1F2400815C14 /* Exercise1UseCase.swift in Sources */,
+				61E202BA251B439D00995E27 /* Exercise10ViewController.swift in Sources */,
 				619C0CD02513642900A9457A /* CalculatePizzaFee.swift in Sources */,
 				C96892F1250A2A2E000FFF5F /* Exercise4Navigator.swift in Sources */,
 				177389CC25071EA2003B5CD7 /* AppAssembler.swift in Sources */,
 				177389CB25071EA2003B5CD7 /* Storyboards.swift in Sources */,
 				C96892EF250A2A2E000FFF5F /* Exercise4UseCase.swift in Sources */,
+				61E202B6251B438A00995E27 /* Exercise10UseCase.swift in Sources */,
 				716A536C2511A7AE0034DC60 /* Exercise2UseCase.swift in Sources */,
 				C96892F2250A2A2E000FFF5F /* Exercise4ViewController.swift in Sources */,
+				61E202A2251B3A9C00995E27 /* CalculateRestaurantPromotion.swift in Sources */,
 				C98D5740250F1197005BCB35 /* GetDateColorDto.swift in Sources */,
 				9C90E28025148AD600EFE188 /* Exersice6Assembler.swift in Sources */,
 				0E1206ED250F3E2B0071C1F9 /* CaculatingTransportationFee.swift in Sources */,
@@ -1062,6 +1112,7 @@
 				0E1206DF250F29190071C1F9 /* Exercise7Assembler.swift in Sources */,
 				716A53702511A7AE0034DC60 /* Exercise2ViewController.swift in Sources */,
 				177389C225071EA2003B5CD7 /* UnitTestViewController.swift in Sources */,
+				61E202A4251B3BA700995E27 /* RestaurantInfo.swift in Sources */,
 				177389ED25072442003B5CD7 /* MainViewModel.swift in Sources */,
 				170DCAB1250E20D100815C14 /* MainAssembler.swift in Sources */,
 				9C90E28225148AD600EFE188 /* Exercise6ViewController.swift in Sources */,
@@ -1091,6 +1142,7 @@
 				619D137925175A9B0001FF53 /* Exercise5ViewControllerTests.swift in Sources */,
 				619D1372251751F40001FF53 /* CalculatePizzaFeeTest.swift in Sources */,
 				619D137B25175C550001FF53 /* Exercise5ViewModelTests.swift in Sources */,
+				61E202C0251CBD2200995E27 /* CalculateRestaurantPromotionTests.swift in Sources */,
 				0E1206EF250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift in Sources */,
 				716A537D2511C7880034DC60 /* Exercise2NavigatorMock.swift in Sources */,
 				9C90E28E25148B3C00EFE188 /* Exercise6ViewModelTests.swift in Sources */,
