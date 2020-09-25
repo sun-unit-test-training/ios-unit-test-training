@@ -33,7 +33,7 @@ extension Exercise10ViewModel: ViewModel {
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
         let output = Output()
         let memberRank = input.memberRankTrigger.map { MemberRank(rawValue: $0) ?? .silver }.startWith(.silver)
-        let prepaidType = input.prepaidTypeTrigger.map { PrepaidCardType(segmentIndex: $0) }.startWith(.value3000)
+        let prepaidType = input.prepaidTypeTrigger.map { PrepaidCardType(index: $0) }.startWith(.value3000)
         let participateLottery = input.participateLotteryTrigger.startWith(false)
         
         Driver.merge(input.loadTrigger,
@@ -48,8 +48,8 @@ extension Exercise10ViewModel: ViewModel {
                                                           participateLottery: participateLottery)
                 return self.useCase.calculateRestaurantPromotion(dto: dto)
             }
-        .drive(output.$restaurantPromotion)
-        .disposed(by: disposeBag)
+            .drive(output.$restaurantPromotion)
+            .disposed(by: disposeBag)
         
         prepaidType
             .map { $0 == .value3000 }

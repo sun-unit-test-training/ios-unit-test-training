@@ -19,8 +19,8 @@ enum PrepaidCardType: Int {
     case value5000 = 5000
     case value10000 = 10000
     
-    init(segmentIndex: Int) {
-        self = segmentIndex == 0 ? .value3000 : segmentIndex == 1 ? .value5000 : .value10000
+    init(index: Int) {
+        self = (index == 0) ? .value3000 : (index == 1 ? .value5000 : .value10000)
     }
 }
 

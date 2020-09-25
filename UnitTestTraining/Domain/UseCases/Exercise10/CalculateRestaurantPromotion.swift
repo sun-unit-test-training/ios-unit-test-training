@@ -27,15 +27,16 @@ protocol CalculateRestaurantPromotion {
 extension CalculateRestaurantPromotion {
     func calculateRestaurantPromotion(dto: CalculateRestaurantPromotionDto) -> RestaurantPromotion {
         let haveChance = dto.prepaidPaymentLimit >= 5000
+        
         switch dto.memberRank {
         case .silver:
-            let bonus = dto.prepaidPaymentLimit <= 3000 ? 1 : dto.prepaidPaymentLimit <= 5000 ? 2 : 4
+            let bonus = (dto.prepaidPaymentLimit <= 3000) ? 1 : (dto.prepaidPaymentLimit <= 5000 ? 2 : 4)
             return RestaurantPromotion(discount: bonus, haveCoupon: dto.participateLottery && haveChance)
         case .gold:
-            let bonus = dto.prepaidPaymentLimit <= 3000 ? 3 : dto.prepaidPaymentLimit <= 5000 ? 5 : 10
+            let bonus = (dto.prepaidPaymentLimit <= 3000) ? 3 : (dto.prepaidPaymentLimit <= 5000 ? 5 : 10)
             return RestaurantPromotion(discount: bonus, haveCoupon: dto.participateLottery && haveChance)
         case .black:
-            let bonus = dto.prepaidPaymentLimit <= 3000 ? 5 : dto.prepaidPaymentLimit <= 5000 ? 7 : 15
+            let bonus = (dto.prepaidPaymentLimit <= 3000) ? 5 : (dto.prepaidPaymentLimit <= 5000 ? 7 : 15)
             return RestaurantPromotion(discount: bonus, haveCoupon: dto.participateLottery && haveChance)
         }
     }
