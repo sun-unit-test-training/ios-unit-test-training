@@ -12,7 +12,6 @@ import RxSwift
 import RxCocoa
 
 final class Exercise9ViewModelTests: XCTestCase {
-
     private var viewModel: Exercise9ViewModel!
     private var navigator: Exercise9NavigatorMock!
     private var useCase: Exercise9UseCaseMock!

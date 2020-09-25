@@ -10,7 +10,6 @@ import XCTest
 @testable import UnitTestTraining
 
 final class CalculatingHanoiQuestResultTests: XCTestCase, CalculatingHanoiQuestResult {
-
     override func setUp() {
         super.setUp()
     }

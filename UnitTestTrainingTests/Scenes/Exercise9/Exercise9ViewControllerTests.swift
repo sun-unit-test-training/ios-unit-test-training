@@ -12,7 +12,6 @@ import UIKit
 import Reusable
 
 final class Exercise9ViewControllerTests: XCTestCase {
-
     var viewController: Exercise9ViewController!
 
     override func setUp() {

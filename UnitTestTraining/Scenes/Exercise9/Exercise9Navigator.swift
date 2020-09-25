@@ -12,7 +12,6 @@ protocol Exercise9NavigatorType {
 }
 
 struct Exercise9Navigator: Exercise9NavigatorType {
-
     unowned let assembler: Assembler
     unowned let navigationController: UINavigationController
 }

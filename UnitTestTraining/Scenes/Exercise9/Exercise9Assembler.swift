@@ -9,7 +9,6 @@
 import UIKit
 
 protocol Exercise9Assembler {
-
     func resolve(navigationController: UINavigationController) -> Exercise9ViewController
     func resolve(navigationController: UINavigationController) -> Exercise9ViewModel
     func resolve(navigationController: UINavigationController) -> Exercise9NavigatorType
@@ -17,7 +16,6 @@ protocol Exercise9Assembler {
 }
 
 extension Exercise9Assembler {
-
     func resolve(navigationController: UINavigationController) -> Exercise9ViewController {
         let vc = Exercise9ViewController.instantiate()
         let vm: Exercise9ViewModel = resolve(navigationController: navigationController)
@@ -34,7 +32,6 @@ extension Exercise9Assembler {
 }
 
 extension Exercise1Assembler where Self: DefaultAssembler {
-
     func resolve(navigationController: UINavigationController) -> Exercise9NavigatorType {
         return Exercise9Navigator(assembler: self, navigationController: navigationController)
     }

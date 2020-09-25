@@ -9,7 +9,6 @@
 import Foundation
 
 protocol Exercise9UseCaseType {
-
     func calculateHanoiQuestResult(dto: CalculatingHanoiQuestResultDto) -> HanoiQuestResult
 }
 

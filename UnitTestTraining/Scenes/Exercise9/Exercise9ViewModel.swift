@@ -12,15 +12,12 @@ import RxSwift
 import RxCocoa
 
 struct Exercise9ViewModel {
-
     let navigator: Exercise9NavigatorType
     let useCase: Exercise9UseCaseType
 }
 
 extension Exercise9ViewModel: ViewModel {
-
     struct Input {
-
         let magicWandSelectionTrigger: Driver<Bool>
         let strategistSelectionTrigger: Driver<Bool>
         let darknessKeySelectionTrigger: Driver<Bool>
@@ -29,7 +26,6 @@ extension Exercise9ViewModel: ViewModel {
     }
 
     struct Output {
-
         @Property var gameResult: HanoiQuestResult = .roomNotFound
     }
 
@@ -39,7 +35,7 @@ extension Exercise9ViewModel: ViewModel {
         let bringStrategist = input.strategistSelectionTrigger.startWith(false)
         let bringDarknessKey = input.darknessKeySelectionTrigger.startWith(false)
         let bringLightSword = input.lightSwordSelectionTrigger.startWith(false)
-
+        
         input.hitBigBossTrigger.withLatestFrom(
             Driver.combineLatest(bringMagicWand, bringStrategist, bringDarknessKey, bringLightSword)
         ).map { inputValues -> HanoiQuestResult in

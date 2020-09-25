@@ -70,6 +70,5 @@ extension Exercise9ViewController {
 // MARK: - StoryboardSceneBased
 
 extension Exercise9ViewController: StoryboardSceneBased {
-
     static var sceneStoryboard = Storyboards.exercise9
 }
