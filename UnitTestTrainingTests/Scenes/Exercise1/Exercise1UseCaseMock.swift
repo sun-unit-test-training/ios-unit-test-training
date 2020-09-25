@@ -19,7 +19,7 @@ final class Exercise1UseCaseMock: Exercise1UseCaseType {
     var usingVoucher = false
     var purchaseTime = Date()
     
-    func calculateBeerPrice(dto: CalculateBeerPriceDto) -> Double {
+    func calculateBeerPrice(dto: BeerOrderDto) -> Double {
         calculateBeerPriceCalled = true
         self.usingVoucher = dto.usingVoucher
         self.purchaseTime = dto.purchaseTime

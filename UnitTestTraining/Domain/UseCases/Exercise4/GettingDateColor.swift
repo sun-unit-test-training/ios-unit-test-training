@@ -1,5 +1,5 @@
 //
-//  GettingDates.swift
+//  GettingDateColor.swift
 //  UnitTestTraining
 //
 //  Created by vu.thanh.long on 9/11/20.
@@ -9,24 +9,28 @@
 import Foundation
 import RxSwift
 import UIKit
+import Dto
 
-protocol GettingDates {
-    var dateGateway: DateGatewayType { get }
+struct GetDateColorDto: Dto {
+    var date: Date
+    var holidays: [Date]
 }
 
-extension GettingDates {
-    func getHolidays() -> [Date] {
-        dateGateway.getHolidays()
-    }
+protocol GettingDateColor {
     
+}
+
+extension GettingDateColor {
     func getDateColor(dto: GetDateColorDto) -> UIColor {
         var dayColor = UIColor.black
         let isHoliday = !dto.holidays.filter { dto.date.isSameDay(with: $0 ) }.isEmpty
+        
         if isHoliday || dto.date.dayInWeek() == .sunday {
             dayColor = .red
         } else if dto.date.dayInWeek() == .saturday {
             dayColor = .blue
         }
+        
         return dayColor
     }
 }

@@ -43,9 +43,9 @@ extension Exercise10ViewModel: ViewModel {
             )
             .withLatestFrom(Driver.combineLatest(memberRank, prepaidType, participateLottery))
             .map { (memberRank, prepaidType, participateLottery) -> RestaurantPromotion in
-                let dto = CalculateRestaurantPromotionDto(memberRank: memberRank,
-                                                          prepaidPaymentLimit: prepaidType.rawValue,
-                                                          participateLottery: participateLottery)
+                let dto = RestaurantPromotionDto(memberRank: memberRank,
+                                                 prepaidPaymentLimit: prepaidType.rawValue,
+                                                 participateLottery: participateLottery)
                 return self.useCase.calculateRestaurantPromotion(dto: dto)
             }
             .drive(output.$restaurantPromotion)

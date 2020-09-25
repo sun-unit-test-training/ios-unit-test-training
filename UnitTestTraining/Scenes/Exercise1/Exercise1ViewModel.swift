@@ -44,7 +44,7 @@ extension Exercise1ViewModel: ViewModel {
         )
         .withLatestFrom(Driver.combineLatest(usingVoucher, purchaseTime))
         .map { usingVoucher, purchaseTime -> Double in
-            let dto = CalculateBeerPriceDto(usingVoucher: usingVoucher, purchaseTime: purchaseTime)
+            let dto = BeerOrderDto(usingVoucher: usingVoucher, purchaseTime: purchaseTime)
             return self.useCase.calculateBeerPrice(dto: dto)
         }
         .map { $0.japanCurrency }

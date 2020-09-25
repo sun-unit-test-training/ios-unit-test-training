@@ -11,7 +11,7 @@ import Dto
 import ValidatedPropertyKit
 
 protocol Exercise10UseCaseType {
-    func calculateRestaurantPromotion(dto: CalculateRestaurantPromotionDto) -> RestaurantPromotion
+    func calculateRestaurantPromotion(dto: RestaurantPromotionDto) -> RestaurantPromotion
 }
 
 struct Exercise10UseCase: Exercise10UseCaseType, CalculateRestaurantPromotion {

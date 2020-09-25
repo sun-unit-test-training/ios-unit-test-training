@@ -9,7 +9,7 @@
 import RxSwift
 
 protocol Exercise1UseCaseType {
-    func calculateBeerPrice(dto: CalculateBeerPriceDto) -> Double
+    func calculateBeerPrice(dto: BeerOrderDto) -> Double
 }
 
 struct Exercise1UseCase: Exercise1UseCaseType, CalculatingBeerPrice {

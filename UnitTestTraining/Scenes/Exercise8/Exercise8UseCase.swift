@@ -9,7 +9,7 @@ import Dto
 
 protocol Exercise8UseCaseType {
     func validateAge(_ age: String) -> ValidationResult
-    func calculatePlayFee(dto: CalculateBadmintonFeeDto) -> Double
+    func calculatePlayFee(dto: BadmintonGameDto) -> Double
 }
 
 struct Exercise8UseCase: Exercise8UseCaseType, CalculateBadmintonFee {

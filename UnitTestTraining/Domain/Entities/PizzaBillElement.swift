@@ -21,6 +21,6 @@ enum PromotionType {
 }
 
 struct CalculatePizzaFeeResult {
-    let fee: Double
-    let promotions: [PromotionType]
+    var fee: Double = 0.0
+    var promotions = [PromotionType]()
 }

@@ -44,9 +44,9 @@ extension Exercise2ViewModel: ViewModel {
             }
             .map { (isVIP, date) -> Int in
                 let holidays = self.useCase.getHolidays()
-                let dto = CalculateChargeFeeDto(isVIP: isVIP,
-                                                date: date,
-                                                holidays: holidays)
+                let dto = ATMWithdrawalDto(isVIP: isVIP,
+                                           date: date,
+                                           holidays: holidays)
                 return self.useCase.calculateFee(dto: dto)
             }
             .drive(output.$fee)

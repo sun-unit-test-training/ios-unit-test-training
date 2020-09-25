@@ -13,9 +13,9 @@ import UIKit
 
 protocol Exercise2UseCaseType {
     func getHolidays() -> [Date]
-    func calculateFee(dto: CalculateChargeFeeDto) -> Int
+    func calculateFee(dto: ATMWithdrawalDto) -> Int
 }
 
-struct Exercise2UseCase: Exercise2UseCaseType, CalculatingFee, GettingDates {
+struct Exercise2UseCase: Exercise2UseCaseType, CalculatingFee, GettingHolidays {
     var dateGateway: DateGatewayType
 }

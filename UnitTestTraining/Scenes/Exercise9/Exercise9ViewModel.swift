@@ -39,7 +39,7 @@ extension Exercise9ViewModel: ViewModel {
         input.hitBigBossTrigger.withLatestFrom(
             Driver.combineLatest(bringMagicWand, bringStrategist, bringDarknessKey, bringLightSword)
         ).map { inputValues -> HanoiQuestResult in
-            let dto = CalculatingHanoiQuestResultDto(
+            let dto = HanoiQuestDto(
                 bringMagicWand: inputValues.0,
                 bringStrategist: inputValues.1,
                 bringDarknessKey: inputValues.2,

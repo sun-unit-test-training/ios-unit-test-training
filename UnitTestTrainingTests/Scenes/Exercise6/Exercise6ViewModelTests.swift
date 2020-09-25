@@ -64,6 +64,7 @@ final class Exercise6ViewModelTests: XCTestCase {
         
         // asset
         XCTAssert(useCase.calculateFreeMinutesCalled)
+        XCTAssert(useCase.isvalidateMoneySpentCalled)
         XCTAssertFalse(useCase.watchMovie)
     }
     

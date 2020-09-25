@@ -9,16 +9,11 @@
 import Foundation
 import Dto
 
-struct CalculatingHanoiQuestResultDto: Dto {
-
+struct HanoiQuestDto: Dto {
     let bringMagicWand: Bool
     let bringStrategist: Bool
     let bringDarknessKey: Bool
     let bringLightSword: Bool
-
-    var validatedProperties: [ValidatedProperty] {
-        return []
-    }
 }
 
 protocol CalculatingHanoiQuestResult {
@@ -26,7 +21,7 @@ protocol CalculatingHanoiQuestResult {
 
 extension CalculatingHanoiQuestResult {
 
-    func calculateHanoiQuestResult(dto: CalculatingHanoiQuestResultDto) -> HanoiQuestResult {
+    func calculateHanoiQuestResult(dto: HanoiQuestDto) -> HanoiQuestResult {
         var result: HanoiQuestResult = .roomNotFound
         if dto.bringMagicWand || dto.bringStrategist {
             result = .roomFound

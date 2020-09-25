@@ -19,7 +19,7 @@ final class Exercise9UseCaseMock: Exercise9UseCaseType {
     var bringDarknessKey = false
     var bringLightSword = false
 
-    func calculateHanoiQuestResult(dto: CalculatingHanoiQuestResultDto) -> HanoiQuestResult {
+    func calculateHanoiQuestResult(dto: HanoiQuestDto) -> HanoiQuestResult {
         calculateHanoiQuestResultCalled = true
         self.bringMagicWand = dto.bringMagicWand
         self.bringStrategist = dto.bringStrategist

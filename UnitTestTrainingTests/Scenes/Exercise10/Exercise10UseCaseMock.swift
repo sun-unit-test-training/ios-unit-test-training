@@ -18,7 +18,7 @@ final class Exercise10UseCaseMock: Exercise10UseCaseType {
     var restaurantPromotionResult = RestaurantPromotion(discount: 1, haveCoupon: false)
     var calculateRestaurantPromotionCalled = false
     
-    func calculateRestaurantPromotion(dto: CalculateRestaurantPromotionDto) -> RestaurantPromotion {
+    func calculateRestaurantPromotion(dto: RestaurantPromotionDto) -> RestaurantPromotion {
         calculateRestaurantPromotionCalled = true
         return restaurantPromotionResult
     }

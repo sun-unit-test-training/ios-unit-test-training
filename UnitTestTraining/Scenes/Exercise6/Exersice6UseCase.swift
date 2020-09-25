@@ -11,7 +11,7 @@ import RxSwift
 import ValidatedPropertyKit
 
 protocol Exercise6UseCaseType {
-    func calculateFreeMinutes(dto: CalculateFreeMinutesDto) -> Double
+    func calculateFreeMinutes(dto: TayHoOrderDto) -> Double
     func validateMoneyAmount(_ amount: String) -> ValidationResult
 }
 

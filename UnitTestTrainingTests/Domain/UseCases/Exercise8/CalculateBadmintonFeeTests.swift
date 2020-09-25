@@ -19,7 +19,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 2
     /// Giới tính: Nam
     func test_calculateFee1() {
-        let dto = CalculateBadmintonFeeDto(isMale: true, playDate: "2020/09/14".toDate(), age: -1)
+        let dto = BadmintonGameDto(isMale: true, playDate: "2020/09/14".toDate(), age: -1)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 0.0)
     }
@@ -29,7 +29,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 2
     /// Giới tính: Nam
     func test_calculateFee2() {
-        let dto = CalculateBadmintonFeeDto(isMale: true, playDate: "2020/09/14".toDate(), age: 5)
+        let dto = BadmintonGameDto(isMale: true, playDate: "2020/09/14".toDate(), age: 5)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 900.0)
     }
@@ -39,7 +39,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 2
     /// Giới tính: Nam
     func test_calculateFee3() {
-        let dto = CalculateBadmintonFeeDto(isMale: true, playDate: "2020/09/14".toDate(), age: 16)
+        let dto = BadmintonGameDto(isMale: true, playDate: "2020/09/14".toDate(), age: 16)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 1800.0)
     }
@@ -49,7 +49,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 2
     /// Giới tính: Nam
     func test_calculateFee4() {
-        let dto = CalculateBadmintonFeeDto(isMale: true, playDate: "2020/09/14".toDate(), age: 65)
+        let dto = BadmintonGameDto(isMale: true, playDate: "2020/09/14".toDate(), age: 65)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 1800.0)
     }
@@ -59,7 +59,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 2
     /// Giới tính: Nam
     func test_calculateFee5() {
-        let dto = CalculateBadmintonFeeDto(isMale: true, playDate: "2020/09/14".toDate(), age: 66)
+        let dto = BadmintonGameDto(isMale: true, playDate: "2020/09/14".toDate(), age: 66)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 1600.0)
     }
@@ -69,7 +69,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 6
     /// Giới tính: Nữ
     func test_calculateFee6() {
-        let dto = CalculateBadmintonFeeDto(isMale: false, playDate: "2020/09/18".toDate(), age: 30)
+        let dto = BadmintonGameDto(isMale: false, playDate: "2020/09/18".toDate(), age: 30)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 1400.0)
     }
@@ -79,7 +79,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 6
     /// Giới tính: Nữ
     func test_calculateFee7() {
-        let dto = CalculateBadmintonFeeDto(isMale: false, playDate: "2020/09/18".toDate(), age: 9)
+        let dto = BadmintonGameDto(isMale: false, playDate: "2020/09/18".toDate(), age: 9)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 900.0)
     }
@@ -89,7 +89,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 6
     /// Giới tính: Nữ
     func test_calculateFee8() {
-        let dto = CalculateBadmintonFeeDto(isMale: false, playDate: "2020/09/18".toDate(), age: 66)
+        let dto = BadmintonGameDto(isMale: false, playDate: "2020/09/18".toDate(), age: 66)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 1400.0)
     }
@@ -99,7 +99,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 3
     /// Giới tính: Nữ
     func test_calculateFee9() {
-        let dto = CalculateBadmintonFeeDto(isMale: false, playDate: "2020/09/15".toDate(), age: 66)
+        let dto = BadmintonGameDto(isMale: false, playDate: "2020/09/15".toDate(), age: 66)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 1200.0)
     }
@@ -109,7 +109,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 3
     /// Giới tính: Nữ
     func test_calculateFee10() {
-        let dto = CalculateBadmintonFeeDto(isMale: false, playDate: "2020/09/15".toDate(), age: 8)
+        let dto = BadmintonGameDto(isMale: false, playDate: "2020/09/15".toDate(), age: 8)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 900.0)
     }
@@ -119,7 +119,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 3
     /// Giới tính: Nữ
     func test_calculateFee11() {
-        let dto = CalculateBadmintonFeeDto(isMale: false, playDate: "2020/09/15".toDate(), age: 14)
+        let dto = BadmintonGameDto(isMale: false, playDate: "2020/09/15".toDate(), age: 14)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 1200.0)
     }
@@ -129,7 +129,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 3
     /// Giới tính: Nữ
     func test_calculateFee12() {
-        let dto = CalculateBadmintonFeeDto(isMale: false, playDate: "2020/09/15".toDate(), age: 121)
+        let dto = BadmintonGameDto(isMale: false, playDate: "2020/09/15".toDate(), age: 121)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 0.0)
     }
@@ -139,7 +139,7 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
     /// Ngày chơi: Thứ 3
     /// Giới tính: Nam
     func test_calculateFee13() {
-        let dto = CalculateBadmintonFeeDto(isMale: true, playDate: "2020/09/15".toDate(), age: 100)
+        let dto = BadmintonGameDto(isMale: true, playDate: "2020/09/15".toDate(), age: 100)
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 1200.0)
     }

@@ -10,14 +10,10 @@ import Foundation
 import Dto
 import ValidatedPropertyKit
 
-struct CalculateRestaurantPromotionDto: Dto {
+struct RestaurantPromotionDto: Dto {
     var memberRank: MemberRank = .silver
     var prepaidPaymentLimit: Int = 0
     var participateLottery = false
-    
-    var validatedProperties: [ValidatedProperty] {
-        return []
-    }
 }
 
 protocol CalculateRestaurantPromotion {
@@ -25,7 +21,7 @@ protocol CalculateRestaurantPromotion {
 }
 
 extension CalculateRestaurantPromotion {
-    func calculateRestaurantPromotion(dto: CalculateRestaurantPromotionDto) -> RestaurantPromotion {
+    func calculateRestaurantPromotion(dto: RestaurantPromotionDto) -> RestaurantPromotion {
         let haveChance = dto.prepaidPaymentLimit >= 5000
         
         switch dto.memberRank {

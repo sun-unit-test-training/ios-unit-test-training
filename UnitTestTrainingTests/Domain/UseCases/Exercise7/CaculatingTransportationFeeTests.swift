@@ -20,7 +20,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     /// - Giao hàng siêu tốc - Y
     
     func testCase1_calculationFee() {
-        let dto = CaculatingTransportationFeeDto(isPremiumMember: true, isQuickDeliver: true, cartAmount: 6000.0)
+        let dto = VietnamMartOrderDto(isPremiumMember: true, isQuickDeliver: true, cartAmount: 6000.0)
         let result = self.calculationFee(dto: dto)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 500.0)
@@ -32,7 +32,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     /// - Giao hàng siêu tốc - N
     
     func testCase2_calculationFee() {
-        let dto = CaculatingTransportationFeeDto(isPremiumMember: true, isQuickDeliver: false, cartAmount: 5100.0)
+        let dto = VietnamMartOrderDto(isPremiumMember: true, isQuickDeliver: false, cartAmount: 5100.0)
         let result = self.calculationFee(dto: dto)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 0.0)
@@ -44,7 +44,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     /// - Giao hàng siêu tốc - Y
     
     func testCase3_calculationFee() {
-        let dto = CaculatingTransportationFeeDto(isPremiumMember: true, isQuickDeliver: true, cartAmount: 4900.0)
+        let dto = VietnamMartOrderDto(isPremiumMember: true, isQuickDeliver: true, cartAmount: 4900.0)
         let result = self.calculationFee(dto: dto)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 500.0)
@@ -56,7 +56,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     /// - Giao hàng siêu tốc - N
     
     func testCase4_calculationFee() {
-        let dto = CaculatingTransportationFeeDto(isPremiumMember: true, isQuickDeliver: false, cartAmount: 6000.0)
+        let dto = VietnamMartOrderDto(isPremiumMember: true, isQuickDeliver: false, cartAmount: 6000.0)
         let result = self.calculationFee(dto: dto)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 0.0)
@@ -68,7 +68,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     /// - Giao hàng siêu tốc - Y
     
     func testCase5_calculationFee() {
-        let dto = CaculatingTransportationFeeDto(isPremiumMember: false, isQuickDeliver: true, cartAmount: 7000.0)
+        let dto = VietnamMartOrderDto(isPremiumMember: false, isQuickDeliver: true, cartAmount: 7000.0)
         let result = self.calculationFee(dto: dto)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 500.0)
@@ -80,7 +80,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     /// - Giao hàng siêu tốc - N
     
     func testCase6_calculationFee() {
-        let dto = CaculatingTransportationFeeDto(isPremiumMember: false, isQuickDeliver: false, cartAmount: 5100.0)
+        let dto = VietnamMartOrderDto(isPremiumMember: false, isQuickDeliver: false, cartAmount: 5100.0)
         let result = self.calculationFee(dto: dto)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 0.0)
@@ -92,7 +92,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     /// - Giao hàng siêu tốc - Y
     
     func testCase7_calculationFee() {
-        let dto = CaculatingTransportationFeeDto(isPremiumMember: false, isQuickDeliver: true, cartAmount: 4750.0)
+        let dto = VietnamMartOrderDto(isPremiumMember: false, isQuickDeliver: true, cartAmount: 4750.0)
         let result = self.calculationFee(dto: dto)
         XCTAssertEqual(result.standardFee, 500.0)
         XCTAssertEqual(result.quickFee, 500.0)
@@ -104,7 +104,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     /// - Giao hàng siêu tốc - N
     
     func testCase8_calculationFee() {
-        let dto = CaculatingTransportationFeeDto(isPremiumMember: false, isQuickDeliver: false, cartAmount: 3400.0)
+        let dto = VietnamMartOrderDto(isPremiumMember: false, isQuickDeliver: false, cartAmount: 3400.0)
         let result = self.calculationFee(dto: dto)
         XCTAssertEqual(result.standardFee, 500.0)
         XCTAssertEqual(result.quickFee, 0.0)
@@ -116,7 +116,7 @@ final class CaculatingTransportationFeeTests: XCTestCase, CaculatingTransportati
     /// - Giao hàng siêu tốc - Y
     
     func testCase9_calculationFee() {
-        let dto = CaculatingTransportationFeeDto(isPremiumMember: false, isQuickDeliver: true, cartAmount: 5000.0)
+        let dto = VietnamMartOrderDto(isPremiumMember: false, isQuickDeliver: true, cartAmount: 5000.0)
         let result = self.calculationFee(dto: dto)
         XCTAssertEqual(result.standardFee, 0.0)
         XCTAssertEqual(result.quickFee, 500.0)

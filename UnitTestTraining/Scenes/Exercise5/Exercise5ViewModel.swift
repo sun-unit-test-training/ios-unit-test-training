@@ -54,9 +54,9 @@ extension Exercise5ViewModel: ViewModel {
         input.intoMoneyTrigger
             .withLatestFrom(Driver.combineLatest(price, receiveMethod, usingCoupon))
             .map { price, receiveMethod, usingCoupon -> CalculatePizzaFeeResult in
-                let dto = CalculatePizzaFeeDto(priceString: price,
-                                               receiveMethod: receiveMethod,
-                                               usingCoupon: usingCoupon)
+                let dto = PizzaOrderDto(price: price,
+                                        receiveMethod: receiveMethod,
+                                        usingCoupon: usingCoupon)
                 return self.useCase.calculateFee(dto: dto)
             }
             .drive(output.$fee)

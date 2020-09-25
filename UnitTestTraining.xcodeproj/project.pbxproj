@@ -29,7 +29,6 @@
 		0E4C361E2512E10B006A2047 /* Exercise8UseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C361A2512E10B006A2047 /* Exercise8UseCaseMock.swift */; };
 		0E4C36202512E1CE006A2047 /* Exercise8.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4C361F2512E1CE006A2047 /* Exercise8.storyboard */; };
 		0E4C36232512E7BD006A2047 /* CalculateBadmintonFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C36222512E7BD006A2047 /* CalculateBadmintonFee.swift */; };
-		0E4C36252512E7C6006A2047 /* CalculateBadmintonFeeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C36242512E7C6006A2047 /* CalculateBadmintonFeeDto.swift */; };
 		0EA1C06125119F8F008560B0 /* Validation+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA1C06025119F8F008560B0 /* Validation+Ext.swift */; };
 		0EE3245125133D5F00AB95E2 /* CalculateBadmintonFeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3245025133D5F00AB95E2 /* CalculateBadmintonFeeTests.swift */; };
 		0EE324532513401500AB95E2 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE324522513401500AB95E2 /* String+Ext.swift */; };
@@ -74,6 +73,10 @@
 		1712849C250C75E300A95A97 /* AppViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128498250C75E300A95A97 /* AppViewModelTests.swift */; };
 		1712849D250C75E300A95A97 /* AppNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128499250C75E300A95A97 /* AppNavigatorMock.swift */; };
 		1712849E250C75E300A95A97 /* AppUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712849A250C75E300A95A97 /* AppUseCaseMock.swift */; };
+		17597B49251DCF9B00D5235F /* Dto+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17597B48251DCF9B00D5235F /* Dto+.swift */; };
+		17597B59251DDB2400D5235F /* ClotherOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17597B58251DDB2400D5235F /* ClotherOrder.swift */; };
+		17597B63251DE73100D5235F /* GettingClotherItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17597B62251DE73100D5235F /* GettingClotherItems.swift */; };
+		17597B6B251DED1300D5235F /* GettingHolidays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17597B6A251DED1300D5235F /* GettingHolidays.swift */; };
 		1773898925071D8D003B5CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773898725071D8D003B5CD7 /* Main.storyboard */; };
 		1773898B25071D8E003B5CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1773898A25071D8E003B5CD7 /* Assets.xcassets */; };
 		1773898E25071D8E003B5CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773898C25071D8E003B5CD7 /* LaunchScreen.storyboard */; };
@@ -167,7 +170,6 @@
 		9C90E29125148B7300EFE188 /* Exercise6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C90E29025148B7300EFE188 /* Exercise6.storyboard */; };
 		9C90E29325148C5F00EFE188 /* CalculateFreeMinutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C90E29225148C5F00EFE188 /* CalculateFreeMinutes.swift */; };
 		9C90E29525148C8B00EFE188 /* CalculateFreeMinutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C90E29425148C8B00EFE188 /* CalculateFreeMinutes.swift */; };
-		B6D5557C2510EE6D00439F84 /* CaculatingTransportationFeeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5557B2510EE6D00439F84 /* CaculatingTransportationFeeDto.swift */; };
 		C96892EF250A2A2E000FFF5F /* Exercise4UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96892EA250A2A2E000FFF5F /* Exercise4UseCase.swift */; };
 		C96892F0250A2A2E000FFF5F /* Exercise4Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96892EB250A2A2E000FFF5F /* Exercise4Assembler.swift */; };
 		C96892F1250A2A2E000FFF5F /* Exercise4Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96892EC250A2A2E000FFF5F /* Exercise4Navigator.swift */; };
@@ -181,8 +183,7 @@
 		C9689301250B3FBC000FFF5F /* DateGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9689300250B3FBC000FFF5F /* DateGateway.swift */; };
 		C9689307250B6666000FFF5F /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9689306250B6666000FFF5F /* Date+.swift */; };
 		C968930D250B74DC000FFF5F /* GettingDatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C968930C250B74DC000FFF5F /* GettingDatesTests.swift */; };
-		C98D5740250F1197005BCB35 /* GetDateColorDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D573E250F1197005BCB35 /* GetDateColorDto.swift */; };
-		C98D5741250F1197005BCB35 /* GettingDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D573F250F1197005BCB35 /* GettingDates.swift */; };
+		C98D5741250F1197005BCB35 /* GettingDateColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D573F250F1197005BCB35 /* GettingDateColor.swift */; };
 		C98D5747250F17C9005BCB35 /* DateGatewayMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D5746250F17C9005BCB35 /* DateGatewayMock.swift */; };
 /* End PBXBuildFile section */
 
@@ -219,7 +220,6 @@
 		0E4C361A2512E10B006A2047 /* Exercise8UseCaseMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise8UseCaseMock.swift; sourceTree = "<group>"; };
 		0E4C361F2512E1CE006A2047 /* Exercise8.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise8.storyboard; sourceTree = "<group>"; };
 		0E4C36222512E7BD006A2047 /* CalculateBadmintonFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBadmintonFee.swift; sourceTree = "<group>"; };
-		0E4C36242512E7C6006A2047 /* CalculateBadmintonFeeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBadmintonFeeDto.swift; sourceTree = "<group>"; };
 		0EA1C06025119F8F008560B0 /* Validation+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validation+Ext.swift"; sourceTree = "<group>"; };
 		0EE3245025133D5F00AB95E2 /* CalculateBadmintonFeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBadmintonFeeTests.swift; sourceTree = "<group>"; };
 		0EE324522513401500AB95E2 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
@@ -264,6 +264,10 @@
 		17128498250C75E300A95A97 /* AppViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModelTests.swift; sourceTree = "<group>"; };
 		17128499250C75E300A95A97 /* AppNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigatorMock.swift; sourceTree = "<group>"; };
 		1712849A250C75E300A95A97 /* AppUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUseCaseMock.swift; sourceTree = "<group>"; };
+		17597B48251DCF9B00D5235F /* Dto+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dto+.swift"; sourceTree = "<group>"; };
+		17597B58251DDB2400D5235F /* ClotherOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClotherOrder.swift; sourceTree = "<group>"; };
+		17597B62251DE73100D5235F /* GettingClotherItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingClotherItems.swift; sourceTree = "<group>"; };
+		17597B6A251DED1300D5235F /* GettingHolidays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingHolidays.swift; sourceTree = "<group>"; };
 		1773897E25071D8D003B5CD7 /* UnitTestTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1773898825071D8D003B5CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1773898A25071D8E003B5CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -357,7 +361,6 @@
 		9C90E29025148B7300EFE188 /* Exercise6.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Exercise6.storyboard; sourceTree = "<group>"; };
 		9C90E29225148C5F00EFE188 /* CalculateFreeMinutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateFreeMinutes.swift; sourceTree = "<group>"; };
 		9C90E29425148C8B00EFE188 /* CalculateFreeMinutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateFreeMinutes.swift; sourceTree = "<group>"; };
-		B6D5557B2510EE6D00439F84 /* CaculatingTransportationFeeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculatingTransportationFeeDto.swift; sourceTree = "<group>"; };
 		C96892EA250A2A2E000FFF5F /* Exercise4UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise4UseCase.swift; sourceTree = "<group>"; };
 		C96892EB250A2A2E000FFF5F /* Exercise4Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise4Assembler.swift; sourceTree = "<group>"; };
 		C96892EC250A2A2E000FFF5F /* Exercise4Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise4Navigator.swift; sourceTree = "<group>"; };
@@ -371,8 +374,7 @@
 		C9689300250B3FBC000FFF5F /* DateGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateGateway.swift; sourceTree = "<group>"; };
 		C9689306250B6666000FFF5F /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		C968930C250B74DC000FFF5F /* GettingDatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingDatesTests.swift; sourceTree = "<group>"; };
-		C98D573E250F1197005BCB35 /* GetDateColorDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDateColorDto.swift; sourceTree = "<group>"; };
-		C98D573F250F1197005BCB35 /* GettingDates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettingDates.swift; sourceTree = "<group>"; };
+		C98D573F250F1197005BCB35 /* GettingDateColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettingDateColor.swift; sourceTree = "<group>"; };
 		C98D5746250F17C9005BCB35 /* DateGatewayMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateGatewayMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -449,7 +451,6 @@
 			isa = PBXGroup;
 			children = (
 				0E4C36222512E7BD006A2047 /* CalculateBadmintonFee.swift */,
-				0E4C36242512E7C6006A2047 /* CalculateBadmintonFeeDto.swift */,
 			);
 			path = Exercise8;
 			sourceTree = "<group>";
@@ -558,17 +559,17 @@
 		1712848D250C71B500A95A97 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				11CDA468251D46AE007F1D39 /* Exercise9 */,
 				1712848E250C71D200A95A97 /* GettingExercisesTests.swift */,
-				170DCABF250E28EB00815C14 /* CalculatingBeerPriceTests.swift */,
-				C968930C250B74DC000FFF5F /* GettingDatesTests.swift */,
-				0E1206EE250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift */,
-				716A53802511E6FC0034DC60 /* CalculateFeeTest.swift */,
-				52C5417A250F290F0092CA4A /* CaculatingClotherDiscountTest.swift */,
-				0EE3245025133D5F00AB95E2 /* CalculateBadmintonFeeTests.swift */,
-				9C90E29225148C5F00EFE188 /* CalculateFreeMinutes.swift */,
-				619D1371251751F40001FF53 /* CalculatePizzaFeeTest.swift */,
-				61E202BF251CBD2200995E27 /* CalculateRestaurantPromotionTests.swift */,
+				17597B2F251DC78D00D5235F /* Exercise1 */,
+				17597B30251DC79500D5235F /* Exercise2 */,
+				17597B31251DC79B00D5235F /* Exercise3 */,
+				17597B32251DC7A100D5235F /* Exercise4 */,
+				17597B33251DC7A600D5235F /* Exercise5 */,
+				17597B34251DC7B200D5235F /* Exercise6 */,
+				17597B35251DC7B900D5235F /* Exercise7 */,
+				17597B36251DC7BE00D5235F /* Exercise8 */,
+				11CDA468251D46AE007F1D39 /* Exercise9 */,
+				17597B37251DC7C400D5235F /* Exercise10 */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -598,6 +599,120 @@
 				1712849A250C75E300A95A97 /* AppUseCaseMock.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		17597B2A251DC6A000D5235F /* Exercise1 */ = {
+			isa = PBXGroup;
+			children = (
+				170DCAB4250E287500815C14 /* CalculatingBeerPrice.swift */,
+			);
+			path = Exercise1;
+			sourceTree = "<group>";
+		};
+		17597B2B251DC6A700D5235F /* Exercise2 */ = {
+			isa = PBXGroup;
+			children = (
+				716A53712511AE650034DC60 /* CalculatingFee.swift */,
+			);
+			path = Exercise2;
+			sourceTree = "<group>";
+		};
+		17597B2C251DC6AE00D5235F /* Exercise3 */ = {
+			isa = PBXGroup;
+			children = (
+				52C54178250F0EB40092CA4A /* CaculatingClotherDiscount.swift */,
+				17597B62251DE73100D5235F /* GettingClotherItems.swift */,
+			);
+			path = Exercise3;
+			sourceTree = "<group>";
+		};
+		17597B2D251DC6B400D5235F /* Exercise4 */ = {
+			isa = PBXGroup;
+			children = (
+				C98D573F250F1197005BCB35 /* GettingDateColor.swift */,
+				17597B6A251DED1300D5235F /* GettingHolidays.swift */,
+			);
+			path = Exercise4;
+			sourceTree = "<group>";
+		};
+		17597B2E251DC6C800D5235F /* Exercise6 */ = {
+			isa = PBXGroup;
+			children = (
+				9C90E29425148C8B00EFE188 /* CalculateFreeMinutes.swift */,
+			);
+			path = Exercise6;
+			sourceTree = "<group>";
+		};
+		17597B2F251DC78D00D5235F /* Exercise1 */ = {
+			isa = PBXGroup;
+			children = (
+				170DCABF250E28EB00815C14 /* CalculatingBeerPriceTests.swift */,
+			);
+			path = Exercise1;
+			sourceTree = "<group>";
+		};
+		17597B30251DC79500D5235F /* Exercise2 */ = {
+			isa = PBXGroup;
+			children = (
+				716A53802511E6FC0034DC60 /* CalculateFeeTest.swift */,
+			);
+			path = Exercise2;
+			sourceTree = "<group>";
+		};
+		17597B31251DC79B00D5235F /* Exercise3 */ = {
+			isa = PBXGroup;
+			children = (
+				52C5417A250F290F0092CA4A /* CaculatingClotherDiscountTest.swift */,
+			);
+			path = Exercise3;
+			sourceTree = "<group>";
+		};
+		17597B32251DC7A100D5235F /* Exercise4 */ = {
+			isa = PBXGroup;
+			children = (
+				C968930C250B74DC000FFF5F /* GettingDatesTests.swift */,
+			);
+			path = Exercise4;
+			sourceTree = "<group>";
+		};
+		17597B33251DC7A600D5235F /* Exercise5 */ = {
+			isa = PBXGroup;
+			children = (
+				619D1371251751F40001FF53 /* CalculatePizzaFeeTest.swift */,
+			);
+			path = Exercise5;
+			sourceTree = "<group>";
+		};
+		17597B34251DC7B200D5235F /* Exercise6 */ = {
+			isa = PBXGroup;
+			children = (
+				9C90E29225148C5F00EFE188 /* CalculateFreeMinutes.swift */,
+			);
+			path = Exercise6;
+			sourceTree = "<group>";
+		};
+		17597B35251DC7B900D5235F /* Exercise7 */ = {
+			isa = PBXGroup;
+			children = (
+				0E1206EE250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift */,
+			);
+			path = Exercise7;
+			sourceTree = "<group>";
+		};
+		17597B36251DC7BE00D5235F /* Exercise8 */ = {
+			isa = PBXGroup;
+			children = (
+				0EE3245025133D5F00AB95E2 /* CalculateBadmintonFeeTests.swift */,
+			);
+			path = Exercise8;
+			sourceTree = "<group>";
+		};
+		17597B37251DC7C400D5235F /* Exercise10 */ = {
+			isa = PBXGroup;
+			children = (
+				61E202BF251CBD2200995E27 /* CalculateRestaurantPromotionTests.swift */,
+			);
+			path = Exercise10;
 			sourceTree = "<group>";
 		};
 		1773897525071D8D003B5CD7 = {
@@ -660,18 +775,17 @@
 		177389A525071EA2003B5CD7 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				17597B2A251DC6A000D5235F /* Exercise1 */,
+				17597B2B251DC6A700D5235F /* Exercise2 */,
+				17597B2C251DC6AE00D5235F /* Exercise3 */,
+				17597B2D251DC6B400D5235F /* Exercise4 */,
 				619C0CCE251363E600A9457A /* Exercise5 */,
+				17597B2E251DC6C800D5235F /* Exercise6 */,
 				B6D5557A2510EE5000439F84 /* Exercise7 */,
 				0E4C36212512E780006A2047 /* Exercise8 */,
 				11D7BA71251D3E0200C7C074 /* Exercise9 */,
 				61E202A0251B3A6100995E27 /* Exercise10 */,
-				C98D573E250F1197005BCB35 /* GetDateColorDto.swift */,
-				C98D573F250F1197005BCB35 /* GettingDates.swift */,
 				17128488250C6EC900A95A97 /* GettingExercises.swift */,
-				170DCAB4250E287500815C14 /* CalculatingBeerPrice.swift */,
-				716A53712511AE650034DC60 /* CalculatingFee.swift */,
-				52C54178250F0EB40092CA4A /* CaculatingClotherDiscount.swift */,
-				9C90E29425148C8B00EFE188 /* CalculateFreeMinutes.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -679,8 +793,9 @@
 		177389A625071EA2003B5CD7 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				17128485250C6E9D00A95A97 /* Exercise.swift */,
+				17597B58251DDB2400D5235F /* ClotherOrder.swift */,
 				5297A25A250E7943002745A9 /* ClotherOrderItem.swift */,
+				17128485250C6E9D00A95A97 /* Exercise.swift */,
 				619D137C25184A640001FF53 /* PizzaBillElement.swift */,
 				11D7BA6D251D3A3F00C7C074 /* HanoiQuestResult.swift */,
 				61E202A3251B3BA700995E27 /* RestaurantInfo.swift */,
@@ -736,16 +851,16 @@
 		177389B625071EA2003B5CD7 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				9C90E29025148B7300EFE188 /* Exercise6.storyboard */,
+				177389B725071EA2003B5CD7 /* Storyboards.swift */,
 				1773898725071D8D003B5CD7 /* Main.storyboard */,
 				170DCAAE250E1F5800815C14 /* Exercise1.storyboard */,
 				716A53642511A5DA0034DC60 /* Exercise2.storyboard */,
-				C96892FD250A334D000FFF5F /* Exercise4.storyboard */,
-				177389B725071EA2003B5CD7 /* Storyboards.swift */,
-				0E1206E9250F295A0071C1F9 /* Exercise7.storyboard */,
 				5297A251250B2ED0002745A9 /* Exercise3.storyboard */,
-				0E4C361F2512E1CE006A2047 /* Exercise8.storyboard */,
+				C96892FD250A334D000FFF5F /* Exercise4.storyboard */,
 				619C0CCC251333C800A9457A /* Exercise5.storyboard */,
+				9C90E29025148B7300EFE188 /* Exercise6.storyboard */,
+				0E1206E9250F295A0071C1F9 /* Exercise7.storyboard */,
+				0E4C361F2512E1CE006A2047 /* Exercise8.storyboard */,
 				11CE6267251D29AE0032E5DF /* Exercise9.storyboard */,
 				61E202BD251C20F300995E27 /* Exercise10.storyboard */,
 			);
@@ -781,6 +896,7 @@
 				C9689306250B6666000FFF5F /* Date+.swift */,
 				0EA1C06025119F8F008560B0 /* Validation+Ext.swift */,
 				0EE324522513401500AB95E2 /* String+Ext.swift */,
+				17597B48251DCF9B00D5235F /* Dto+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -938,7 +1054,6 @@
 			isa = PBXGroup;
 			children = (
 				0E1206EB250F3DFD0071C1F9 /* CaculatingTransportationFee.swift */,
-				B6D5557B2510EE6D00439F84 /* CaculatingTransportationFeeDto.swift */,
 			);
 			path = Exercise7;
 			sourceTree = "<group>";
@@ -1019,7 +1134,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Sun Asterisk";
 				TargetAttributes = {
 					1773897D25071D8D003B5CD7 = {
@@ -1117,6 +1232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17597B6B251DED1300D5235F /* GettingHolidays.swift in Sources */,
 				9C90E28425148AD600EFE188 /* Exercise6Navigator.swift in Sources */,
 				C9689307250B6666000FFF5F /* Date+.swift in Sources */,
 				C9689301250B3FBC000FFF5F /* DateGateway.swift in Sources */,
@@ -1153,7 +1269,6 @@
 				177389CE25071EA2003B5CD7 /* AppViewModel.swift in Sources */,
 				11CE6278251D2A2E0032E5DF /* Exercise9ViewController.swift in Sources */,
 				177389EB25072442003B5CD7 /* MainUseCase.swift in Sources */,
-				0E4C36252512E7C6006A2047 /* CalculateBadmintonFeeDto.swift in Sources */,
 				11CE626C251D29F20032E5DF /* Exercise9Assembler.swift in Sources */,
 				170DCAAD250E1F2400815C14 /* Exercise1ViewModel.swift in Sources */,
 				0EA1C06125119F8F008560B0 /* Validation+Ext.swift in Sources */,
@@ -1169,12 +1284,13 @@
 				0E4C36122512E0ED006A2047 /* Exercise8UseCase.swift in Sources */,
 				619C0CC92513154600A9457A /* Exercise5ViewController.swift in Sources */,
 				177389D225071EA2003B5CD7 /* Utils.swift in Sources */,
-				C98D5741250F1197005BCB35 /* GettingDates.swift in Sources */,
+				C98D5741250F1197005BCB35 /* GettingDateColor.swift in Sources */,
 				177389EA25072442003B5CD7 /* MainNavigator.swift in Sources */,
 				0E4C36152512E0ED006A2047 /* Exercise8Assembler.swift in Sources */,
 				C96892F0250A2A2E000FFF5F /* Exercise4Assembler.swift in Sources */,
 				0E4C36132512E0ED006A2047 /* Exercise8ViewModel.swift in Sources */,
 				0EE324532513401500AB95E2 /* String+Ext.swift in Sources */,
+				17597B63251DE73100D5235F /* GettingClotherItems.swift in Sources */,
 				177389CD25071EA2003B5CD7 /* AppNavigator.swift in Sources */,
 				177389CC25071EA2003B5CD7 /* AppAssembler.swift in Sources */,
 				5297A25B250E7943002745A9 /* ClotherOrderItem.swift in Sources */,
@@ -1183,7 +1299,6 @@
 				619C0CCB2513154E00A9457A /* Exercise5ViewModel.swift in Sources */,
 				170DCAB3250E25C600815C14 /* Double+.swift in Sources */,
 				61E202B8251B439400995E27 /* Exercise10ViewModel.swift in Sources */,
-				B6D5557C2510EE6D00439F84 /* CaculatingTransportationFeeDto.swift in Sources */,
 				619C0CC52513152C00A9457A /* Exercise5Navigator.swift in Sources */,
 				716A536D2511A7AE0034DC60 /* Exercise2Assembler.swift in Sources */,
 				11D7BA73251D3E1600C7C074 /* CalculatingHanoiQuestResult.swift in Sources */,
@@ -1194,14 +1309,12 @@
 				61E202BA251B439D00995E27 /* Exercise10ViewController.swift in Sources */,
 				619C0CD02513642900A9457A /* CalculatePizzaFee.swift in Sources */,
 				C96892F1250A2A2E000FFF5F /* Exercise4Navigator.swift in Sources */,
-				177389CC25071EA2003B5CD7 /* AppAssembler.swift in Sources */,
-				177389CB25071EA2003B5CD7 /* Storyboards.swift in Sources */,
 				C96892EF250A2A2E000FFF5F /* Exercise4UseCase.swift in Sources */,
+				17597B49251DCF9B00D5235F /* Dto+.swift in Sources */,
 				61E202B6251B438A00995E27 /* Exercise10UseCase.swift in Sources */,
 				716A536C2511A7AE0034DC60 /* Exercise2UseCase.swift in Sources */,
 				C96892F2250A2A2E000FFF5F /* Exercise4ViewController.swift in Sources */,
 				61E202A2251B3A9C00995E27 /* CalculateRestaurantPromotion.swift in Sources */,
-				C98D5740250F1197005BCB35 /* GetDateColorDto.swift in Sources */,
 				9C90E28025148AD600EFE188 /* Exersice6Assembler.swift in Sources */,
 				0E1206ED250F3E2B0071C1F9 /* CaculatingTransportationFee.swift in Sources */,
 				11CE6274251D2A1E0032E5DF /* Exercise9UseCase.swift in Sources */,
@@ -1212,6 +1325,7 @@
 				716A53702511A7AE0034DC60 /* Exercise2ViewController.swift in Sources */,
 				177389C225071EA2003B5CD7 /* UnitTestViewController.swift in Sources */,
 				61E202A4251B3BA700995E27 /* RestaurantInfo.swift in Sources */,
+				17597B59251DDB2400D5235F /* ClotherOrder.swift in Sources */,
 				177389ED25072442003B5CD7 /* MainViewModel.swift in Sources */,
 				170DCAB1250E20D100815C14 /* MainAssembler.swift in Sources */,
 				9C90E28225148AD600EFE188 /* Exercise6ViewController.swift in Sources */,
@@ -1342,6 +1456,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1403,6 +1518,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

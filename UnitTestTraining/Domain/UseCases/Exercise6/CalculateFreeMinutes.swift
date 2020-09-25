@@ -10,12 +10,11 @@ import Foundation
 import Dto
 import ValidatedPropertyKit
 
-struct CalculateFreeMinutesDto: Dto {
-    
-    // swiftlint:disable:next
+struct TayHoOrderDto: Dto {
     @Validated(.isNumber(message: "Must input number"))
-    var moneySpentString: String? = ""
-    var isWatchMovie: Bool = false
+    var moneySpentString: String? = ""  // swiftlint:disable:this let_var_whitespace
+    
+    var watchingMovie: Bool = false
     var moneySpent: Double = 0.0
     
     var validatedProperties: [ValidatedProperty] {
@@ -23,9 +22,9 @@ struct CalculateFreeMinutesDto: Dto {
     }
 }
 
-extension CalculateFreeMinutesDto {
+extension TayHoOrderDto {
     static func validateMoneyAmount(_ amount: String) -> Result<String, ValidationError> {
-        return CalculateFreeMinutesDto()._moneySpentString.isValid(value: amount)
+        return TayHoOrderDto()._moneySpentString.isValid(value: amount)
     }
 }
 
@@ -36,18 +35,18 @@ protocol CalculatingFreeMinutes {
 extension CalculatingFreeMinutes {
     
     func validateMoneyAmount(_ amount: String) -> ValidationResult {
-        return CalculateFreeMinutesDto.validateMoneyAmount(amount).mapToVoid()
+        return TayHoOrderDto.validateMoneyAmount(amount).mapToVoid()
     }
     
-    func calculateFreeMinutes(dto: CalculateFreeMinutesDto) -> Double {
+    func calculateFreeMinutes(dto: TayHoOrderDto) -> Double {
         let freeMinute: Double
         
         if dto.moneySpent < 2000 {
-            freeMinute = dto.isWatchMovie ? 180 : 0
+            freeMinute = dto.watchingMovie ? 180 : 0
         } else if dto.moneySpent < 5000 {
-            freeMinute = dto.isWatchMovie ? 240 : 60
+            freeMinute = dto.watchingMovie ? 240 : 60
         } else {
-            freeMinute = dto.isWatchMovie ? 300 : 120
+            freeMinute = dto.watchingMovie ? 300 : 120
         }
         
         return freeMinute

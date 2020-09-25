@@ -15,7 +15,7 @@ protocol Exercise4UseCaseType {
     func getDateColor(dto: GetDateColorDto) -> UIColor
 }
 
-struct Exercise4UseCase: Exercise4UseCaseType, GettingDates {
+struct Exercise4UseCase: Exercise4UseCaseType, GettingDateColor, GettingHolidays {
     var dateGateway: DateGatewayType
     
 }

@@ -18,7 +18,7 @@ final class Exercise5UseCaseMock: Exercise5UseCaseType {
     var calculateFeeResult = CalculatePizzaFeeResult(fee: 1500.0, promotions: [])
     var calculateFeeIsCalled = false
     
-    func calculateFee(dto: CalculatePizzaFeeDto) -> CalculatePizzaFeeResult {
+    func calculateFee(dto: PizzaOrderDto) -> CalculatePizzaFeeResult {
         calculateFeeIsCalled = true
         return calculateFeeResult
     }

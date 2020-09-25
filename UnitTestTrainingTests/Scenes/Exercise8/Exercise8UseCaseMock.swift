@@ -27,7 +27,7 @@ final class Exercise8UseCaseMock: Exercise8UseCaseType {
         return validateAgeSuccess
     }
     
-    func calculatePlayFee(dto: CalculateBadmintonFeeDto) -> Double {
+    func calculatePlayFee(dto: BadmintonGameDto) -> Double {
         isCalculatePlayFeeCalled = true
         self.age = dto.age
         self.isMale = dto.isMale

@@ -24,7 +24,7 @@ final class Exercise2UseCaseMock: Exercise2UseCaseType {
     var calculateFeeCalled = false
     var calculateFeeValues = 0
     
-    func calculateFee(dto: CalculateChargeFeeDto) -> Int {
+    func calculateFee(dto: ATMWithdrawalDto) -> Int {
         calculateFeeCalled = true
         return calculateFeeValues
     }

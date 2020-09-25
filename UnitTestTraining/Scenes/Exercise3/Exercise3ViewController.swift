@@ -24,7 +24,7 @@ final class Exercise3ViewController: UIViewController, Bindable {
     var viewModel: Exercise3ViewModel!
     var disposeBag = DisposeBag()
     
-    private let minusTrigger = PublishSubject<IndexPath>()
+    private let subtractTrigger = PublishSubject<IndexPath>()
     private let addTrigger = PublishSubject<IndexPath>()
 
     // MARK: - Life Cycle
@@ -47,6 +47,7 @@ final class Exercise3ViewController: UIViewController, Bindable {
 
     private func configView() {
         title = "Exercise 3"
+        
         tableView.do {
             $0.register(cellType: ClotherCell.self)
             $0.estimatedRowHeight = 220
@@ -57,7 +58,7 @@ final class Exercise3ViewController: UIViewController, Bindable {
     func bindViewModel() {
         let input = Exercise3ViewModel.Input(loadTrigger: Driver.just(()),
                                              addTrigger: addTrigger.asDriverOnErrorJustComplete(),
-                                             minusTrigger: minusTrigger.asDriverOnErrorJustComplete())
+                                             subtractTrigger: subtractTrigger.asDriverOnErrorJustComplete())
         let output = viewModel.transform(input, disposeBag: disposeBag)
         
         output.$clotherList
@@ -75,7 +76,7 @@ final class Exercise3ViewController: UIViewController, Bindable {
                     }
                         
                     $0.minusButtonAction = {
-                        self?.minusTrigger.onNext(IndexPath(row: index, section: 0))
+                        self?.subtractTrigger.onNext(IndexPath(row: index, section: 0))
                     }
                 }
             }

@@ -10,16 +10,45 @@ import RxSwift
 import Dto
 import ValidatedPropertyKit
 
+struct BadmintonGameDto: Dto {
+    
+    // swiftlint:disable:next
+    @Validated(.isValidAge(message: "Độ tuổi từ 0 - 120 tuổi"))
+    var ageString: String? = ""
+    
+    var isMale = false
+    var playDate = Date()
+    var age = 0
+    
+    var validatedProperties: [ValidatedProperty] {
+        return [_ageString]
+    }
+}
+
+extension BadmintonGameDto {
+    
+    init(isMale: Bool, playDate: Date, age: Int) {
+        self.isMale = isMale
+        self.playDate = playDate
+        self.age = age
+        self.ageString = String(describing: age)
+    }
+    
+    static func validateAge(_ ageString: String) -> Result<String, ValidationError> {
+        return BadmintonGameDto()._ageString.isValid(value: ageString)
+    }
+}
+
 protocol CalculateBadmintonFee {
     
 }
 
 extension CalculateBadmintonFee {
     func validateAge(_ age: String) -> ValidationResult {
-        return CalculateBadmintonFeeDto.validateAge(age).mapToVoid()
+        return BadmintonGameDto.validateAge(age).mapToVoid()
     }
     
-    func calculatePlayFee(dto: CalculateBadmintonFeeDto) -> Double {
+    func calculatePlayFee(dto: BadmintonGameDto) -> Double {
         guard dto.validationError == nil else { return 0.0 }
         
         if dto.age < 13 {

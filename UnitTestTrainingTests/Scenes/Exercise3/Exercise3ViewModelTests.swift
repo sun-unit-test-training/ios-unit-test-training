@@ -22,7 +22,7 @@ final class Exercise3ViewModelTests: XCTestCase {
     
     private let loadTrigger = PublishSubject<Void>()
     private let addTrigger = PublishSubject<IndexPath>()
-    private let minusTrigger = PublishSubject<IndexPath>()
+    private let subtractTrigger = PublishSubject<IndexPath>()
 
     override func setUp() {
         super.setUp()
@@ -32,7 +32,7 @@ final class Exercise3ViewModelTests: XCTestCase {
 
         input = Exercise3ViewModel.Input(loadTrigger: loadTrigger.asDriverOnErrorJustComplete(),
                                          addTrigger: addTrigger.asDriverOnErrorJustComplete(),
-                                         minusTrigger: minusTrigger.asDriverOnErrorJustComplete())
+                                         subtractTrigger: subtractTrigger.asDriverOnErrorJustComplete())
         
         disposeBag = DisposeBag()
         output = viewModel.transform(input, disposeBag: disposeBag)
@@ -43,19 +43,8 @@ final class Exercise3ViewModelTests: XCTestCase {
         loadTrigger.onNext(())
         
         // assert
-        XCTAssert(useCase.getClotherDataCalled)
+        XCTAssert(useCase.getClotherItemsCalled)
         XCTAssertEqual(output.clotherList.count, 3)
-    }
-    
-    func test_minus_and_add() {
-        // act
-        loadTrigger.onNext(())
-        addTrigger.onNext(IndexPath(row: 0, section: 0))
-        minusTrigger.onNext(IndexPath(row: 0, section: 0))
-        
-        // assert
-        XCTAssert(useCase.addCalled)
-        XCTAssert(useCase.minusCalled)
     }
     
     func test_getDiscount() {

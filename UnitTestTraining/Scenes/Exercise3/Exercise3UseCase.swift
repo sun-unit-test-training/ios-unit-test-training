@@ -9,12 +9,10 @@ import Then
 import RxSwift
 
 protocol Exercise3UseCaseType {
-    func getClotherData() -> [ClotherOrderItem]
-    func getDiscount(clothers: [ClotherOrderItem]) -> Double
-    func minus(dto: CaculatingClotherDiscountDto) -> [ClotherOrderItem]
-    func add(dto: CaculatingClotherDiscountDto) -> [ClotherOrderItem]
+    func getClotherItems() -> [ClotherOrderItem]
+    func getDiscount(of order: ClotherOrder) -> Double
 }
 
-struct Exercise3UseCase: Exercise3UseCaseType, CaculatingClotherDiscount {
+struct Exercise3UseCase: Exercise3UseCaseType, CaculatingClotherDiscount, GettingClotherItems {
     
 }

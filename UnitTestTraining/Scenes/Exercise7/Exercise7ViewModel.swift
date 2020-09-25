@@ -53,9 +53,9 @@ extension Exercise7ViewModel: ViewModel {
             .map { isPremium, cartAmount, isQuickDeliver -> (standardFee: Double, quickFee: Double) in
                 let amount = Double(cartAmount) ?? 0.0
                 let dto =
-                    CaculatingTransportationFeeDto(isPremiumMember: isPremium,
-                                                   isQuickDeliver: isQuickDeliver,
-                                                   cartAmount: amount)
+                    VietnamMartOrderDto(isPremiumMember: isPremium,
+                                        isQuickDeliver: isQuickDeliver,
+                                        cartAmount: amount)
                 return self.useCase.calculationFee(dto: dto)
             }
             .map { ($0.standardFee, $0.quickFee) }

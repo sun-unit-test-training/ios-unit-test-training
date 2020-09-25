@@ -10,7 +10,7 @@ import RxSwift
 import ValidatedPropertyKit
 
 protocol Exercise7UseCaseType {
-    func calculationFee(dto: CaculatingTransportationFeeDto) -> (standardFee: Double, quickFee: Double)
+    func calculationFee(dto: VietnamMartOrderDto) -> (standardFee: Double, quickFee: Double)
     func validateCardAmount(_ amount: String) -> ValidationResult
 }
 

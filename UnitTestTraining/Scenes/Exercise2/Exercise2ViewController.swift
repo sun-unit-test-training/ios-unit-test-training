@@ -12,7 +12,7 @@ import MGArchitecture
 import RxSwift
 import RxCocoa
 
-final class Exercise2ViewController: UIViewController, Bindable {
+final class Exercise2ViewController: UITableViewController, Bindable {
     
     // MARK: - IBOutlets
     @IBOutlet weak var dateLabel: UILabel!

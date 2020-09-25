@@ -22,7 +22,7 @@ extension Exercise3ViewModel: ViewModel {
     struct Input {
         let loadTrigger: Driver<Void>
         let addTrigger: Driver<IndexPath>
-        let minusTrigger: Driver<IndexPath>
+        let subtractTrigger: Driver<IndexPath>
     }
 
     struct Output {
@@ -32,39 +32,42 @@ extension Exercise3ViewModel: ViewModel {
     
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
         let output = Output()
-        let clotherListSubject = BehaviorRelay<[ClotherOrderItem]>(value: [])
+        let clotherOrderSubject = BehaviorRelay(value: ClotherOrder())
                 
         input.loadTrigger
-            .map { self.useCase.getClotherData() }
-            .drive(clotherListSubject)
+            .map { self.useCase.getClotherItems() }
+            .map { ClotherOrder(items: $0) }
+            .drive(clotherOrderSubject)
             .disposed(by: disposeBag)
         
-        clotherListSubject
+        clotherOrderSubject
             .asDriver()
-            .map { $0.map(ClotherViewModel.init) }
+            .map { $0.items.map(ClotherViewModel.init) }
             .drive(output.$clotherList)
             .disposed(by: disposeBag)
         
-        select(trigger: input.minusTrigger, items: clotherListSubject.asDriver())
-            .map { clother in
-                let dto = CaculatingClotherDiscountDto(clother: clother, currentClothers: clotherListSubject.value)
-                return self.useCase.minus(dto: dto)
-            }
-            .drive(clotherListSubject)
+        input.subtractTrigger
+            .drive(onNext: { indexPath in
+                var order = clotherOrderSubject.value
+                let item = order.items[indexPath.row]
+                order.subtract(item)
+                clotherOrderSubject.accept(order)
+            })
             .disposed(by: disposeBag)
         
-        select(trigger: input.addTrigger, items: clotherListSubject.asDriver())
-            .map { clother in
-                let dto = CaculatingClotherDiscountDto(clother: clother, currentClothers: clotherListSubject.value)
-                return self.useCase.add(dto: dto)
-            }
-            .drive(clotherListSubject)
+        input.addTrigger
+            .drive(onNext: { indexPath in
+                var order = clotherOrderSubject.value
+                let item = order.items[indexPath.row]
+                order.add(item)
+                clotherOrderSubject.accept(order)
+            })
             .disposed(by: disposeBag)
         
-        clotherListSubject
+        clotherOrderSubject
             .asDriver()
-            .map { subject in
-                self.useCase.getDiscount(clothers: subject)
+            .map { order in
+                self.useCase.getDiscount(of: order)
             }
             .drive(output.$discount)
             .disposed(by: disposeBag)

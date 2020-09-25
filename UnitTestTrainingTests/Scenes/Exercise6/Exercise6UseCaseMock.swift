@@ -21,9 +21,9 @@ final class Exercise6UseCaseMock: Exercise6UseCaseType {
     var isvalidateMoneySpentCalled = false
     var validateMoneySpentSuccess = ValidationResult.success(())
     
-    func calculateFreeMinutes(dto: CalculateFreeMinutesDto) -> Double {
+    func calculateFreeMinutes(dto: TayHoOrderDto) -> Double {
         calculateFreeMinutesCalled = true
-        watchMovie = dto.isWatchMovie
+        watchMovie = dto.watchingMovie
         moneySpent = dto.moneySpent
         return calculateFreeMinutesReturnValue
     }

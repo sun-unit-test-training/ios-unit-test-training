@@ -10,8 +10,11 @@
 import RxSwift
 
 final class Exercise3UseCaseMock: Exercise3UseCaseType {
-    var getClotherDataCalled = false
-    var getClotherDataReturnValue: [ClotherOrderItem] = {
+    
+    // MARK: - getClotherData
+    
+    var getClotherItemsCalled = false
+    var getClotherItemsReturnValue: [ClotherOrderItem] = {
         return [
             ClotherOrderItem(type: .whiteShirt),
             ClotherOrderItem(type: .tie),
@@ -19,38 +22,18 @@ final class Exercise3UseCaseMock: Exercise3UseCaseType {
         ]
     }()
     
-    func getClotherData() -> [ClotherOrderItem] {
-        getClotherDataCalled = true
-        return getClotherDataReturnValue
+    func getClotherItems() -> [ClotherOrderItem] {
+        getClotherItemsCalled = true
+        return getClotherItemsReturnValue
     }
     
-    var getDiscountReturnValue = 0.12
-    var getDiscountCalled = false
+    // MARK: - getDiscount
     
-    func getDiscount(clothers: [ClotherOrderItem]) -> Double {
+    var getDiscountCalled = false
+    var getDiscountReturnValue = 0.12
+    
+    func getDiscount(of order: ClotherOrder) -> Double {
         getDiscountCalled = true
         return getDiscountReturnValue
-    }
-    
-    var minusCalled = false
-    
-    func minus(dto: CaculatingClotherDiscountDto) -> [ClotherOrderItem] {
-        minusCalled = true
-        return [
-            ClotherOrderItem(total: 1, type: .whiteShirt),
-            ClotherOrderItem(total: 1, type: .tie),
-            ClotherOrderItem(total: 1, type: .other)
-        ]
-    }
-    
-    var addCalled = false
-    
-    func add(dto: CaculatingClotherDiscountDto) -> [ClotherOrderItem] {
-        addCalled = true
-        return [
-            ClotherOrderItem(total: 1, type: .whiteShirt),
-            ClotherOrderItem(total: 1, type: .tie),
-            ClotherOrderItem(total: 1, type: .other)
-        ]
     }
 }

@@ -9,13 +9,9 @@
 import Foundation
 import Dto
 
-struct CalculateBeerPriceDto: Dto {
+struct BeerOrderDto: Dto {
     let usingVoucher: Bool
     let purchaseTime: Date
-    
-    var validatedProperties: [ValidatedProperty] {
-        return []
-    }
 }
 
 protocol CalculatingBeerPrice {
@@ -23,7 +19,7 @@ protocol CalculatingBeerPrice {
 }
 
 extension CalculatingBeerPrice {
-    func calculateBeerPrice(dto: CalculateBeerPriceDto) -> Double {
+    func calculateBeerPrice(dto: BeerOrderDto) -> Double {
         let calendar = Calendar(identifier: .gregorian)
         
         let hour = calendar.component(.hour, from: dto.purchaseTime)

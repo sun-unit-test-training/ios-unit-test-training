@@ -10,22 +10,25 @@ import Foundation
 import Dto
 import ValidatedPropertyKit
 
-struct CalculatePizzaFeeDto: Dto {
-    // swiftlint:disable:next
+struct PizzaOrderDto: Dto {
     @Validated(.isNumber(message: "Giá thành phải lớn hơn 0"))
-    var priceString: String? = ""
+    var price: String? = "" // swiftlint:disable:this let_var_whitespace
+    
+    var priceValue: Double {
+        return price.flatMap { Double($0) } ?? 0.0
+    }
     
     var receiveMethod: ReceiveMethod = .deliver
     var usingCoupon: Bool = false
     
     var validatedProperties: [ValidatedProperty] {
-        return [_priceString]
+        return [_price]
     }
 }
 
-extension CalculatePizzaFeeDto {
+extension PizzaOrderDto {
     static func validatePizzaPrice(_ price: String) -> Result<String, ValidationError> {
-        return CalculatePizzaFeeDto()._priceString.isValid(value: price)
+        return PizzaOrderDto()._price.isValid(value: price)
     }
 }
 
@@ -35,16 +38,18 @@ protocol CalculatePizzaFee {
 
 extension CalculatePizzaFee {
     func validatePizzaPrice(_ price: String) -> ValidationResult {
-        return CalculatePizzaFeeDto.validatePizzaPrice(price).mapToVoid()
+        return PizzaOrderDto.validatePizzaPrice(price).mapToVoid()
     }
     
-    func calculateFee(dto: CalculatePizzaFeeDto) -> CalculatePizzaFeeResult {
-        var promotions: [PromotionType] = []
-        guard var price = Double(dto.priceString ?? ""), dto.validationError == nil else {
-            return CalculatePizzaFeeResult(fee: 0.0, promotions: [])
+    func calculateFee(dto: PizzaOrderDto) -> CalculatePizzaFeeResult {
+        guard dto.validationError == nil else {
+            return CalculatePizzaFeeResult()
         }
         
-        if price > 1500 {
+        var price = dto.priceValue
+        var promotions: [PromotionType] = []
+        
+        if dto.priceValue > 1500 {
             promotions.append(.freePotato)
         }
         

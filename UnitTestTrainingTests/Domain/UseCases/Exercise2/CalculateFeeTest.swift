@@ -11,7 +11,7 @@ import XCTest
 import RxSwift
 import RxCocoa
 
-final class CalculateFeeTest: XCTestCase, CalculatingFee, GettingDates {
+final class CalculateFeeTest: XCTestCase, CalculatingFee, GettingHolidays {
     var dateGateway: DateGatewayType {
         return dateGatewayMock
     }
@@ -32,7 +32,7 @@ final class CalculateFeeTest: XCTestCase, CalculatingFee, GettingDates {
     }
     
     func test_VIPAccount() {
-        let dto = CalculateChargeFeeDto(isVIP: true, date: Date(), holidays: self.getHolidays())
+        let dto = ATMWithdrawalDto(isVIP: true, date: Date(), holidays: self.getHolidays())
         let result = self.calculateFee(dto: dto)
         
         XCTAssertEqual(result, 0)
@@ -40,7 +40,7 @@ final class CalculateFeeTest: XCTestCase, CalculatingFee, GettingDates {
     
     func test_normalAccount_normalDay_freeTime() {
         let date = createDayWith(string: "2020/09/16 09:00:00")
-        let dto = CalculateChargeFeeDto(isVIP: false, date: date, holidays: self.getHolidays())
+        let dto = ATMWithdrawalDto(isVIP: false, date: date, holidays: self.getHolidays())
         let result = self.calculateFee(dto: dto)
         
         XCTAssertEqual(result, 0)
@@ -48,7 +48,7 @@ final class CalculateFeeTest: XCTestCase, CalculatingFee, GettingDates {
     
     func test_normalAccount_normalDay_notFreeTime() {
         let date = createDayWith(string: "2020/09/16 01:00:00")
-        let dto = CalculateChargeFeeDto(isVIP: false, date: date, holidays: self.getHolidays())
+        let dto = ATMWithdrawalDto(isVIP: false, date: date, holidays: self.getHolidays())
         let result = self.calculateFee(dto: dto)
         
         XCTAssertEqual(result, 110)
@@ -56,7 +56,7 @@ final class CalculateFeeTest: XCTestCase, CalculatingFee, GettingDates {
     
     func test_normalAccount_weekend_freeTime() {
         let date = createDayWith(string: "2020/09/19 08:45:00")
-        let dto = CalculateChargeFeeDto(isVIP: false, date: date, holidays: self.getHolidays())
+        let dto = ATMWithdrawalDto(isVIP: false, date: date, holidays: self.getHolidays())
         let result = self.calculateFee(dto: dto)
         
         XCTAssertEqual(result, 110)
@@ -64,7 +64,7 @@ final class CalculateFeeTest: XCTestCase, CalculatingFee, GettingDates {
     
     func test_normalAccount_holiday_notFreeTime() {
         let date = createDayWith(string: "2020/04/30 18:30:00")
-        let dto = CalculateChargeFeeDto(isVIP: false, date: date, holidays: self.getHolidays())
+        let dto = ATMWithdrawalDto(isVIP: false, date: date, holidays: self.getHolidays())
         let result = self.calculateFee(dto: dto)
         
         XCTAssertEqual(result, 110)

@@ -21,7 +21,7 @@ final class CalculatingBeerPriceTests: XCTestCase, CalculatingBeerPrice {
     func test_calculateBeerPrice_usingVoucher() {
         // act
         guard let purchaseTime = Date(hour: 9) else { return }
-        let dto = CalculateBeerPriceDto(usingVoucher: true, purchaseTime: purchaseTime)
+        let dto = BeerOrderDto(usingVoucher: true, purchaseTime: purchaseTime)
         let result = self.calculateBeerPrice(dto: dto)
         
         // assert
@@ -34,7 +34,7 @@ final class CalculatingBeerPriceTests: XCTestCase, CalculatingBeerPrice {
     func test_calculateBeerPrice_inPromotionTime() {
         // act
         guard let purchaseTime = Date(hour: 16) else { return }
-        let dto = CalculateBeerPriceDto(usingVoucher: false, purchaseTime: purchaseTime)
+        let dto = BeerOrderDto(usingVoucher: false, purchaseTime: purchaseTime)
         let result = self.calculateBeerPrice(dto: dto)
         
         // assert
@@ -47,7 +47,7 @@ final class CalculatingBeerPriceTests: XCTestCase, CalculatingBeerPrice {
     func test_calculateBeerPrice() {
         // act
         guard let purchaseTime = Date(hour: 9) else { return }
-        let dto = CalculateBeerPriceDto(usingVoucher: false, purchaseTime: purchaseTime)
+        let dto = BeerOrderDto(usingVoucher: false, purchaseTime: purchaseTime)
         let result = self.calculateBeerPrice(dto: dto)
         
         // assert

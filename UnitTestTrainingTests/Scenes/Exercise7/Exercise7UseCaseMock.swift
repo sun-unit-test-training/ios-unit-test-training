@@ -22,7 +22,7 @@ final class Exercise7UseCaseMock: Exercise7UseCaseType {
     var isvalidateCardAmountCalled = false
     var validateCartAmountSuccess = ValidationResult.success(())
     
-    func calculationFee(dto: CaculatingTransportationFeeDto) -> (standardFee: Double, quickFee: Double) {
+    func calculationFee(dto: VietnamMartOrderDto) -> (standardFee: Double, quickFee: Double) {
         self.isCalculationFeeCalled = true
         self.isQuickDeliver = dto.isQuickDeliver
         self.isPremiumMember = dto.isPremiumMember

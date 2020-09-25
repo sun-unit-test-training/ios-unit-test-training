@@ -53,7 +53,7 @@ extension Exercise6ViewModel: ViewModel {
         .withLatestFrom(Driver.combineLatest(isWatchMovie, moneySpent))
         .map { isWatchMovie, moneySpent -> Double in
             let moneySpent = Double(moneySpent) ?? 0
-            let dto = CalculateFreeMinutesDto(isWatchMovie: isWatchMovie, moneySpent: moneySpent)
+            let dto = TayHoOrderDto(watchingMovie: isWatchMovie, moneySpent: moneySpent)
             return self.useCase.calculateFreeMinutes(dto: dto)
         }
         .map { String($0) }

@@ -21,7 +21,7 @@ final class CalculateFreeMinutesTest: XCTestCase, CalculatingFreeMinutes {
     /// - Not Watch Movie
     func test_calculateFreeMinutes_lessthan_2000_not_watchMovie() {
         // act
-        let dto = CalculateFreeMinutesDto(isWatchMovie: false, moneySpent: 1000)
+        let dto = TayHoOrderDto(watchingMovie: false, moneySpent: 1000)
         let result = self.calculateFreeMinutes(dto: dto)
         
         // assert
@@ -33,7 +33,7 @@ final class CalculateFreeMinutesTest: XCTestCase, CalculatingFreeMinutes {
     /// - Watch Movie
     func test_calculateFreeMinutes_lessthan_2000_watchMovie() {
         // act
-        let dto = CalculateFreeMinutesDto(isWatchMovie: true, moneySpent: 1000)
+        let dto = TayHoOrderDto(watchingMovie: true, moneySpent: 1000)
         let result = self.calculateFreeMinutes(dto: dto)
         
         // assert
@@ -45,7 +45,7 @@ final class CalculateFreeMinutesTest: XCTestCase, CalculatingFreeMinutes {
     /// - Not Watch Movie
     func test_calculateFreeMinutes_lessthan_2000_morethan_5000_not_watchMovie() {
         // act
-        let dto = CalculateFreeMinutesDto(isWatchMovie: false, moneySpent: 2000)
+        let dto = TayHoOrderDto(watchingMovie: false, moneySpent: 2000)
         let result = self.calculateFreeMinutes(dto: dto)
         
         // assert
@@ -57,7 +57,7 @@ final class CalculateFreeMinutesTest: XCTestCase, CalculatingFreeMinutes {
     /// - Watch Movie
     func test_calculateFreeMinutes_lessthan_2000_morethan_5000_watchMovie() {
         // act
-        let dto = CalculateFreeMinutesDto(isWatchMovie: true, moneySpent: 2000)
+        let dto = TayHoOrderDto(watchingMovie: true, moneySpent: 2000)
         let result = self.calculateFreeMinutes(dto: dto)
         
         // assert
@@ -69,7 +69,7 @@ final class CalculateFreeMinutesTest: XCTestCase, CalculatingFreeMinutes {
     /// - Not Watch Movie
     func test_calculateFreeMinutes_morethan_5000_not_watchMovie() {
         // act
-        let dto = CalculateFreeMinutesDto(isWatchMovie: false, moneySpent: 5000)
+        let dto = TayHoOrderDto(watchingMovie: false, moneySpent: 5000)
         let result = self.calculateFreeMinutes(dto: dto)
         
         // assert
@@ -81,7 +81,7 @@ final class CalculateFreeMinutesTest: XCTestCase, CalculatingFreeMinutes {
     /// - Watch Movie
     func test_calculateBeerPrice() {
         // act
-        let dto = CalculateFreeMinutesDto(isWatchMovie: true, moneySpent: 5000)
+        let dto = TayHoOrderDto(watchingMovie: true, moneySpent: 5000)
         let result = self.calculateFreeMinutes(dto: dto)
         
         // assert

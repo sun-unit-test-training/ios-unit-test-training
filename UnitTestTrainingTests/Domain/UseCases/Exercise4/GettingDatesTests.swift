@@ -10,7 +10,7 @@
 import XCTest
 import RxSwift
 
-final class GettingDatesTests: XCTestCase, GettingDates {
+final class GettingDatesTests: XCTestCase, GettingDateColor, GettingHolidays {
     var dateGateway: DateGatewayType {
         return dateGatewayMock
     }

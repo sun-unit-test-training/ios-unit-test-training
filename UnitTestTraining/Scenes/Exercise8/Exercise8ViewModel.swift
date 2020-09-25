@@ -61,7 +61,7 @@ extension Exercise8ViewModel: ViewModel {
         .withLatestFrom(Driver.combineLatest(age, isMale, date))
         .map { (age, isMale, date) -> Double in
             let age = Int(age) ?? 0
-            let dto = CalculateBadmintonFeeDto(isMale: isMale, playDate: date, age: age)
+            let dto = BadmintonGameDto(isMale: isMale, playDate: date, age: age)
             return self.useCase.calculatePlayFee(dto: dto)
         }
         .map { ($0) }

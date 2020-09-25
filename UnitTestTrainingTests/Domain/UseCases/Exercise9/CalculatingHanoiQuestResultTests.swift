@@ -23,7 +23,7 @@ final class CalculatingHanoiQuestResultTests: XCTestCase, CalculatingHanoiQuestR
      */
     func test_case1() {
         // 1. Given
-        let dto = CalculatingHanoiQuestResultDto(
+        let dto = HanoiQuestDto(
             bringMagicWand: true,
             bringStrategist: true,
             bringDarknessKey: true,
@@ -46,7 +46,7 @@ final class CalculatingHanoiQuestResultTests: XCTestCase, CalculatingHanoiQuestR
      */
     func test_case2() {
         // 1. Given
-        let dto = CalculatingHanoiQuestResultDto(
+        let dto = HanoiQuestDto(
             bringMagicWand: true,
             bringStrategist: true,
             bringDarknessKey: true,
@@ -69,7 +69,7 @@ final class CalculatingHanoiQuestResultTests: XCTestCase, CalculatingHanoiQuestR
      */
     func test_case3() {
         // 1. Given
-        let dto = CalculatingHanoiQuestResultDto(
+        let dto = HanoiQuestDto(
             bringMagicWand: true,
             bringStrategist: true,
             bringDarknessKey: false,
@@ -92,7 +92,7 @@ final class CalculatingHanoiQuestResultTests: XCTestCase, CalculatingHanoiQuestR
      */
     func test_case4() {
         // 1. Given
-        let dto = CalculatingHanoiQuestResultDto(
+        let dto = HanoiQuestDto(
             bringMagicWand: true,
             bringStrategist: false,
             bringDarknessKey: true,
@@ -115,7 +115,7 @@ final class CalculatingHanoiQuestResultTests: XCTestCase, CalculatingHanoiQuestR
      */
     func test_case5() {
         // 1. Given
-        let dto = CalculatingHanoiQuestResultDto(
+        let dto = HanoiQuestDto(
             bringMagicWand: true,
             bringStrategist: false,
             bringDarknessKey: true,
@@ -138,7 +138,7 @@ final class CalculatingHanoiQuestResultTests: XCTestCase, CalculatingHanoiQuestR
      */
     func test_case6() {
         // 1. Given
-        let dto = CalculatingHanoiQuestResultDto(
+        let dto = HanoiQuestDto(
             bringMagicWand: true,
             bringStrategist: false,
             bringDarknessKey: false,
@@ -161,7 +161,7 @@ final class CalculatingHanoiQuestResultTests: XCTestCase, CalculatingHanoiQuestR
      */
     func test_case7() {
         // 1. Given
-        let dto = CalculatingHanoiQuestResultDto(
+        let dto = HanoiQuestDto(
             bringMagicWand: false,
             bringStrategist: true,
             bringDarknessKey: true,
@@ -184,7 +184,7 @@ final class CalculatingHanoiQuestResultTests: XCTestCase, CalculatingHanoiQuestR
      */
     func test_case8() {
         // 1. Given
-        let dto = CalculatingHanoiQuestResultDto(
+        let dto = HanoiQuestDto(
             bringMagicWand: false,
             bringStrategist: true,
             bringDarknessKey: true,
@@ -207,7 +207,7 @@ final class CalculatingHanoiQuestResultTests: XCTestCase, CalculatingHanoiQuestR
      */
     func test_case9() {
         // 1. Given
-        let dto = CalculatingHanoiQuestResultDto(
+        let dto = HanoiQuestDto(
             bringMagicWand: false,
             bringStrategist: true,
             bringDarknessKey: false,
@@ -230,7 +230,7 @@ final class CalculatingHanoiQuestResultTests: XCTestCase, CalculatingHanoiQuestR
      */
     func test_case10() {
         // 1. Given
-        let dto = CalculatingHanoiQuestResultDto(
+        let dto = HanoiQuestDto(
             bringMagicWand: false,
             bringStrategist: false,
             bringDarknessKey: true,
