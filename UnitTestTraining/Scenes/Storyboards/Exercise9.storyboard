@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exercise9 View Controller-->
+        <scene sceneID="znE-RB-Gc6">
+            <objects>
+                <tableViewController storyboardIdentifier="Exercise9ViewController" id="oR5-P1-KLq" customClass="Exercise9ViewController" customModule="UnitTestTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="fuV-pF-jpA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Lựa chọn đồ mang theo" id="zaj-4W-G4z">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="PkL-Ky-PhA">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PkL-Ky-PhA" id="vcs-kF-Fbb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đũa phép" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kv-4D-eti">
+                                                    <rect key="frame" x="20" y="11.5" width="74" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gAT-pu-xjU">
+                                                    <rect key="frame" x="345" y="6" width="49" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="gAT-pu-xjU" secondAttribute="trailing" constant="22" id="X67-mV-0O7"/>
+                                                <constraint firstItem="gAT-pu-xjU" firstAttribute="centerY" secondItem="vcs-kF-Fbb" secondAttribute="centerY" id="k09-sE-fTf"/>
+                                                <constraint firstItem="5Kv-4D-eti" firstAttribute="leading" secondItem="vcs-kF-Fbb" secondAttribute="leading" constant="20" symbolic="YES" id="lA1-7m-UZ2"/>
+                                                <constraint firstItem="5Kv-4D-eti" firstAttribute="centerY" secondItem="vcs-kF-Fbb" secondAttribute="centerY" id="sX7-xf-B32"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="eLx-dT-YWb">
+                                        <rect key="frame" x="0.0" y="99" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eLx-dT-YWb" id="kjJ-z1-432">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quân sư" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obC-AJ-9ht">
+                                                    <rect key="frame" x="20" y="11.5" width="63.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sxX-qa-QCW">
+                                                    <rect key="frame" x="345" y="6" width="49" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sxX-qa-QCW" firstAttribute="centerY" secondItem="kjJ-z1-432" secondAttribute="centerY" id="9mn-Jg-pZc"/>
+                                                <constraint firstItem="obC-AJ-9ht" firstAttribute="centerY" secondItem="kjJ-z1-432" secondAttribute="centerY" id="GYY-6H-Du8"/>
+                                                <constraint firstItem="obC-AJ-9ht" firstAttribute="leading" secondItem="kjJ-z1-432" secondAttribute="leading" constant="20" symbolic="YES" id="Q68-6r-2D0"/>
+                                                <constraint firstAttribute="trailing" secondItem="sxX-qa-QCW" secondAttribute="trailing" constant="22" id="WKa-Ja-Nz9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="CeE-TZ-JI7">
+                                        <rect key="frame" x="0.0" y="142.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CeE-TZ-JI7" id="fbZ-it-s27">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chìa khóa bóng đêm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUx-fB-z2Y">
+                                                    <rect key="frame" x="20" y="11.5" width="157.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IUN-nQ-dXw">
+                                                    <rect key="frame" x="345" y="6" width="49" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NUx-fB-z2Y" firstAttribute="centerY" secondItem="fbZ-it-s27" secondAttribute="centerY" id="8xd-uU-kwI"/>
+                                                <constraint firstItem="NUx-fB-z2Y" firstAttribute="leading" secondItem="fbZ-it-s27" secondAttribute="leading" constant="20" symbolic="YES" id="aeK-hl-qRl"/>
+                                                <constraint firstAttribute="trailing" secondItem="IUN-nQ-dXw" secondAttribute="trailing" constant="22" id="ijX-1D-t9S"/>
+                                                <constraint firstItem="IUN-nQ-dXw" firstAttribute="centerY" secondItem="fbZ-it-s27" secondAttribute="centerY" id="qge-VE-4fP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="Eyd-Jx-CXY">
+                                        <rect key="frame" x="0.0" y="186" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eyd-Jx-CXY" id="h29-mV-UFv">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kiếm ánh sáng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvR-t4-Pvv">
+                                                    <rect key="frame" x="20" y="11.5" width="112" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BHE-8q-p24">
+                                                    <rect key="frame" x="345" y="6" width="49" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WvR-t4-Pvv" firstAttribute="leading" secondItem="h29-mV-UFv" secondAttribute="leading" constant="20" symbolic="YES" id="9gT-pc-NZN"/>
+                                                <constraint firstItem="BHE-8q-p24" firstAttribute="centerY" secondItem="h29-mV-UFv" secondAttribute="centerY" id="C6e-ci-Ka6"/>
+                                                <constraint firstAttribute="trailing" secondItem="BHE-8q-p24" secondAttribute="trailing" constant="22" id="Eej-t5-FaG"/>
+                                                <constraint firstItem="WvR-t4-Pvv" firstAttribute="centerY" secondItem="h29-mV-UFv" secondAttribute="centerY" id="H5S-TZ-SY5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Đi đấm nhau nào" id="g0l-KD-dTa">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="uPJ-Yo-jIz">
+                                        <rect key="frame" x="0.0" y="285.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uPJ-Yo-jIz" id="fG8-8A-o4X">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coB-Fa-pls">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                    <state key="normal" title="Bấm vào đây để đánh Big Boss"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="coB-Fa-pls" secondAttribute="trailing" id="NLp-te-PFM"/>
+                                                <constraint firstItem="coB-Fa-pls" firstAttribute="leading" secondItem="fG8-8A-o4X" secondAttribute="leading" id="UkW-tz-kko"/>
+                                                <constraint firstAttribute="bottom" secondItem="coB-Fa-pls" secondAttribute="bottom" id="saz-aW-FMJ"/>
+                                                <constraint firstItem="coB-Fa-pls" firstAttribute="top" secondItem="fG8-8A-o4X" secondAttribute="top" id="wsD-Dh-4P5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Và kết quả là" id="aAp-01-v69">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="9wk-ao-oS9">
+                                        <rect key="frame" x="0.0" y="385" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9wk-ao-oS9" id="K8J-cK-Vat">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đang chờ bấm nút..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqa-7M-9UX">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="wqa-7M-9UX" secondAttribute="bottom" id="4aK-HC-oIO"/>
+                                                <constraint firstItem="wqa-7M-9UX" firstAttribute="top" secondItem="K8J-cK-Vat" secondAttribute="top" id="9zo-Mf-mXE"/>
+                                                <constraint firstAttribute="trailing" secondItem="wqa-7M-9UX" secondAttribute="trailing" constant="20" symbolic="YES" id="DTX-ij-AN9"/>
+                                                <constraint firstItem="wqa-7M-9UX" firstAttribute="leading" secondItem="K8J-cK-Vat" secondAttribute="leading" constant="20" symbolic="YES" id="mpU-Xg-sWw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Điều kiện" id="2uF-au-5tM">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="yIa-GT-JXb">
+                                        <rect key="frame" x="0.0" y="484.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yIa-GT-JXb" id="jZt-MX-Ebu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsd-u7-Svc">
+                                                    <rect key="frame" x="20" y="20" width="374" height="4"/>
+                                                    <string key="text">Trong Roll Playing Game "Hanoi quest", để dũng sĩ Bánh Mì có thể đánh 「Big Boss」hùng mạnh, cần phải hoàn thành rất nhiều điều kiện.								
+---								
+●Điều kiện tiên quyết：								
+①：Để tìm được căn phòng nơi có Big Boss, cần mang theo công cụ là "Đũa phép" hoặc là cần có "Quân sư" làm bạn đồng hành 								
+②：Khi vào trong phòng có Big Boss , cần mang theo công cụ là "Chìa khoá bóng đêm". 								
+③：Để đánh bại Big Boss, dũng sĩ Bánh Mì cần phải mang theo vũ khí là "Kiếm ánh sáng" 								</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="wsd-u7-Svc" secondAttribute="trailing" constant="20" symbolic="YES" id="6ez-et-OUa"/>
+                                                <constraint firstItem="wsd-u7-Svc" firstAttribute="leading" secondItem="jZt-MX-Ebu" secondAttribute="leading" constant="20" symbolic="YES" id="PVf-UG-oeF"/>
+                                                <constraint firstItem="wsd-u7-Svc" firstAttribute="top" secondItem="jZt-MX-Ebu" secondAttribute="top" constant="20" symbolic="YES" id="edL-pY-M92"/>
+                                                <constraint firstAttribute="bottom" secondItem="wsd-u7-Svc" secondAttribute="bottom" constant="20" symbolic="YES" id="ekN-bK-AB3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="oR5-P1-KLq" id="YbV-cS-U3k"/>
+                            <outlet property="delegate" destination="oR5-P1-KLq" id="a9z-Hj-g7f"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="darknessKeySelectionSwitch" destination="IUN-nQ-dXw" id="r5m-kz-3ms"/>
+                        <outlet property="hitBigBossButton" destination="coB-Fa-pls" id="P2K-6B-hlR"/>
+                        <outlet property="lightSwordSelectionSwitch" destination="BHE-8q-p24" id="zCN-xt-JCT"/>
+                        <outlet property="magicWandSelectionSwitch" destination="gAT-pu-xjU" id="ARE-Ds-DRW"/>
+                        <outlet property="resultLabel" destination="wqa-7M-9UX" id="oZh-wp-Pex"/>
+                        <outlet property="strategistSelectionSwitch" destination="sxX-qa-QCW" id="pZb-bn-kpI"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tE1-d6-qTs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42.028985507246382" y="147.99107142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
