@@ -14,14 +14,17 @@ struct BadmintonGameDto: Dto {
     
     // swiftlint:disable:next
     @Validated(.isValidAge(message: "Độ tuổi từ 0 - 120 tuổi"))
-    var ageString: String? = ""
+    var age: String? = ""
+    
+    var ageValue: Double {
+        return age.flatMap { Double($0) } ?? 0.0
+    }
     
     var isMale = false
     var playDate = Date()
-    var age = 0
     
     var validatedProperties: [ValidatedProperty] {
-        return [_ageString]
+        return [_age]
     }
 }
 
@@ -30,12 +33,11 @@ extension BadmintonGameDto {
     init(isMale: Bool, playDate: Date, age: Int) {
         self.isMale = isMale
         self.playDate = playDate
-        self.age = age
-        self.ageString = String(describing: age)
+        self.age = String(describing: age)
     }
     
     static func validateAge(_ ageString: String) -> Result<String, ValidationError> {
-        return BadmintonGameDto()._ageString.isValid(value: ageString)
+        return BadmintonGameDto()._age.isValid(value: ageString)
     }
 }
 
@@ -51,7 +53,7 @@ extension CalculateBadmintonFee {
     func calculatePlayFee(dto: BadmintonGameDto) -> Double {
         guard dto.validationError == nil else { return 0.0 }
         
-        if dto.age < 13 {
+        if dto.ageValue < 13 {
             return 1800.0 / 2
         }
         
@@ -63,7 +65,7 @@ extension CalculateBadmintonFee {
             return 1400.0
         }
         
-        if dto.age > 65 {
+        if dto.ageValue > 65 {
             return 1600.0
         }
         

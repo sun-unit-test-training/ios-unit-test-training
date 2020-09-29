@@ -14,7 +14,7 @@ import Dto
 final class Exercise7UseCaseMock: Exercise7UseCaseType {
     
     var fee = (standardFee: 500.0, quickFee: 0.0)
-    var cartAmount = 5000.0
+    var cartAmount: String?
     var isPremiumMember = false
     var isQuickDeliver = false
     var isCalculationFeeCalled = false

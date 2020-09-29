@@ -12,19 +12,22 @@ import ValidatedPropertyKit
 
 struct TayHoOrderDto: Dto {
     @Validated(.isNumber(message: "Must input number"))
-    var moneySpentString: String? = ""  // swiftlint:disable:this let_var_whitespace
+    var moneySpent: String? = ""  // swiftlint:disable:this let_var_whitespace
+
+    var moneySpentValue: Double {
+        return moneySpent.flatMap { Double($0) } ?? 0.0
+    }
     
     var watchingMovie: Bool = false
-    var moneySpent: Double = 0.0
     
     var validatedProperties: [ValidatedProperty] {
-        return [_moneySpentString]
+        return [_moneySpent]
     }
 }
 
 extension TayHoOrderDto {
     static func validateMoneyAmount(_ amount: String) -> Result<String, ValidationError> {
-        return TayHoOrderDto()._moneySpentString.isValid(value: amount)
+        return TayHoOrderDto()._moneySpent.isValid(value: amount)
     }
 }
 
@@ -39,11 +42,13 @@ extension CalculatingFreeMinutes {
     }
     
     func calculateFreeMinutes(dto: TayHoOrderDto) -> Double {
+        guard dto.validationError == nil else { return 0 }
+        
         let freeMinute: Double
         
-        if dto.moneySpent < 2000 {
+        if dto.moneySpentValue < 2000 {
             freeMinute = dto.watchingMovie ? 180 : 0
-        } else if dto.moneySpent < 5000 {
+        } else if dto.moneySpentValue < 5000 {
             freeMinute = dto.watchingMovie ? 240 : 60
         } else {
             freeMinute = dto.watchingMovie ? 300 : 120

@@ -17,6 +17,28 @@ struct HanoiQuestDto: Dto {
 }
 
 protocol CalculatingHanoiQuestResult {
+    
+}
+
+enum HanoiQuestResult {
+    
+    case roomNotFound
+    case roomFound
+    case roomOpened
+    case beatBigBoss
+    
+    var description: String {
+        switch self {
+        case .roomNotFound:
+            return "Bạn không tìm thấy phòng!"
+        case .roomFound:
+            return "Bạn tìm thấy phòng nhưng không mở được cửa!"
+        case .roomOpened:
+            return "Bạn đã chiến đấu dũng cảm, nhưng thua!"
+        case .beatBigBoss:
+            return "Bạn đã chiến thắng Big Boss, chúc mừng!"
+        }
+    }
 }
 
 extension CalculatingHanoiQuestResult {

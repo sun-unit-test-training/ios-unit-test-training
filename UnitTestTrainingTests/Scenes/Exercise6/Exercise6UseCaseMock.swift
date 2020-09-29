@@ -16,7 +16,7 @@ final class Exercise6UseCaseMock: Exercise6UseCaseType {
     var calculateFreeMinutesCalled = false
     var calculateFreeMinutesReturnValue = 0.0
     var watchMovie = false
-    var moneySpent = 0.0
+    var moneySpent: String?
     
     var isvalidateMoneySpentCalled = false
     var validateMoneySpentSuccess = ValidationResult.success(())

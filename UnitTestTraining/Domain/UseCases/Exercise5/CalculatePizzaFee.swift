@@ -32,6 +32,11 @@ extension PizzaOrderDto {
     }
 }
 
+struct CalculatePizzaFeeResult {
+    var fee: Double = 0.0
+    var promotions = [PromotionType]()
+}
+
 protocol CalculatePizzaFee {
     
 }
@@ -42,9 +47,7 @@ extension CalculatePizzaFee {
     }
     
     func calculateFee(dto: PizzaOrderDto) -> CalculatePizzaFeeResult {
-        guard dto.validationError == nil else {
-            return CalculatePizzaFeeResult()
-        }
+        guard dto.validationError == nil else { return CalculatePizzaFeeResult() }
         
         var price = dto.priceValue
         var promotions: [PromotionType] = []

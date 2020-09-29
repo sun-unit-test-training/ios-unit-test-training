@@ -19,8 +19,3 @@ enum PromotionType {
     case freeOnMonday
     case none
 }
-
-struct CalculatePizzaFeeResult {
-    var fee: Double = 0.0
-    var promotions = [PromotionType]()
-}

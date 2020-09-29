@@ -13,21 +13,24 @@ import ValidatedPropertyKit
 struct VietnamMartOrderDto: Dto {
     // swiftlint:disable:next
     @Validated(.isNumber(message: "Must input number"))
-    var cartAmountString: String? = ""
+    var cartAmount: String? = ""
+    
+    var cartAmountValue: Double {
+        return cartAmount.flatMap { Double($0) } ?? 0.0
+    }
     
     var isPremiumMember: Bool = false
     var isQuickDeliver: Bool = false
-    var cartAmount: Double = 0.0
     
     var validatedProperties: [ValidatedProperty] {
-        return [_cartAmountString]
+        return [_cartAmount]
     }
     
 }
 
 extension VietnamMartOrderDto {
     static func validateCartAmount(_ amount: String) -> Result<String, ValidationError> {
-        return VietnamMartOrderDto()._cartAmountString.isValid(value: amount)
+        return VietnamMartOrderDto()._cartAmount.isValid(value: amount)
     }
 }
 
@@ -42,14 +45,19 @@ extension CaculatingTransportationFee {
     }
     
     func calculationFee(dto: VietnamMartOrderDto) -> (standardFee: Double, quickFee: Double) {
+        guard dto.validationError == nil else { return (0, 0) }
+        
         var standardDeliver = 500.0
         var quickDeliver = 0.0
-        if dto.cartAmount >= 5000 || dto.isPremiumMember {
+        
+        if dto.cartAmountValue >= 5000 || dto.isPremiumMember {
             standardDeliver = 0.0
         }
+        
         if dto.isQuickDeliver {
             quickDeliver = 500.0
         }
+        
         return (standardDeliver, quickDeliver)
     }
 }

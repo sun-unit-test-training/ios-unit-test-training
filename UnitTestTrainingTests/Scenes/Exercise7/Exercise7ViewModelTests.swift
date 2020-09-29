@@ -48,7 +48,7 @@ final class Exercise7ViewModelTests: XCTestCase {
         XCTAssertFalse(useCase.isQuickDeliver)
         XCTAssertFalse(useCase.isPremiumMember)
         XCTAssertEqual(output.fee.standardFee, 500.0)
-        XCTAssertEqual(useCase.cartAmount, 5000.0)
+        XCTAssertEqual(useCase.cartAmount, "5000.0")
     }
 
     func test_isPremiumMemberTrigger() {
@@ -70,7 +70,7 @@ final class Exercise7ViewModelTests: XCTestCase {
         XCTAssert(useCase.isCalculationFeeCalled)
         XCTAssertFalse(useCase.isQuickDeliver)
         XCTAssertFalse(useCase.isPremiumMember)
-        XCTAssertEqual(useCase.cartAmount, 6000.0)
+        XCTAssertEqual(useCase.cartAmount, "6000.0")
     }
     
     func test_cartAmountTrigger_validateCartAmount() {

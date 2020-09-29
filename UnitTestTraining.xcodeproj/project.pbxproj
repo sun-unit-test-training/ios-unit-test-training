@@ -44,7 +44,6 @@
 		11CE6274251D2A1E0032E5DF /* Exercise9UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CE6273251D2A1E0032E5DF /* Exercise9UseCase.swift */; };
 		11CE6278251D2A2E0032E5DF /* Exercise9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CE6277251D2A2E0032E5DF /* Exercise9ViewController.swift */; };
 		11CE627C251D2A3C0032E5DF /* Exercise9ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CE627B251D2A3C0032E5DF /* Exercise9ViewModel.swift */; };
-		11D7BA6E251D3A3F00C7C074 /* HanoiQuestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7BA6D251D3A3F00C7C074 /* HanoiQuestResult.swift */; };
 		11D7BA73251D3E1600C7C074 /* CalculatingHanoiQuestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7BA72251D3E1600C7C074 /* CalculatingHanoiQuestResult.swift */; };
 		170DCAA9250E1F2400815C14 /* Exercise1Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA4250E1F2400815C14 /* Exercise1Assembler.swift */; };
 		170DCAAA250E1F2400815C14 /* Exercise1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170DCAA5250E1F2400815C14 /* Exercise1Navigator.swift */; };
@@ -104,6 +103,7 @@
 		177389F225073B8D003B5CD7 /* ExerciseItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389F125073B8D003B5CD7 /* ExerciseItemViewModel.swift */; };
 		177389F525073BA3003B5CD7 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389F325073BA3003B5CD7 /* ExerciseCell.swift */; };
 		177389F625073BA3003B5CD7 /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177389F425073BA3003B5CD7 /* ExerciseCell.xib */; };
+		179D9EF1252421660036E7E9 /* ClotherOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D9EF0252421660036E7E9 /* ClotherOrderTests.swift */; };
 		1B07D6DE251CE4EF00D17736 /* Exercise10NavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07D6DD251CE4EF00D17736 /* Exercise10NavigatorMock.swift */; };
 		1B07D6E4251CE4FC00D17736 /* Exercise10UseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07D6E3251CE4FC00D17736 /* Exercise10UseCaseMock.swift */; };
 		1B07D6E8251CE50F00D17736 /* Exercise10ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07D6E7251CE50F00D17736 /* Exercise10ViewControllerTests.swift */; };
@@ -235,7 +235,6 @@
 		11CE6273251D2A1E0032E5DF /* Exercise9UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise9UseCase.swift; sourceTree = "<group>"; };
 		11CE6277251D2A2E0032E5DF /* Exercise9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise9ViewController.swift; sourceTree = "<group>"; };
 		11CE627B251D2A3C0032E5DF /* Exercise9ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise9ViewModel.swift; sourceTree = "<group>"; };
-		11D7BA6D251D3A3F00C7C074 /* HanoiQuestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanoiQuestResult.swift; sourceTree = "<group>"; };
 		11D7BA72251D3E1600C7C074 /* CalculatingHanoiQuestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatingHanoiQuestResult.swift; sourceTree = "<group>"; };
 		170DCAA4250E1F2400815C14 /* Exercise1Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1Assembler.swift; sourceTree = "<group>"; };
 		170DCAA5250E1F2400815C14 /* Exercise1Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1Navigator.swift; sourceTree = "<group>"; };
@@ -295,6 +294,7 @@
 		177389F125073B8D003B5CD7 /* ExerciseItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseItemViewModel.swift; sourceTree = "<group>"; };
 		177389F325073BA3003B5CD7 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		177389F425073BA3003B5CD7 /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
+		179D9EF0252421660036E7E9 /* ClotherOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClotherOrderTests.swift; sourceTree = "<group>"; };
 		1B07D6DD251CE4EF00D17736 /* Exercise10NavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise10NavigatorMock.swift; sourceTree = "<group>"; };
 		1B07D6E3251CE4FC00D17736 /* Exercise10UseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise10UseCaseMock.swift; sourceTree = "<group>"; };
 		1B07D6E7251CE50F00D17736 /* Exercise10ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise10ViewControllerTests.swift; sourceTree = "<group>"; };
@@ -308,7 +308,7 @@
 		5297A254250E648F002745A9 /* ClotherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClotherCell.swift; sourceTree = "<group>"; };
 		5297A255250E648F002745A9 /* ClotherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClotherCell.xib; sourceTree = "<group>"; };
 		5297A258250E6CB6002745A9 /* ClotherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClotherViewModel.swift; sourceTree = "<group>"; };
-		5297A25A250E7943002745A9 /* ClotherOrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClotherOrderItem.swift; path = UnitTestTraining/Scenes/Exercise3/ClotherOrderItem.swift; sourceTree = SOURCE_ROOT; };
+		5297A25A250E7943002745A9 /* ClotherOrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClotherOrderItem.swift; path = UnitTestTraining/Domain/Entities/Exercise3/ClotherOrderItem.swift; sourceTree = SOURCE_ROOT; };
 		5297A25D250EC6DA002745A9 /* Exercise3NavigatorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise3NavigatorMock.swift; sourceTree = "<group>"; };
 		5297A25E250EC6DA002745A9 /* Exercise3ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise3ViewControllerTests.swift; sourceTree = "<group>"; };
 		5297A25F250EC6DA002745A9 /* Exercise3UseCaseMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise3UseCaseMock.swift; sourceTree = "<group>"; };
@@ -551,6 +551,7 @@
 		1712848C250C71AB00A95A97 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				179D9EE925241C060036E7E9 /* Entities */,
 				1712848D250C71B500A95A97 /* UseCases */,
 			);
 			path = Domain;
@@ -793,12 +794,10 @@
 		177389A625071EA2003B5CD7 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				17597B58251DDB2400D5235F /* ClotherOrder.swift */,
-				5297A25A250E7943002745A9 /* ClotherOrderItem.swift */,
+				179D9EEA2524202B0036E7E9 /* Exercise3 */,
+				179D9EEB252420600036E7E9 /* Exercise5 */,
+				179D9EEE2524211A0036E7E9 /* Exercise10 */,
 				17128485250C6E9D00A95A97 /* Exercise.swift */,
-				619D137C25184A640001FF53 /* PizzaBillElement.swift */,
-				11D7BA6D251D3A3F00C7C074 /* HanoiQuestResult.swift */,
-				61E202A3251B3BA700995E27 /* RestaurantInfo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -914,6 +913,47 @@
 				177389F425073BA3003B5CD7 /* ExerciseCell.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		179D9EE925241C060036E7E9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				179D9EEF2524214E0036E7E9 /* Exercise3 */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		179D9EEA2524202B0036E7E9 /* Exercise3 */ = {
+			isa = PBXGroup;
+			children = (
+				17597B58251DDB2400D5235F /* ClotherOrder.swift */,
+				5297A25A250E7943002745A9 /* ClotherOrderItem.swift */,
+			);
+			path = Exercise3;
+			sourceTree = "<group>";
+		};
+		179D9EEB252420600036E7E9 /* Exercise5 */ = {
+			isa = PBXGroup;
+			children = (
+				619D137C25184A640001FF53 /* PizzaBillElement.swift */,
+			);
+			path = Exercise5;
+			sourceTree = "<group>";
+		};
+		179D9EEE2524211A0036E7E9 /* Exercise10 */ = {
+			isa = PBXGroup;
+			children = (
+				61E202A3251B3BA700995E27 /* RestaurantInfo.swift */,
+			);
+			path = Exercise10;
+			sourceTree = "<group>";
+		};
+		179D9EEF2524214E0036E7E9 /* Exercise3 */ = {
+			isa = PBXGroup;
+			children = (
+				179D9EF0252421660036E7E9 /* ClotherOrderTests.swift */,
+			);
+			path = Exercise3;
 			sourceTree = "<group>";
 		};
 		1B07D6DC251CE4D600D17736 /* Exercise10 */ = {
@@ -1254,7 +1294,6 @@
 				716A536E2511A7AE0034DC60 /* Exercise2Navigator.swift in Sources */,
 				170DCAA9250E1F2400815C14 /* Exercise1Assembler.swift in Sources */,
 				177389CF25071EA2003B5CD7 /* AppUseCase.swift in Sources */,
-				11D7BA6E251D3A3F00C7C074 /* HanoiQuestResult.swift in Sources */,
 				0E4C36112512E0ED006A2047 /* Exercise8ViewController.swift in Sources */,
 				17128489250C6EC900A95A97 /* GettingExercises.swift in Sources */,
 				52C54179250F0EB40092CA4A /* CaculatingClotherDiscount.swift in Sources */,
@@ -1388,6 +1427,7 @@
 				9C90E28D25148B3C00EFE188 /* Exercise6ViewControllerTests.swift in Sources */,
 				C96892F9250A2A71000FFF5F /* Exercise4UseCaseMock.swift in Sources */,
 				716A537F2511C7880034DC60 /* Exercise2UseCaseMock.swift in Sources */,
+				179D9EF1252421660036E7E9 /* ClotherOrderTests.swift in Sources */,
 				C96892FC250A2A71000FFF5F /* Exercise4ViewControllerTests.swift in Sources */,
 				9C90E28C25148B3C00EFE188 /* Exercise6NavigatorMock.swift in Sources */,
 				9C90E29325148C5F00EFE188 /* CalculateFreeMinutes.swift in Sources */,

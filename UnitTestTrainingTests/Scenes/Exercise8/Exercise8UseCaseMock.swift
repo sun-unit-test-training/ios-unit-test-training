@@ -15,7 +15,7 @@ final class Exercise8UseCaseMock: Exercise8UseCaseType {
     
     var fee = 0.0
     var isMale = false
-    var age = 0
+    var age: String?
     var date = Date()
     
     var isValidateAgeCalled = false

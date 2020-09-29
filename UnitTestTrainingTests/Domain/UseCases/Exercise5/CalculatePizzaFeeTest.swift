@@ -70,4 +70,19 @@ final class CalculatePizzaFeeTest: XCTestCase, CalculatePizzaFee {
         XCTAssertFalse(result.promotions.contains(.freePotato))
         XCTAssert(result.promotions.contains(.freeOnMonday))
     }
+    
+    func test_validatePizzaPrice_success() {
+        let result = self.validatePizzaPrice("1500")
+        XCTAssert(result.isValid)
+    }
+    
+    func test_validatePizzaPrice_failed() {
+        let result = self.validatePizzaPrice("0")
+        XCTAssertFalse(result.isValid)
+    }
+    
+    func test_validatePizzaPrice_failed_NaN() {
+        let result = self.validatePizzaPrice("abc")
+        XCTAssertFalse(result.isValid)
+    }
 }

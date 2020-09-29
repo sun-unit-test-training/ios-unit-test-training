@@ -143,4 +143,19 @@ final class CalculateBadmintonFeeTests: XCTestCase, CalculateBadmintonFee {
         let result = self.calculatePlayFee(dto: dto)
         XCTAssertEqual(result, 1200.0)
     }
+    
+    func test_validateAge_success() {
+        let result = self.validateAge("30")
+        XCTAssert(result.isValid)
+    }
+    
+    func test_validateAge_failed() {
+        let result = self.validateAge("130")
+        XCTAssertFalse(result.isValid)
+    }
+    
+    func test_validateAge_failed_NaN() {
+        let result = self.validateAge("abc")
+        XCTAssertFalse(result.isValid)
+    }
 }

@@ -51,11 +51,9 @@ extension Exercise7ViewModel: ViewModel {
             )
             .withLatestFrom(Driver.combineLatest(isPremium, cartAmount, isQuickDeliver))
             .map { isPremium, cartAmount, isQuickDeliver -> (standardFee: Double, quickFee: Double) in
-                let amount = Double(cartAmount) ?? 0.0
-                let dto =
-                    VietnamMartOrderDto(isPremiumMember: isPremium,
-                                        isQuickDeliver: isQuickDeliver,
-                                        cartAmount: amount)
+                let dto = VietnamMartOrderDto(cartAmount: cartAmount,
+                                              isPremiumMember: isPremium,
+                                              isQuickDeliver: isQuickDeliver)
                 return self.useCase.calculationFee(dto: dto)
             }
             .map { ($0.standardFee, $0.quickFee) }

@@ -20,6 +20,11 @@ protocol CalculateRestaurantPromotion {
 
 }
 
+struct RestaurantPromotion {
+    let discount: Int
+    let haveCoupon: Bool
+}
+
 extension CalculateRestaurantPromotion {
     func calculateRestaurantPromotion(dto: RestaurantPromotionDto) -> RestaurantPromotion {
         let haveChance = dto.prepaidPaymentLimit >= 5000

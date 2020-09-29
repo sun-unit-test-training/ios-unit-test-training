@@ -42,37 +42,41 @@ final class Exercise8ViewModelTests: XCTestCase {
     
     func test_loadTrigger() {
         loadTrigger.onNext(())
+        
         XCTAssert(useCase.isCalculatePlayFeeCalled)
         XCTAssertFalse(useCase.isMale)
         XCTAssertEqual(output.fee, 0.0)
-        XCTAssertEqual(useCase.age, 0)
+        XCTAssertEqual(useCase.age, "0")
         XCTAssertEqual(useCase.date.dayInWeek(), Date().dayInWeek())
     }
     
     func test_ageTrigger() {
         ageTrigger.onNext("9")
+        
         XCTAssert(useCase.isCalculatePlayFeeCalled)
         XCTAssertFalse(useCase.isMale)
         XCTAssertEqual(output.fee, 0.0)
-        XCTAssertEqual(useCase.age, 9)
+        XCTAssertEqual(useCase.age, "9")
         XCTAssertEqual(useCase.date.dayInWeek(), Date().dayInWeek())
     }
     
     func test_isMaleTrigger() {
         isMaleTrigger.onNext(true)
+        
         XCTAssert(useCase.isCalculatePlayFeeCalled)
         XCTAssert(useCase.isMale)
         XCTAssertEqual(output.fee, 0.0)
-        XCTAssertEqual(useCase.age, 0)
+        XCTAssertEqual(useCase.age, "0")
         XCTAssertEqual(useCase.date.dayInWeek(), Date().dayInWeek())
     }
     
     func test_dateTrigger() {
         dateTrigger.onNext(Date())
+        
         XCTAssert(useCase.isCalculatePlayFeeCalled)
         XCTAssertFalse(useCase.isMale)
         XCTAssertEqual(output.fee, 0.0)
-        XCTAssertEqual(useCase.age, 0)
+        XCTAssertEqual(useCase.age, "0")
         XCTAssertEqual(useCase.date.dayInWeek(), Date().dayInWeek())
     }
 }

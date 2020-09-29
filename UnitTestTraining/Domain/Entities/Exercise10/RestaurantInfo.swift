@@ -23,8 +23,3 @@ enum PrepaidCardType: Int {
         self = (index == 0) ? .value3000 : (index == 1 ? .value5000 : .value10000)
     }
 }
-
-struct RestaurantPromotion {
-    let discount: Int
-    let haveCoupon: Bool
-}
