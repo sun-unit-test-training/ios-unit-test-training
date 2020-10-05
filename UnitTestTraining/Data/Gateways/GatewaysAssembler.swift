@@ -9,6 +9,7 @@
 protocol GatewaysAssembler {
     func resolve() -> ExerciseGatewayType
     func resolve() -> DateGatewayType
+    func resolve() -> ArticleGatewayType
 }
 
 extension GatewaysAssembler where Self: DefaultAssembler {
@@ -18,5 +19,9 @@ extension GatewaysAssembler where Self: DefaultAssembler {
     
     func resolve() -> DateGatewayType {
         return DateGateway()
+    }
+    
+    func resolve() -> ArticleGatewayType {
+        return ArticleGateway()
     }
 }

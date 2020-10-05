@@ -89,4 +89,12 @@ final class MainNavigatorMock: MainNavigatorType {
     func toExercise10() {
         toExercise10Called = true
     }
+    
+    // MARK: - toExercise11
+    
+    var toExercise11Called = false
+    
+    func toExercise11() {
+        toExercise11Called = true
+    }
 }

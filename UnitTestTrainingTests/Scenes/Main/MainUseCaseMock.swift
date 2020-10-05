@@ -14,7 +14,7 @@ final class MainUseCaseMock: MainUseCaseType {
     // MARK: - getExercies
     
     var getExerciesCalled = false
-    var getExerciesReturnValue = (1...10).map { Exercise(title: "Exercise \($0)") }
+    var getExerciesReturnValue = (1...11).map { Exercise(id: $0, title: "Exercise \($0)") }
     
     func getExercies() -> [Exercise] {
         getExerciesCalled = true

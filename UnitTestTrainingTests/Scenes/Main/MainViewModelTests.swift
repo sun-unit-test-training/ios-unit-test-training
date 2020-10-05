@@ -43,7 +43,7 @@ final class MainViewModelTests: XCTestCase {
         
         // assert
         XCTAssert(useCase.getExerciesCalled)
-        XCTAssertEqual(output.exercises.count, 10)
+        XCTAssertEqual(output.exercises.count, 11)
     }
     
     func test_selectTrigger_toExercise1() {
@@ -136,4 +136,12 @@ final class MainViewModelTests: XCTestCase {
         XCTAssert(navigator.toExercise10Called)
     }
     
+    func test_selectTrigger_toExercise11() {
+        // act
+        loadTrigger.onNext(())
+        selectTrigger.onNext(IndexPath(row: 10, section: 0))
+        
+        // assert
+        XCTAssert(navigator.toExercise11Called)
+    }
 }

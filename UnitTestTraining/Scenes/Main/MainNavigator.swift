@@ -19,6 +19,7 @@ protocol MainNavigatorType {
     func toExercise8()
     func toExercise9()
     func toExercise10()
+    func toExercise11()
 }
 
 struct MainNavigator: MainNavigatorType {
@@ -91,6 +92,13 @@ struct MainNavigator: MainNavigatorType {
     func toExercise10() {
         let nav = UINavigationController()
         let vc: Exercise10ViewController = assembler.resolve(navigationController: navigationController)
+        nav.viewControllers = [vc]
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func toExercise11() {
+        let nav = UINavigationController()
+        let vc: Exercise11ViewController = assembler.resolve(navigationController: navigationController)
         nav.viewControllers = [vc]
         navigationController.pushViewController(vc, animated: true)
     }

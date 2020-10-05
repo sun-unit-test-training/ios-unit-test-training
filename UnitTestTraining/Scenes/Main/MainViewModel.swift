@@ -30,16 +30,21 @@ extension MainViewModel: ViewModel {
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
         let output = Output()
         
-        input.loadTrigger
+        let exercises = input.loadTrigger
             .map { self.useCase.getExercies() }
+        
+        exercises
             .map { $0.map(ExerciseItemViewModel.init(exercise:)) }
             .drive(output.$exercises)
             .disposed(by: disposeBag)
         
         input.selectTrigger
             .map { $0.row }
-            .drive(onNext: { row in
-                switch row + 1 {
+            .withLatestFrom(exercises) { row, exercises in
+                exercises[row]
+            }
+            .drive(onNext: { exercise in
+                switch exercise.id {
                 case 1:
                     self.navigator.toExercise1()
                 case 2:
@@ -60,6 +65,8 @@ extension MainViewModel: ViewModel {
                     self.navigator.toExercise9()
                 case 10:
                     self.navigator.toExercise10()
+                case 11:
+                    self.navigator.toExercise11()
                 default:
                     break
                 }

@@ -72,6 +72,8 @@
 		1712849C250C75E300A95A97 /* AppViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128498250C75E300A95A97 /* AppViewModelTests.swift */; };
 		1712849D250C75E300A95A97 /* AppNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128499250C75E300A95A97 /* AppNavigatorMock.swift */; };
 		1712849E250C75E300A95A97 /* AppUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712849A250C75E300A95A97 /* AppUseCaseMock.swift */; };
+		173EA0E225271AA500E87634 /* MGAPIService in Frameworks */ = {isa = PBXBuildFile; productRef = 173EA0E125271AA500E87634 /* MGAPIService */; };
+		173EA0E725271B8F00E87634 /* MGLoadMore in Frameworks */ = {isa = PBXBuildFile; productRef = 173EA0E625271B8F00E87634 /* MGLoadMore */; };
 		17597B49251DCF9B00D5235F /* Dto+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17597B48251DCF9B00D5235F /* Dto+.swift */; };
 		17597B59251DDB2400D5235F /* ClotherOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17597B58251DDB2400D5235F /* ClotherOrder.swift */; };
 		17597B63251DE73100D5235F /* GettingClotherItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17597B62251DE73100D5235F /* GettingClotherItems.swift */; };
@@ -104,6 +106,31 @@
 		177389F525073BA3003B5CD7 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177389F325073BA3003B5CD7 /* ExerciseCell.swift */; };
 		177389F625073BA3003B5CD7 /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177389F425073BA3003B5CD7 /* ExerciseCell.xib */; };
 		179D9EF1252421660036E7E9 /* ClotherOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D9EF0252421660036E7E9 /* ClotherOrderTests.swift */; };
+		17BBD85F252AC0D8003535D1 /* Exercise11.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BBD85E252AC0D8003535D1 /* Exercise11.storyboard */; };
+		17BBD864252B0257003535D1 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD863252B0256003535D1 /* Article.swift */; };
+		17BBD884252B02FC003535D1 /* Exercise11UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD87D252B02FC003535D1 /* Exercise11UseCase.swift */; };
+		17BBD885252B02FC003535D1 /* Exercise11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD87E252B02FC003535D1 /* Exercise11ViewController.swift */; };
+		17BBD887252B02FC003535D1 /* ArticleItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD880252B02FC003535D1 /* ArticleItemViewModel.swift */; };
+		17BBD888252B02FC003535D1 /* Exercise11ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD881252B02FC003535D1 /* Exercise11ViewModel.swift */; };
+		17BBD889252B02FC003535D1 /* Exercise11Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD882252B02FC003535D1 /* Exercise11Navigator.swift */; };
+		17BBD88A252B02FC003535D1 /* Exercise11Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD883252B02FC003535D1 /* Exercise11Assembler.swift */; };
+		17BBD88E252B0E12003535D1 /* ArticleGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD88D252B0E12003535D1 /* ArticleGateway.swift */; };
+		17BBD893252B0E62003535D1 /* GettingArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD892252B0E62003535D1 /* GettingArticles.swift */; };
+		17BBD897252B0E71003535D1 /* GetArticlesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD896252B0E71003535D1 /* GetArticlesDto.swift */; };
+		17BBD89F252B101C003535D1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD89B252B101C003535D1 /* APIService.swift */; };
+		17BBD8A0252B101C003535D1 /* APIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD89C252B101C003535D1 /* APIInput.swift */; };
+		17BBD8A1252B101C003535D1 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD89D252B101C003535D1 /* APIError.swift */; };
+		17BBD8A2252B101C003535D1 /* APIOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD89E252B101C003535D1 /* APIOutput.swift */; };
+		17BBD8A7252B10B1003535D1 /* API+Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD8A6252B10B1003535D1 /* API+Article.swift */; };
+		17BBD8AB252B159E003535D1 /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD8AA252B159E003535D1 /* APIUrls.swift */; };
+		17BBD8B4252B1950003535D1 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD8B2252B1950003535D1 /* ArticleCell.swift */; };
+		17BBD8B5252B1950003535D1 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17BBD8B3252B1950003535D1 /* ArticleCell.xib */; };
+		17BBD8C0252B1D09003535D1 /* Exercise11UseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD8BB252B1D09003535D1 /* Exercise11UseCaseMock.swift */; };
+		17BBD8C1252B1D09003535D1 /* Exercise11NavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD8BC252B1D09003535D1 /* Exercise11NavigatorMock.swift */; };
+		17BBD8C2252B1D09003535D1 /* Exercise11ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD8BD252B1D09003535D1 /* Exercise11ViewControllerTests.swift */; };
+		17BBD8C3252B1D09003535D1 /* Exercise11ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD8BE252B1D09003535D1 /* Exercise11ViewModelTests.swift */; };
+		17BBD8C4252B1D09003535D1 /* ArticleCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD8BF252B1D09003535D1 /* ArticleCellTests.swift */; };
+		17BBD8CA252B1D24003535D1 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BBD8C9252B1D24003535D1 /* TestError.swift */; };
 		1B07D6DE251CE4EF00D17736 /* Exercise10NavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07D6DD251CE4EF00D17736 /* Exercise10NavigatorMock.swift */; };
 		1B07D6E4251CE4FC00D17736 /* Exercise10UseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07D6E3251CE4FC00D17736 /* Exercise10UseCaseMock.swift */; };
 		1B07D6E8251CE50F00D17736 /* Exercise10ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07D6E7251CE50F00D17736 /* Exercise10ViewControllerTests.swift */; };
@@ -295,6 +322,31 @@
 		177389F325073BA3003B5CD7 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		177389F425073BA3003B5CD7 /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
 		179D9EF0252421660036E7E9 /* ClotherOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClotherOrderTests.swift; sourceTree = "<group>"; };
+		17BBD85E252AC0D8003535D1 /* Exercise11.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise11.storyboard; sourceTree = "<group>"; };
+		17BBD863252B0256003535D1 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		17BBD87D252B02FC003535D1 /* Exercise11UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise11UseCase.swift; sourceTree = "<group>"; };
+		17BBD87E252B02FC003535D1 /* Exercise11ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise11ViewController.swift; sourceTree = "<group>"; };
+		17BBD880252B02FC003535D1 /* ArticleItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleItemViewModel.swift; sourceTree = "<group>"; };
+		17BBD881252B02FC003535D1 /* Exercise11ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise11ViewModel.swift; sourceTree = "<group>"; };
+		17BBD882252B02FC003535D1 /* Exercise11Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise11Navigator.swift; sourceTree = "<group>"; };
+		17BBD883252B02FC003535D1 /* Exercise11Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise11Assembler.swift; sourceTree = "<group>"; };
+		17BBD88D252B0E12003535D1 /* ArticleGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleGateway.swift; sourceTree = "<group>"; };
+		17BBD892252B0E62003535D1 /* GettingArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingArticles.swift; sourceTree = "<group>"; };
+		17BBD896252B0E71003535D1 /* GetArticlesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesDto.swift; sourceTree = "<group>"; };
+		17BBD89B252B101C003535D1 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		17BBD89C252B101C003535D1 /* APIInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInput.swift; sourceTree = "<group>"; };
+		17BBD89D252B101C003535D1 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		17BBD89E252B101C003535D1 /* APIOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIOutput.swift; sourceTree = "<group>"; };
+		17BBD8A6252B10B1003535D1 /* API+Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Article.swift"; sourceTree = "<group>"; };
+		17BBD8AA252B159E003535D1 /* APIUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
+		17BBD8B2252B1950003535D1 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		17BBD8B3252B1950003535D1 /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
+		17BBD8BB252B1D09003535D1 /* Exercise11UseCaseMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise11UseCaseMock.swift; sourceTree = "<group>"; };
+		17BBD8BC252B1D09003535D1 /* Exercise11NavigatorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise11NavigatorMock.swift; sourceTree = "<group>"; };
+		17BBD8BD252B1D09003535D1 /* Exercise11ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise11ViewControllerTests.swift; sourceTree = "<group>"; };
+		17BBD8BE252B1D09003535D1 /* Exercise11ViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise11ViewModelTests.swift; sourceTree = "<group>"; };
+		17BBD8BF252B1D09003535D1 /* ArticleCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCellTests.swift; sourceTree = "<group>"; };
+		17BBD8C9252B1D24003535D1 /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		1B07D6DD251CE4EF00D17736 /* Exercise10NavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise10NavigatorMock.swift; sourceTree = "<group>"; };
 		1B07D6E3251CE4FC00D17736 /* Exercise10UseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise10UseCaseMock.swift; sourceTree = "<group>"; };
 		1B07D6E7251CE50F00D17736 /* Exercise10ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise10ViewControllerTests.swift; sourceTree = "<group>"; };
@@ -385,9 +437,11 @@
 			files = (
 				177389E225072210003B5CD7 /* Then in Frameworks */,
 				177389D625071FAE003B5CD7 /* MBProgressHUD in Frameworks */,
+				173EA0E725271B8F00E87634 /* MGLoadMore in Frameworks */,
 				177389D92507200E003B5CD7 /* MGArchitecture in Frameworks */,
 				177389DF25072085003B5CD7 /* Dto in Frameworks */,
 				177389F0250724E7003B5CD7 /* Reusable in Frameworks */,
+				173EA0E225271AA500E87634 /* MGAPIService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,8 +584,10 @@
 				0E4C36162512E0FF006A2047 /* Exercise8 */,
 				11CDA467251D4693007F1D39 /* Exercise9 */,
 				1B07D6DC251CE4D600D17736 /* Exercise10 */,
+				17BBD8BA252B1C72003535D1 /* Exercise11 */,
 				17128496250C75D100A95A97 /* App */,
 				1712847C250C6D4100A95A97 /* Main */,
+				17BBD8C9252B1D24003535D1 /* TestError.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -786,6 +842,7 @@
 				0E4C36212512E780006A2047 /* Exercise8 */,
 				11D7BA71251D3E0200C7C074 /* Exercise9 */,
 				61E202A0251B3A6100995E27 /* Exercise10 */,
+				17BBD891252B0E47003535D1 /* Exercise11 */,
 				17128488250C6EC900A95A97 /* GettingExercises.swift */,
 			);
 			path = UseCases;
@@ -797,6 +854,7 @@
 				179D9EEA2524202B0036E7E9 /* Exercise3 */,
 				179D9EEB252420600036E7E9 /* Exercise5 */,
 				179D9EEE2524211A0036E7E9 /* Exercise10 */,
+				17BBD862252AD0C4003535D1 /* Exercise11 */,
 				17128485250C6E9D00A95A97 /* Exercise.swift */,
 			);
 			path = Entities;
@@ -805,6 +863,7 @@
 		177389A925071EA2003B5CD7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				17BBD89A252B0FE3003535D1 /* API */,
 				177389AB25071EA2003B5CD7 /* Gateways */,
 			);
 			path = Data;
@@ -816,6 +875,7 @@
 				177389AC25071EA2003B5CD7 /* GatewaysAssembler.swift */,
 				1712848A250C6EFD00A95A97 /* ExerciseGateway.swift */,
 				C9689300250B3FBC000FFF5F /* DateGateway.swift */,
+				17BBD88D252B0E12003535D1 /* ArticleGateway.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -823,6 +883,7 @@
 		177389B225071EA2003B5CD7 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				17BBD8AA252B159E003535D1 /* APIUrls.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -840,6 +901,7 @@
 				0E4C360B2512E0E1006A2047 /* Exercise8 */,
 				11CE6266251D24A10032E5DF /* Exercise9 */,
 				61E202B0251B436B00995E27 /* Exercise10 */,
+				17BBD851252AC071003535D1 /* Exercise11 */,
 				177389E325072429003B5CD7 /* Main */,
 				177389B625071EA2003B5CD7 /* Storyboards */,
 				177389B825071EA2003B5CD7 /* App */,
@@ -862,6 +924,7 @@
 				0E4C361F2512E1CE006A2047 /* Exercise8.storyboard */,
 				11CE6267251D29AE0032E5DF /* Exercise9.storyboard */,
 				61E202BD251C20F300995E27 /* Exercise10.storyboard */,
+				17BBD85E252AC0D8003535D1 /* Exercise11.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -954,6 +1017,70 @@
 				179D9EF0252421660036E7E9 /* ClotherOrderTests.swift */,
 			);
 			path = Exercise3;
+			sourceTree = "<group>";
+		};
+		17BBD851252AC071003535D1 /* Exercise11 */ = {
+			isa = PBXGroup;
+			children = (
+				17BBD880252B02FC003535D1 /* ArticleItemViewModel.swift */,
+				17BBD883252B02FC003535D1 /* Exercise11Assembler.swift */,
+				17BBD882252B02FC003535D1 /* Exercise11Navigator.swift */,
+				17BBD87D252B02FC003535D1 /* Exercise11UseCase.swift */,
+				17BBD87E252B02FC003535D1 /* Exercise11ViewController.swift */,
+				17BBD881252B02FC003535D1 /* Exercise11ViewModel.swift */,
+				17BBD8B2252B1950003535D1 /* ArticleCell.swift */,
+				17BBD8B3252B1950003535D1 /* ArticleCell.xib */,
+			);
+			path = Exercise11;
+			sourceTree = "<group>";
+		};
+		17BBD862252AD0C4003535D1 /* Exercise11 */ = {
+			isa = PBXGroup;
+			children = (
+				17BBD863252B0256003535D1 /* Article.swift */,
+			);
+			path = Exercise11;
+			sourceTree = "<group>";
+		};
+		17BBD891252B0E47003535D1 /* Exercise11 */ = {
+			isa = PBXGroup;
+			children = (
+				17BBD892252B0E62003535D1 /* GettingArticles.swift */,
+				17BBD896252B0E71003535D1 /* GetArticlesDto.swift */,
+			);
+			path = Exercise11;
+			sourceTree = "<group>";
+		};
+		17BBD89A252B0FE3003535D1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				17BBD8A5252B1092003535D1 /* Base */,
+				17BBD8A6252B10B1003535D1 /* API+Article.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		17BBD8A5252B1092003535D1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				17BBD89D252B101C003535D1 /* APIError.swift */,
+				17BBD89C252B101C003535D1 /* APIInput.swift */,
+				17BBD89E252B101C003535D1 /* APIOutput.swift */,
+				17BBD89B252B101C003535D1 /* APIService.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		17BBD8BA252B1C72003535D1 /* Exercise11 */ = {
+			isa = PBXGroup;
+			children = (
+				17BBD8BF252B1D09003535D1 /* ArticleCellTests.swift */,
+				17BBD8BC252B1D09003535D1 /* Exercise11NavigatorMock.swift */,
+				17BBD8BB252B1D09003535D1 /* Exercise11UseCaseMock.swift */,
+				17BBD8BD252B1D09003535D1 /* Exercise11ViewControllerTests.swift */,
+				17BBD8BE252B1D09003535D1 /* Exercise11ViewModelTests.swift */,
+			);
+			path = Exercise11;
 			sourceTree = "<group>";
 		};
 		1B07D6DC251CE4D600D17736 /* Exercise10 */ = {
@@ -1144,6 +1271,8 @@
 				177389DE25072085003B5CD7 /* Dto */,
 				177389E125072210003B5CD7 /* Then */,
 				177389EF250724E7003B5CD7 /* Reusable */,
+				173EA0E125271AA500E87634 /* MGAPIService */,
+				173EA0E625271B8F00E87634 /* MGLoadMore */,
 			);
 			productName = UnitTestTraining;
 			productReference = 1773897E25071D8D003B5CD7 /* UnitTestTraining.app */;
@@ -1203,6 +1332,8 @@
 				177389DD25072085003B5CD7 /* XCRemoteSwiftPackageReference "Dto" */,
 				177389E025072210003B5CD7 /* XCRemoteSwiftPackageReference "Then" */,
 				177389EE250724E7003B5CD7 /* XCRemoteSwiftPackageReference "Reusable" */,
+				173EA0E025271AA500E87634 /* XCRemoteSwiftPackageReference "MGAPIService" */,
+				173EA0E525271B8F00E87634 /* XCRemoteSwiftPackageReference "MGLoadMore" */,
 			);
 			productRefGroup = 1773897F25071D8D003B5CD7 /* Products */;
 			projectDirPath = "";
@@ -1225,6 +1356,8 @@
 				9C90E29125148B7300EFE188 /* Exercise6.storyboard in Resources */,
 				5297A257250E6490002745A9 /* ClotherCell.xib in Resources */,
 				177389F625073BA3003B5CD7 /* ExerciseCell.xib in Resources */,
+				17BBD8B5252B1950003535D1 /* ArticleCell.xib in Resources */,
+				17BBD85F252AC0D8003535D1 /* Exercise11.storyboard in Resources */,
 				5297A252250B2ED0002745A9 /* Exercise3.storyboard in Resources */,
 				1773898B25071D8E003B5CD7 /* Assets.xcassets in Resources */,
 				0E4C36202512E1CE006A2047 /* Exercise8.storyboard in Resources */,
@@ -1278,6 +1411,7 @@
 				C9689301250B3FBC000FFF5F /* DateGateway.swift in Sources */,
 				0E4C36142512E0ED006A2047 /* Exercise8Navigator.swift in Sources */,
 				177389EC25072442003B5CD7 /* MainViewController.swift in Sources */,
+				17BBD889252B02FC003535D1 /* Exercise11Navigator.swift in Sources */,
 				5297A24C250B27A1002745A9 /* Exercise3ViewController.swift in Sources */,
 				9C90E29525148C8B00EFE188 /* CalculateFreeMinutes.swift in Sources */,
 				9C90E28125148AD600EFE188 /* Exersice6UseCase.swift in Sources */,
@@ -1285,6 +1419,7 @@
 				5297A259250E6CB6002745A9 /* ClotherViewModel.swift in Sources */,
 				177389C325071EA2003B5CD7 /* Assembler.swift in Sources */,
 				5297A250250B27A1002745A9 /* Exercise3Assembler.swift in Sources */,
+				17BBD864252B0257003535D1 /* Article.swift in Sources */,
 				177389D025071EA2003B5CD7 /* UIViewController+.swift in Sources */,
 				170DCAB5250E287500815C14 /* CalculatingBeerPrice.swift in Sources */,
 				0E1206DC250F29190071C1F9 /* Exercise7ViewModel.swift in Sources */,
@@ -1295,13 +1430,16 @@
 				170DCAA9250E1F2400815C14 /* Exercise1Assembler.swift in Sources */,
 				177389CF25071EA2003B5CD7 /* AppUseCase.swift in Sources */,
 				0E4C36112512E0ED006A2047 /* Exercise8ViewController.swift in Sources */,
+				17BBD88E252B0E12003535D1 /* ArticleGateway.swift in Sources */,
 				17128489250C6EC900A95A97 /* GettingExercises.swift in Sources */,
+				17BBD893252B0E62003535D1 /* GettingArticles.swift in Sources */,
 				52C54179250F0EB40092CA4A /* CaculatingClotherDiscount.swift in Sources */,
 				619D137D25184A640001FF53 /* PizzaBillElement.swift in Sources */,
 				170DCAAA250E1F2400815C14 /* Exercise1Navigator.swift in Sources */,
 				170DCAAC250E1F2400815C14 /* Exercise1ViewController.swift in Sources */,
 				716A536F2511A7AE0034DC60 /* Exercise2ViewModel.swift in Sources */,
 				1712848B250C6EFD00A95A97 /* ExerciseGateway.swift in Sources */,
+				17BBD89F252B101C003535D1 /* APIService.swift in Sources */,
 				17128486250C6E9D00A95A97 /* Exercise.swift in Sources */,
 				61E202B2251B437600995E27 /* Exercise10Assembler.swift in Sources */,
 				0E1206DE250F29190071C1F9 /* Exercise7Navigator.swift in Sources */,
@@ -1310,27 +1448,36 @@
 				177389EB25072442003B5CD7 /* MainUseCase.swift in Sources */,
 				11CE626C251D29F20032E5DF /* Exercise9Assembler.swift in Sources */,
 				170DCAAD250E1F2400815C14 /* Exercise1ViewModel.swift in Sources */,
+				17BBD8A1252B101C003535D1 /* APIError.swift in Sources */,
+				17BBD8A2252B101C003535D1 /* APIOutput.swift in Sources */,
 				0EA1C06125119F8F008560B0 /* Validation+Ext.swift in Sources */,
+				17BBD8A0252B101C003535D1 /* APIInput.swift in Sources */,
 				5297A24D250B27A1002745A9 /* Exercise3ViewModel.swift in Sources */,
 				619C0CC32513152200A9457A /* Exercise5Assembler.swift in Sources */,
 				11CE6270251D2A0F0032E5DF /* Exercise9Navigator.swift in Sources */,
 				177389F225073B8D003B5CD7 /* ExerciseItemViewModel.swift in Sources */,
 				5297A24F250B27A1002745A9 /* Exercise3UseCase.swift in Sources */,
 				177389D125071EA2003B5CD7 /* UIViewController+Rx.swift in Sources */,
+				17BBD897252B0E71003535D1 /* GetArticlesDto.swift in Sources */,
 				C96892F3250A2A2E000FFF5F /* Exercise4ViewModel.swift in Sources */,
 				0E1206DD250F29190071C1F9 /* Exercise7ViewController.swift in Sources */,
 				177389CA25071EA2003B5CD7 /* AppDelegate.swift in Sources */,
+				17BBD884252B02FC003535D1 /* Exercise11UseCase.swift in Sources */,
 				0E4C36122512E0ED006A2047 /* Exercise8UseCase.swift in Sources */,
+				17BBD88A252B02FC003535D1 /* Exercise11Assembler.swift in Sources */,
 				619C0CC92513154600A9457A /* Exercise5ViewController.swift in Sources */,
 				177389D225071EA2003B5CD7 /* Utils.swift in Sources */,
 				C98D5741250F1197005BCB35 /* GettingDateColor.swift in Sources */,
+				17BBD885252B02FC003535D1 /* Exercise11ViewController.swift in Sources */,
 				177389EA25072442003B5CD7 /* MainNavigator.swift in Sources */,
 				0E4C36152512E0ED006A2047 /* Exercise8Assembler.swift in Sources */,
 				C96892F0250A2A2E000FFF5F /* Exercise4Assembler.swift in Sources */,
 				0E4C36132512E0ED006A2047 /* Exercise8ViewModel.swift in Sources */,
 				0EE324532513401500AB95E2 /* String+Ext.swift in Sources */,
+				17BBD8A7252B10B1003535D1 /* API+Article.swift in Sources */,
 				17597B63251DE73100D5235F /* GettingClotherItems.swift in Sources */,
 				177389CD25071EA2003B5CD7 /* AppNavigator.swift in Sources */,
+				17BBD8B4252B1950003535D1 /* ArticleCell.swift in Sources */,
 				177389CC25071EA2003B5CD7 /* AppAssembler.swift in Sources */,
 				5297A25B250E7943002745A9 /* ClotherOrderItem.swift in Sources */,
 				177389CB25071EA2003B5CD7 /* Storyboards.swift in Sources */,
@@ -1351,6 +1498,7 @@
 				C96892EF250A2A2E000FFF5F /* Exercise4UseCase.swift in Sources */,
 				17597B49251DCF9B00D5235F /* Dto+.swift in Sources */,
 				61E202B6251B438A00995E27 /* Exercise10UseCase.swift in Sources */,
+				17BBD888252B02FC003535D1 /* Exercise11ViewModel.swift in Sources */,
 				716A536C2511A7AE0034DC60 /* Exercise2UseCase.swift in Sources */,
 				C96892F2250A2A2E000FFF5F /* Exercise4ViewController.swift in Sources */,
 				61E202A2251B3A9C00995E27 /* CalculateRestaurantPromotion.swift in Sources */,
@@ -1364,8 +1512,10 @@
 				716A53702511A7AE0034DC60 /* Exercise2ViewController.swift in Sources */,
 				177389C225071EA2003B5CD7 /* UnitTestViewController.swift in Sources */,
 				61E202A4251B3BA700995E27 /* RestaurantInfo.swift in Sources */,
+				17BBD8AB252B159E003535D1 /* APIUrls.swift in Sources */,
 				17597B59251DDB2400D5235F /* ClotherOrder.swift in Sources */,
 				177389ED25072442003B5CD7 /* MainViewModel.swift in Sources */,
+				17BBD887252B02FC003535D1 /* ArticleItemViewModel.swift in Sources */,
 				170DCAB1250E20D100815C14 /* MainAssembler.swift in Sources */,
 				9C90E28225148AD600EFE188 /* Exercise6ViewController.swift in Sources */,
 			);
@@ -1382,6 +1532,7 @@
 				1712849D250C75E300A95A97 /* AppNavigatorMock.swift in Sources */,
 				17128483250C6D5200A95A97 /* MainNavigatorMock.swift in Sources */,
 				11435FD5251D4ED400B4A5DC /* Exercise9NavigatorMock.swift in Sources */,
+				17BBD8C1252B1D09003535D1 /* Exercise11NavigatorMock.swift in Sources */,
 				170DCABB250E28CD00815C14 /* Exercise1ViewControllerTests.swift in Sources */,
 				0E1206E5250F29390071C1F9 /* Exercise7ViewControllerTests.swift in Sources */,
 				17128481250C6D5200A95A97 /* MainViewControllerTests.swift in Sources */,
@@ -1392,7 +1543,9 @@
 				0E4C361D2512E10B006A2047 /* Exercise8NavigatorMock.swift in Sources */,
 				0E4C361E2512E10B006A2047 /* Exercise8UseCaseMock.swift in Sources */,
 				0E4C361B2512E10B006A2047 /* Exercise8ViewControllerTests.swift in Sources */,
+				17BBD8C2252B1D09003535D1 /* Exercise11ViewControllerTests.swift in Sources */,
 				1712849E250C75E300A95A97 /* AppUseCaseMock.swift in Sources */,
+				17BBD8CA252B1D24003535D1 /* TestError.swift in Sources */,
 				11435FE1251D4F0400B4A5DC /* Exercise9ViewModelTests.swift in Sources */,
 				1B07D6EC251CE51E00D17736 /* Exercise10ViewModelTests.swift in Sources */,
 				0EEF3257251041D6001F2987 /* Exercise7UseCaseMock.swift in Sources */,
@@ -1403,6 +1556,7 @@
 				0E1206EF250F6E3C0071C1F9 /* CaculatingTransportationFeeTests.swift in Sources */,
 				716A537D2511C7880034DC60 /* Exercise2NavigatorMock.swift in Sources */,
 				9C90E28E25148B3C00EFE188 /* Exercise6ViewModelTests.swift in Sources */,
+				17BBD8C0252B1D09003535D1 /* Exercise11UseCaseMock.swift in Sources */,
 				170DCABC250E28CD00815C14 /* Exercise1ViewModelTests.swift in Sources */,
 				0E1206E7250F29390071C1F9 /* Exercise7ViewModelTests.swift in Sources */,
 				0E1206E8250F29390071C1F9 /* Exercise7NavigatorMock.swift in Sources */,
@@ -1424,9 +1578,11 @@
 				9C90E28F25148B3C00EFE188 /* Exercise6UseCaseMock.swift in Sources */,
 				11435FDD251D4EF500B4A5DC /* Exercise9ViewControllerTests.swift in Sources */,
 				C96892FB250A2A71000FFF5F /* Exercise4ViewModelTests.swift in Sources */,
+				17BBD8C3252B1D09003535D1 /* Exercise11ViewModelTests.swift in Sources */,
 				9C90E28D25148B3C00EFE188 /* Exercise6ViewControllerTests.swift in Sources */,
 				C96892F9250A2A71000FFF5F /* Exercise4UseCaseMock.swift in Sources */,
 				716A537F2511C7880034DC60 /* Exercise2UseCaseMock.swift in Sources */,
+				17BBD8C4252B1D09003535D1 /* ArticleCellTests.swift in Sources */,
 				179D9EF1252421660036E7E9 /* ClotherOrderTests.swift in Sources */,
 				C96892FC250A2A71000FFF5F /* Exercise4ViewControllerTests.swift in Sources */,
 				9C90E28C25148B3C00EFE188 /* Exercise6NavigatorMock.swift in Sources */,
@@ -1707,6 +1863,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		173EA0E025271AA500E87634 /* XCRemoteSwiftPackageReference "MGAPIService" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tuan188/MGAPIService";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		173EA0E525271B8F00E87634 /* XCRemoteSwiftPackageReference "MGLoadMore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tuan188/MGLoadMore";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
 		177389D425071FAE003B5CD7 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
@@ -1750,6 +1922,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		173EA0E125271AA500E87634 /* MGAPIService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173EA0E025271AA500E87634 /* XCRemoteSwiftPackageReference "MGAPIService" */;
+			productName = MGAPIService;
+		};
+		173EA0E625271B8F00E87634 /* MGLoadMore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173EA0E525271B8F00E87634 /* XCRemoteSwiftPackageReference "MGLoadMore" */;
+			productName = MGLoadMore;
+		};
 		177389D525071FAE003B5CD7 /* MBProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 177389D425071FAE003B5CD7 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
