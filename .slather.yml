@@ -1,0 +1,15 @@
+xcodeproj: UnitTestTraining.xcodeproj
+scheme: UnitTestTraining
+
+ignore:
+  - "../**/*/Xcode*"
+  - "*/API*"
+  - "*ViewController.swift"
+  - "*View.swift"
+  - "*Cell.swift"
+  - "*Gateway.swift"
+  - "*Assembler.swift"
+  - "*Navigator.swift"
+  - "*UseCase.swift"
+  - "*/Extensions/*"
+  - "*/Support/*"
