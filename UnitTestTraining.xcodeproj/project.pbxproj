@@ -72,6 +72,7 @@
 		1712849C250C75E300A95A97 /* AppViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128498250C75E300A95A97 /* AppViewModelTests.swift */; };
 		1712849D250C75E300A95A97 /* AppNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17128499250C75E300A95A97 /* AppNavigatorMock.swift */; };
 		1712849E250C75E300A95A97 /* AppUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1712849A250C75E300A95A97 /* AppUseCaseMock.swift */; };
+		173E1626261D957C001E92DD /* ValidatedPropertyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 173E1625261D957C001E92DD /* ValidatedPropertyKit */; };
 		173EA0E225271AA500E87634 /* MGAPIService in Frameworks */ = {isa = PBXBuildFile; productRef = 173EA0E125271AA500E87634 /* MGAPIService */; };
 		173EA0E725271B8F00E87634 /* MGLoadMore in Frameworks */ = {isa = PBXBuildFile; productRef = 173EA0E625271B8F00E87634 /* MGLoadMore */; };
 		17597B49251DCF9B00D5235F /* Dto+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17597B48251DCF9B00D5235F /* Dto+.swift */; };
@@ -442,6 +443,7 @@
 				177389DF25072085003B5CD7 /* Dto in Frameworks */,
 				177389F0250724E7003B5CD7 /* Reusable in Frameworks */,
 				173EA0E225271AA500E87634 /* MGAPIService in Frameworks */,
+				173E1626261D957C001E92DD /* ValidatedPropertyKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1273,6 +1275,7 @@
 				177389EF250724E7003B5CD7 /* Reusable */,
 				173EA0E125271AA500E87634 /* MGAPIService */,
 				173EA0E625271B8F00E87634 /* MGLoadMore */,
+				173E1625261D957C001E92DD /* ValidatedPropertyKit */,
 			);
 			productName = UnitTestTraining;
 			productReference = 1773897E25071D8D003B5CD7 /* UnitTestTraining.app */;
@@ -1334,6 +1337,7 @@
 				177389EE250724E7003B5CD7 /* XCRemoteSwiftPackageReference "Reusable" */,
 				173EA0E025271AA500E87634 /* XCRemoteSwiftPackageReference "MGAPIService" */,
 				173EA0E525271B8F00E87634 /* XCRemoteSwiftPackageReference "MGLoadMore" */,
+				173E1624261D957C001E92DD /* XCRemoteSwiftPackageReference "ValidatedPropertyKit" */,
 			);
 			productRefGroup = 1773897F25071D8D003B5CD7 /* Products */;
 			projectDirPath = "";
@@ -1751,7 +1755,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitTestTraining/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1772,7 +1776,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitTestTraining/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1863,6 +1867,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		173E1624261D957C001E92DD /* XCRemoteSwiftPackageReference "ValidatedPropertyKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/ValidatedPropertyKit";
+			requirement = {
+				kind = exactVersion;
+				version = 0.0.4;
+			};
+		};
 		173EA0E025271AA500E87634 /* XCRemoteSwiftPackageReference "MGAPIService" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tuan188/MGAPIService";
@@ -1922,6 +1934,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		173E1625261D957C001E92DD /* ValidatedPropertyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173E1624261D957C001E92DD /* XCRemoteSwiftPackageReference "ValidatedPropertyKit" */;
+			productName = ValidatedPropertyKit;
+		};
 		173EA0E125271AA500E87634 /* MGAPIService */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 173EA0E025271AA500E87634 /* XCRemoteSwiftPackageReference "MGAPIService" */;
